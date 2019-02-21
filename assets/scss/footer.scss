@@ -2,3 +2,66 @@ $VIVID_CERULEAN: rgba(0, 162, 216, 1);
 $noir: rgba(0, 0, 0, 1);
 $blanc: rgba(255, 255, 255, 1);
 $gris: rgba(178, 178, 178, 1);
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+footer {
+    background-color: $noir;
+    color: $blanc;
+    div {
+        .col-0-0 {
+            margin-left: 5px;
+            .tr_an_ti {
+                color: $VIVID_CERULEAN;
+                font-family: 'Encode Sans Condensed', sans-serif;
+                font-weight: bold;
+            }
+            a {
+                img {
+                    width: 10%;
+                    transition: transform 0.5s, box-shadow 0.5s;
+                    &:hover {
+                        transform: scale(0.8);
+                        box-shadow: 0 0 5px $gris;
+                    }
+                }
+            }
+            .creators_conteneur {
+                letter-spacing: 1px;
+                text-align: right;
+                position: absolute;
+                right: 5px;
+                top: 0;
+                font-family: 'Encode Sans Condensed', sans-serif;
+                font-weight: bold;
+                .creators {
+                    font-family: none;
+                    font-weight: initial;
+                    color: $VIVID_CERULEAN;
+                    border-bottom: 1px dotted $blanc;
+                    letter-spacing: 0px;
+                    transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s;
+                    &:hover {
+                        font-size: 95%;
+                        text-decoration: none;
+                        border-bottom: 2px dotted $blanc;
+                        letter-spacing: 1px;
+                    }
+                    &:after {
+                        content: "| ";
+                    }
+                }
+            }
+        }
+        .col-0-1 {
+            bottom: 0;
+            font-size: 75%;
+            text-align: right;
+            margin-right: 5px;
+            span {
+                color: $gris;
+            }
+            &:before {
+                content: "©";
+            }
+        }
+    }
+}
