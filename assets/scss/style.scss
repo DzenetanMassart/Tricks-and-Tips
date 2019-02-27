@@ -186,3 +186,192 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 1100px) {
+    body {
+        overflow: hidden;
+        header {
+            margin: 0;
+            width: 100%;
+            h1 {
+                text-align: center;
+                font-size: 200%;
+                font-weight: bold;
+            }
+            div {
+                div {
+                    div {
+                        div {
+                            left: 90px !important;
+                            width: 100px !important;
+                            padding-right: none!important;
+                            padding-left: none !important;
+                            box-shadow: 0 1px 0 $noir;
+                        }
+                    }
+                }
+            }
+        }
+        .jumbotron {
+            padding: 0px;
+            margin-left: 90px;
+        }
+        section {
+            margin: 0;
+            margin-left: 100px;
+            float: left;
+            height: 300px;
+            width: 75%;
+            border-radius: 0px 10px 10px 0px;
+            border: 1px solid $VIVID_CERULEAN;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                width: 60px;
+            }
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px $noir;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
+                background-image: linear-gradient(90deg, $VIVID_CERULEAN 0%, $blanc 55%, $VIVID_CERULEAN 100%);
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-image: linear-gradient(90deg, $VIVID_CERULEAN 0%, $blanc 55%, $VIVID_CERULEAN 100%);
+                border-radius: 10px;
+                box-shadow: inset 2px 0px 10px $noir;
+                transition: background-image 1.5s;
+                &:hover {
+                    background-image: linear-gradient(90deg, $blanc 0%, $VIVID_CERULEAN 55%, $blanc 100%);
+                    box-shadow: inset -2px 0px 10px $noir;
+                }
+            }
+            .card {
+                height: 300px;
+                width: 200px;
+                display: inline-block;
+                margin: 10px;
+                box-shadow: 0px 2px 0px $gris;
+                transition: 0.2s;
+                background-color: $blanc;
+                .card-title {
+                    word-wrap: break-word;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $VIVID_CERULEAN;
+                    text-shadow: 0px 1px 0px $noir;
+                    transition: 0.2s;
+                }
+                .badge {
+                    width: 100%;
+                }
+                .card-img-top {
+                    height: 65px !important;
+                    filter: drop-shadow(0px 0px 5px $gris);
+                    transition: 0.2s;
+                }
+                .card-text {
+                    white-space: normal;
+                    overflow: initial;
+                    text-overflow: ellipsis;
+                    height: 80px;
+                    font-size: 12px;
+                    transition: 0.2s;
+                    &::first-letter {
+                        border-left: dotted 2px $VIVID_CERULEAN;
+                        font-size: 15px;
+                        border-radius: 15px;
+                        background-image: linear-gradient(90deg, $gris 0%, $blanc 55%)
+                    }
+                }
+                &:hover {
+                    background-color: $blanc;
+                    transform: scale(1.05);
+                    box-shadow: 0px 0px 5px $gris;
+                    .card-img-top {
+                        height: 65px !important;
+                        filter: drop-shadow(0px 0px 1px $noir);
+                    }
+                    .card-title {
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $VIVID_CERULEAN;
+                        text-shadow: 0px -1px 0px $noir;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: 100px;
+        background-color: $noir;
+        color: $blanc;
+        position: absolute;
+        bottom: 0;
+        div {
+            .col-0-0 {
+                text-justify: auto;
+                margin-left: 5px;
+                .tr_an_ti {
+                    color: $VIVID_CERULEAN;
+                    font-family: 'Encode Sans Condensed', sans-serif;
+                    font-weight: bold;
+                }
+                a {
+                    img {
+                        width: 10%;
+                        transition: transform 0.5s, box-shadow 0.5s;
+                        &:hover {
+                            transform: scale(0.8);
+                            box-shadow: 0 0 5px $gris;
+                        }
+                    }
+                }
+                .creators_conteneur {
+                    position: absolute;
+                    letter-spacing: 1px;
+                    bottom: 12px;
+                    right: 10px;
+                    font-family: 'Encode Sans Condensed', sans-serif;
+                    font-weight: bold;
+                    .creators {
+                        font-family: none;
+                        font-weight: initial;
+                        color: $VIVID_CERULEAN;
+                        border-bottom: 1px dotted $blanc;
+                        letter-spacing: 0px;
+                        transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s;
+                        &:hover {
+                            font-size: 95%;
+                            text-decoration: none;
+                            border-bottom: 2px dotted $blanc;
+                            letter-spacing: 1px;
+                        }
+                        &:after {
+                            content: "| ";
+                        }
+                    }
+                }
+            }
+            .copyrighter {
+                right: 0;
+                position: absolute;
+                bottom: 0;
+                font-size: 75%;
+                text-align: right;
+                margin-right: 5px;
+                span {
+                    color: $gris;
+                }
+                &:before {
+                    content: "©";
+                }
+            }
+        }
+    }
+}
