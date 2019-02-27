@@ -6,7 +6,7 @@ body header { margin: 0; width: 100%; }
 
 body header h1 { text-align: center; font-size: 1000%; font-weight: bold; }
 
-body header div div div div { left: 10%; width: 70% !important; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; }
+body header div div div div { left: 15%; width: 72% !important; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; }
 
 body .jumbotron { padding: 0px; }
 
