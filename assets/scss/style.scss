@@ -215,12 +215,13 @@ footer {
         .jumbotron {
             padding: 0px;
             margin-left: 90px;
+            width: 65%;
         }
         section {
             margin: 0;
             margin-left: 100px;
             float: left;
-            height: 300px;
+            height: 150px;
             width: 75%;
             border-radius: 0px 10px 10px 0px;
             border: 1px solid $VIVID_CERULEAN;
@@ -247,8 +248,16 @@ footer {
                 }
             }
             .card {
-                height: 300px;
-                width: 200px;
+                .card-body {
+                    a {
+                        position: absolute;
+                        left: 0px;
+                        font-size: 10px;
+                        padding: 4px;
+                    }
+                }
+                height: 150px;
+                width: 100px;
                 display: inline-block;
                 margin: 10px;
                 box-shadow: 0px 2px 0px $gris;
@@ -260,7 +269,7 @@ footer {
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     text-align: center;
-                    font-size: 14px;
+                    font-size: 10px;
                     font-weight: bold;
                     color: $VIVID_CERULEAN;
                     text-shadow: 0px 1px 0px $noir;
@@ -270,16 +279,22 @@ footer {
                     width: 100%;
                 }
                 .card-img-top {
-                    height: 65px !important;
+                    height: 32px !important;
                     filter: drop-shadow(0px 0px 5px $gris);
                     transition: 0.2s;
                 }
                 .card-text {
-                    white-space: normal;
-                    overflow: initial;
+                    position: absolute;
+                    padding: 0.25rem;
+                    padding-bottom: 9px;
+                    height: 40px;
+                    overflow: hidden;
+                    text-align: right;
+                    width: 75px;
+                    right: 0px;
+                    padding: 3px;
                     text-overflow: ellipsis;
-                    height: 80px;
-                    font-size: 12px;
+                    font-size: 8px;
                     transition: 0.2s;
                     &::first-letter {
                         border-left: dotted 2px $VIVID_CERULEAN;
@@ -289,19 +304,26 @@ footer {
                     }
                 }
                 &:hover {
+                    padding-bottom: 9px;
                     background-color: $blanc;
                     transform: scale(1.05);
                     box-shadow: 0px 0px 5px $gris;
                     .card-img-top {
-                        height: 65px !important;
+                        height: 45px !important;
                         filter: drop-shadow(0px 0px 1px $noir);
                     }
                     .card-title {
                         text-align: center;
-                        font-size: 14px;
+                        font-size: 10px;
                         font-weight: bold;
                         color: $VIVID_CERULEAN;
                         text-shadow: 0px -1px 0px $noir;
+                    }
+                    .card-text {
+                        font-size: 6px;
+                        text-overflow: ellipsis;
+                        transform: scale(1.1);
+                        height: 35px;
                     }
                 }
             }
