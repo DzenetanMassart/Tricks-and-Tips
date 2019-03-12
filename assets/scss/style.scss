@@ -218,14 +218,16 @@ footer {
             width: 65%;
         }
         section {
+            scroll-snap-type: y mandatory;
             margin: 0;
             margin-left: 100px;
             float: left;
-            height: 150px;
+            height: 175px;
             width: 75%;
             border-radius: 0px 10px 10px 0px;
             border: 1px solid $VIVID_CERULEAN;
             overflow-y: scroll;
+            scroll-padding: 5px;
             &::-webkit-scrollbar {
                 width: 60px;
             }
@@ -248,6 +250,7 @@ footer {
                 }
             }
             .card {
+                scroll-snap-align: start;
                 .card-body {
                     a {
                         position: absolute;

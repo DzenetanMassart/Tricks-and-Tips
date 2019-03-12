@@ -41,3 +41,7 @@ function JavS() {
     document.querySelectorAll("Boo").style.display = "none";
     document.querySelectorAll("HTM").style.display = "none";
 }
+
+AOS.init({
+    duration: 1200,
+})
