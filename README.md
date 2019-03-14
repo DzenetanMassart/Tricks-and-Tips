@@ -12,6 +12,5 @@ Les boutons "Tout","HTML",Bootstrap" et "Javascript" font apparaîtres leurs car
 
 ## Les prochaines features
 - Les boutons fonctionnels (Le javascript n'est pas encore fonctionnel),
-- Le bouton CSS et ses cards,
-- Des sous-boutons pour plus de précisions (javascript>canvas ,CSS>Bootstrap ,...) en fonction des API et fonctionnalités découvertes dans le cadre de BeCode !
+- Les nouveaux API que nous verrons à BeCode !
 
