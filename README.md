@@ -3,7 +3,7 @@
 ## But
 Afin de ne pas perdre les logiciels en ligne et la documentation autour du code dans un ensemble de lien peu esthétique, Tricks and Tips doit offrir une interface ergonomique et attirante dans son système de gallerie.
 
-La structure doit ressembler à ceci
+La structure doit avoir comme base ceci
 ![](https://github.com/DzenetanMassart/Tricks-and-Tips/blob/master/assets/pics/visuTricksAndTipsBase.png?raw=true)
 
 ## Le fonctionnement
@@ -12,6 +12,5 @@ Les boutons "Tout","HTML",Bootstrap" et "Javascript" font apparaîtres leurs car
 
 ## Les prochaines features
 - Les boutons fonctionnels (Le javascript n'est pas encore fonctionnel),
-- Le bouton CSS et ses cards,
-- Des sous-boutons pour plus de précisions (javascript>canvas ,CSS>Bootstrap ,...) en fonction des API et fonctionnalités découvertes dans le cadre de BeCode !
+- Les nouveaux API que nous verrons à BeCode !
 
