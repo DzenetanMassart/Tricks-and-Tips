@@ -250,6 +250,31 @@ footer {
                 }
             }
             .card {
+                //Les différents types de card
+                .htmlcard {
+                    background-color: #ffe1e1;
+                    display: none !important;
+                }
+                .jscard {
+                    background-color: #ffe1e1;
+                    display: none !important;
+                }
+                .boocard {
+                    background-color: #ffe1e1;
+                    display: none !important;
+                }
+                .csscard {
+                    background-color: #ffe1e1;
+                    display: none !important;
+                }
+                .canvacard {
+                    background-color: #ffe1e1;
+                    display: none !important;
+                }
+                .apicard {
+                    background-color: #ffe1e1;
+                    display: none !important;
+                }
                 scroll-snap-align: start;
                 .card-body {
                     a {

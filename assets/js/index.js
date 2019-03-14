@@ -1,47 +1,138 @@
-let js = document.querySelectorAll("#JS")
-js.style.display = "block-inline";
-let boo = document.querySelectorAll("#Boo")
-boo.style.display = "block-inline";
-let ht = document.querySelectorAll("#HTM")
-ht.style.display = "block-inline";
+//Les déclarations
+let tout = document.getElementsByClassName("card");
+let html = document.getElementsByClassName("htmlcard");
+let js = document.getElementsByClassName("jscard");
+let Boostrap = document.getElementsByClassName("boocard");
+let API = document.getElementsByClassName("apicard");
+let canvas = document.getElementsByClassName("canvacard");
+let css = document.getElementsByClassName("csscard");
 
-document.querySelector("#TOUT").addEventListener("click", TOUT);
-document.querySelector("#HTML").addEventListener("click", HT);
-document.querySelector("#Boostrap").addEventListener("click", BOOS);
-document.querySelector("#Javascript").addEventListener("click", JavS);
+// Les liens avec les fonctions
+document.getElementById("TOUT").onclick = all;
+document.getElementById("HTML").onclick = htmlcards;
+document.getElementById("Javascript").onclick = jscards;
+document.getElementById("Bootstrap").onclick = boocards;
+document.getElementById("API").onclick = apicards;
+document.getElementById("Canvas").onclick = canvacards;
+document.getElementById("CSS").onclick = csscards;
 
 
 
-function TOUT() {
-    document.querySelectorAll("#JS").style.display = "block-inline";
-    document.querySelectorAll("Boo").style.display = "block-inline";
-    document.querySelectorAll("HTM").style.display = "block-inline";
-    let style_JS = window.getComputedStyle("js");
-    console.log("Les #JS ont comme display : " + style_JS.getPropertyValue("display"));
-    let style_Boo = window.getComputedStyle("boo");
-    console.log("Les #Boo ont comme display :" + style_Boo.getPropertyValue("display"));
-    let style_HTM = window.getComputedStyle("ht");
-    console.log("Les #HTM ont comme display :" + style_HTM.getPropertyValue("display"));
+//Bouton "TOUT"
+function all() {
+    if (tout.classList) {
+        tout.classList.toggle("card");
+    } else {
+        // For IE9
+        let classes = tout.className.split(" ");
+        let i = classes.indexOf("card");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("card");
+        tout.className = classes.join(" ");
+    }
 }
 
-function HT() {
-    TOUT();
-    document.querySelectorAll("#JS").style.display = "none";
-    document.querySelectorAll("Boo").style.display = "none";
+//Bouton "HTML"
+function htmlcards() {
+    if (html.classList) {
+        html.classList.toggle("htmlcard");
+    } else {
+        // For IE9
+        let classes = html.className.split(" ");
+        let i = classes.indexOf("htmlcard");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("htmlcard");
+        html.className = classes.join(" ");
+    }
 }
 
-function BOOS() {
-    TOUT();
-    document.querySelectorAll("#JS").style.display = "none";
-    document.querySelectorAll("HTM").style.display = "none";
+//Bouton "Javascript"
+function jscards() {
+    if (js.classList) {
+        js.classList.toggle("jscard");
+    } else {
+        // For IE9
+        let classes = js.className.split(" ");
+        let i = classes.indexOf("jscard");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("jscard");
+        js.className = classes.join(" ");
+    }
 }
 
-function JavS() {
-    TOUT();
-    document.querySelectorAll("Boo").style.display = "none";
-    document.querySelectorAll("HTM").style.display = "none";
+//Bouton "Boostrap"
+function boocards() {
+    if (Boostrap.classList) {
+        Boostrap.classList.toggle("boocard");
+    } else {
+        // For IE9
+        let classes = Boostrap.className.split(" ");
+        let i = classes.indexOf("boocard");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("boocard");
+        Boostrap.className = classes.join(" ");
+    }
 }
 
-AOS.init({
-    duration: 1200,
-})
+//Bouton "API"
+function apicards() {
+    if (API.classList) {
+        API.classList.toggle("apicard");
+    } else {
+        // For IE9
+        let classes = API.className.split(" ");
+        let i = classes.indexOf("apicard");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("apicard");
+        API.className = classes.join(" ");
+    }
+}
+
+//Bouton "Canvas"
+function canvacards() {
+    if (canvas.classList) {
+        canvas.classList.toggle("canvacard");
+    } else {
+        // For IE9
+        let classes = canvas.className.split(" ");
+        let i = classes.indexOf("canvacard");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("canvacard");
+        canvas.className = classes.join(" ");
+    }
+}
+
+//Bouton "CSS"
+function csscards() {
+    if (css.classList) {
+        css.classList.toggle("csscard");
+    } else {
+        // For IE9
+        let classes = css.className.split(" ");
+        let i = classes.indexOf("csscard");
+
+        if (i >= 0)
+            classes.splice(i, 1);
+        else
+            classes.push("csscard");
+        css.className = classes.join(" ");
+    }
+}
