@@ -10,7 +10,7 @@ body header div div div div { left: 15%; width: 72% !important; -webkit-box-shad
 
 body .jumbotron { padding: 0px; }
 
-body section { margin: 0; margin-left: 200px; float: left; height: 300px; width: 75%; border-radius: 0px 10px 10px 0px; border: 1px solid #00a2d8; overflow-y: scroll; }
+body section { margin: 0; margin-left: 200px; float: left; height: 330px; width: 75%; border-radius: 0px 10px 10px 0px; border: 1px solid #00a2d8; overflow-y: scroll; }
 
 body section::-webkit-scrollbar { width: 60px; }
 
@@ -98,4 +98,18 @@ footer div .copyrighter:before { content: "©"; }
   footer div .copyrighter { right: 0; position: absolute; bottom: 0; font-size: 75%; text-align: right; margin-right: 5px; }
   footer div .copyrighter span { color: #b2b2b2; }
   footer div .copyrighter:before { content: "©"; } }
+
+.css_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: white; background-color: #000085; width: 50%; }
+
+.js_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: yellow; width: 50%; }
+
+.html_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: white; background-color: #000085; width: 50%; }
+
+.bootstrap_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: white; background-color: red; width: 50%; }
+
+.api_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: rosybrown; width: 50%; }
+
+.canvas_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: white; -webkit-box-shadow: inset 1px 1px 1px black; box-shadow: inset 1px 1px 1px black; width: 50%; }
+
+.generateur { width: 50%; right: 0; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: yellow; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/920305549842945092/DD720C8896AEA4B09947C8C3069F633EAD7380FA/"); background-position: bottom; text-shadow: 0px 1px 0px #000000, 1px 0px 0px #000000, 0px 0px 1px #000000; -webkit-box-shadow: inset 0px 0px 15px 0px yellow; box-shadow: inset 0px 0px 15px 0px yellow; }
 /*# sourceMappingURL=style.css.map */
