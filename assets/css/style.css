@@ -112,4 +112,8 @@ footer div .copyrighter:before { content: "©"; }
 .canvas_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: white; -webkit-box-shadow: inset 1px 1px 1px black; box-shadow: inset 1px 1px 1px black; width: 50%; }
 
 .generateur { width: 50%; right: 0; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: yellow; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/920305549842945092/DD720C8896AEA4B09947C8C3069F633EAD7380FA/"); background-position: bottom; text-shadow: 0px 1px 0px #000000, 1px 0px 0px #000000, 0px 0px 1px #000000; -webkit-box-shadow: inset 0px 0px 15px 0px yellow; box-shadow: inset 0px 0px 15px 0px yellow; }
+
+.icone { width: 100px; position: absolute; right: 0; -webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg); -webkit-transition: padding 1s, -webkit-filter 2s; transition: padding 1s, -webkit-filter 2s; transition: filter 2s, padding 1s; transition: filter 2s, padding 1s, -webkit-filter 2s; padding: 20px; }
+
+.icone:hover { padding: 15px; -webkit-filter: hue-rotate(120deg); filter: hue-rotate(120deg); }
 /*# sourceMappingURL=style.css.map */
