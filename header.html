@@ -4,38 +4,52 @@
 <head>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/header.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
     <title>Tricks and Tips</title>
+    <link rel="icon" type="image/ico" href="assets/pics/T_T.ico" />
+    <meta name="description" content="Répertoire de trucs et astuces à usage des devellopeurs web !" />
 </head>
 
 <body>
     <header>
+        <a href="https://github.com/DzenetanMassart/Tricks-and-Tips" title="Vers le répertoire Github !"><img class="icone" src="assets/pics/T_T.svg" alt="Vers le répertoire Github !" /></a>
         <h1>Tricks and Tips</h1>
-        <div class="container-fluid">
+        <div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="btn-group btn-group-lg" role="group">
 
-                        <button class="btn btn-secondary" type="button">
-                                TOUT
-                            </button>
-                        <button class="btn btn-secondary" type="button">
+                        <button class="btn btn-secondary" type="button" id="TOUT">
+                                        TOUT
+                                    </button>
+                        <button class="btn btn-secondary" type="button" id="HTML">
                                 HTML
-                            </button>
+                                    </button>
                         <button class="btn btn-secondary" type="button">
-                                Bootstrap
-                            </button>
+                                <select class="form-control">
+                                        <option id="CSS">CSS</option>
+                                        <option id="Bootstrap">Boostrap</option>
+                                </select>
+                                    </button>
                         <button class="btn btn-secondary" type="button">
-                                Javascript
-                            </button>
+                                <select class="form-control">
+                                        <option id="Javascript">Javascript</option>
+                                        <option id="Canvas">Canvas</option>
+                                        <option id="REACT">REACT</option>
+                                        </select>
+                                    </button>
+                        <button class="btn btn-secondary" type="button">
+                                        <select class="form-control">
+                                                <option id="PHP">PHP</option>
+                                                <option id="WordPress">WordPress</option>
+                                                </select>
+                                            </button>
                     </div>
                 </div>
             </div>
         </div>
 
     </header>
-
-
 </body>
 
 </html>
