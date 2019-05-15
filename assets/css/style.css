@@ -1,125 +1,34 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed");
-body { overflow: hidden; }
+section { width: 95%; margin: auto auto; height: 450px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
 
-body header { margin: 0; width: 100%; }
+section::-webkit-scrollbar { width: 45px; }
 
-body header h1 { text-align: center; font-size: 1000%; font-weight: bold; }
+section::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
 
-body header div div div div { left: 15%; width: 72% !important; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; }
+section::-webkit-scrollbar-track-piece { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; }
 
-body .jumbotron { padding: 0px; }
+section::-webkit-scrollbar-thumb { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; -webkit-box-shadow: inset 2px 0px 10px black; box-shadow: inset 2px 0px 10px black; -webkit-transition: background-image 1.5s; transition: background-image 1.5s; }
 
-body section { margin: 0; margin-left: 200px; float: left; height: 330px; width: 75%; border-radius: 0px 10px 10px 0px; border: 1px solid #00a2d8; overflow-y: scroll; }
+section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #00a2d8), to(white)); background-image: linear-gradient(90deg, white 0%, #00a2d8 55%, white 100%); -webkit-box-shadow: inset -2px 0px 10px black; box-shadow: inset -2px 0px 10px black; }
 
-body section::-webkit-scrollbar { width: 60px; }
+section .row { margin-right: 0 !important; }
 
-body section::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
+section .card { padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
 
-body section::-webkit-scrollbar-track-piece { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; }
+section .card .card-title { font-size: 12.5px; width: 245px; border-bottom: solid 1px black; border-right: solid 2px black; -webkit-box-shadow: 0 1px 5px black; box-shadow: 0 1px 5px black; }
 
-body section::-webkit-scrollbar-thumb { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; -webkit-box-shadow: inset 2px 0px 10px black; box-shadow: inset 2px 0px 10px black; -webkit-transition: background-image 1.5s; transition: background-image 1.5s; }
+section .card .card-img-top { padding: 5px; height: 100px; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222); margin: auto auto; }
 
-body section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #00a2d8), to(white)); background-image: linear-gradient(90deg, white 0%, #00a2d8 55%, white 100%); -webkit-box-shadow: inset -2px 0px 10px black; box-shadow: inset -2px 0px 10px black; }
+section .card .badge { height: 20px; position: absolute; width: 150px; top: 5px; right: 0; background: black; color: white; }
 
-body section .card { height: 300px; width: 200px; display: inline-block; margin: 10px; -webkit-box-shadow: 0px 2px 0px #b2b2b2; box-shadow: 0px 2px 0px #b2b2b2; -webkit-transition: 0.2s; transition: 0.2s; background-color: white; }
+section .card .generateur { z-index: 2; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background-color: white; }
 
-body section .card .card-title { word-wrap: break-word; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; font-size: 14px; font-weight: bold; color: #00a2d8; text-shadow: 0px 1px 0px black; -webkit-transition: 0.2s; transition: 0.2s; }
+section .card a { position: absolute; bottom: 5px; }
 
-body section .card .badge { width: 100%; }
+section .card .card-body { height: 200px; }
 
-body section .card .card-img-top { height: 65px !important; -webkit-filter: drop-shadow(0px 0px 5px #b2b2b2); filter: drop-shadow(0px 0px 5px #b2b2b2); -webkit-transition: 0.2s; transition: 0.2s; }
+footer .creators_conteneur { position: absolute; right: 0; top: 0; }
 
-body section .card .card-text { white-space: normal; overflow: initial; text-overflow: ellipsis; height: 80px; font-size: 12px; -webkit-transition: 0.2s; transition: 0.2s; }
+footer .copyrighter { position: absolute; right: 0; bottom: 0; }
 
-body section .card .card-text::first-letter { border-left: dotted 2px #00a2d8; font-size: 15px; border-radius: 15px; background-image: -webkit-gradient(linear, left top, right top, from(#b2b2b2), color-stop(55%, white)); background-image: linear-gradient(90deg, #b2b2b2 0%, white 55%); }
-
-body section .card:hover { background-color: white; -webkit-transform: scale(1.05); transform: scale(1.05); -webkit-box-shadow: 0px 0px 5px #b2b2b2; box-shadow: 0px 0px 5px #b2b2b2; }
-
-body section .card:hover .card-img-top { height: 65px !important; -webkit-filter: drop-shadow(0px 0px 1px black); filter: drop-shadow(0px 0px 1px black); }
-
-body section .card:hover .card-title { text-align: center; font-size: 14px; font-weight: bold; color: #00a2d8; text-shadow: 0px -1px 0px black; }
-
-footer { height: 50px; background-color: black; color: white; position: absolute; bottom: 0; }
-
-footer div .col-0-0 { margin-left: 5px; }
-
-footer div .col-0-0 .tr_an_ti { color: #00a2d8; font-family: 'Encode Sans Condensed', sans-serif; font-weight: bold; }
-
-footer div .col-0-0 a img { width: 10%; -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s; transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s; transition: transform 0.5s, box-shadow 0.5s; transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s; }
-
-footer div .col-0-0 a img:hover { -webkit-transform: scale(0.8); transform: scale(0.8); -webkit-box-shadow: 0 0 5px #b2b2b2; box-shadow: 0 0 5px #b2b2b2; }
-
-footer div .col-0-0 .creators_conteneur { position: absolute; letter-spacing: 1px; bottom: 12px; right: 10px; font-family: 'Encode Sans Condensed', sans-serif; font-weight: bold; }
-
-footer div .col-0-0 .creators_conteneur .creators { font-family: none; font-weight: initial; color: #00a2d8; border-bottom: 1px dotted white; letter-spacing: 0px; -webkit-transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s; transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s; }
-
-footer div .col-0-0 .creators_conteneur .creators:hover { font-size: 95%; text-decoration: none; border-bottom: 2px dotted white; letter-spacing: 1px; }
-
-footer div .col-0-0 .creators_conteneur .creators:after { content: "| "; }
-
-footer div .copyrighter { right: 0; position: absolute; bottom: 0; font-size: 75%; text-align: right; margin-right: 5px; }
-
-footer div .copyrighter span { color: #b2b2b2; }
-
-footer div .copyrighter:before { content: "©"; }
-
-@media only screen and (max-width: 1100px) { body { overflow: hidden; }
-  body header { margin: 0; width: 100%; }
-  body header h1 { text-align: center; font-size: 200%; font-weight: bold; }
-  body header div div div div { left: 90px !important; width: 100px !important; padding-right: none !important; padding-left: none !important; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; }
-  body .jumbotron { padding: 0px; margin-left: 90px; width: 65%; }
-  body section { -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; margin: 0; margin-left: 100px; float: left; height: 175px; width: 75%; border-radius: 0px 10px 10px 0px; border: 1px solid #00a2d8; overflow-y: scroll; scroll-padding: 5px; }
-  body section::-webkit-scrollbar { width: 60px; }
-  body section::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
-  body section::-webkit-scrollbar-track-piece { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; }
-  body section::-webkit-scrollbar-thumb { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; -webkit-box-shadow: inset 2px 0px 10px black; box-shadow: inset 2px 0px 10px black; -webkit-transition: background-image 1.5s; transition: background-image 1.5s; }
-  body section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #00a2d8), to(white)); background-image: linear-gradient(90deg, white 0%, #00a2d8 55%, white 100%); -webkit-box-shadow: inset -2px 0px 10px black; box-shadow: inset -2px 0px 10px black; }
-  body section .card { scroll-snap-align: start; height: 150px; width: 100px; display: inline-block; margin: 10px; -webkit-box-shadow: 0px 2px 0px #b2b2b2; box-shadow: 0px 2px 0px #b2b2b2; -webkit-transition: 0.2s; transition: 0.2s; background-color: white; }
-  body section .card .htmlcard { background-color: #ffe1e1; display: none !important; }
-  body section .card .jscard { background-color: #ffe1e1; display: none !important; }
-  body section .card .boocard { background-color: #ffe1e1; display: none !important; }
-  body section .card .csscard { background-color: #ffe1e1; display: none !important; }
-  body section .card .canvacard { background-color: #ffe1e1; display: none !important; }
-  body section .card .apicard { background-color: #ffe1e1; display: none !important; }
-  body section .card .card-body a { position: absolute; left: 0px; font-size: 10px; padding: 4px; }
-  body section .card .card-title { word-wrap: break-word; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: center; font-size: 10px; font-weight: bold; color: #00a2d8; text-shadow: 0px 1px 0px black; -webkit-transition: 0.2s; transition: 0.2s; }
-  body section .card .badge { width: 100%; }
-  body section .card .card-img-top { height: 32px !important; -webkit-filter: drop-shadow(0px 0px 5px #b2b2b2); filter: drop-shadow(0px 0px 5px #b2b2b2); -webkit-transition: 0.2s; transition: 0.2s; }
-  body section .card .card-text { position: absolute; padding: 0.25rem; padding-bottom: 9px; height: 40px; overflow: hidden; text-align: right; width: 75px; right: 0px; padding: 3px; text-overflow: ellipsis; font-size: 8px; -webkit-transition: 0.2s; transition: 0.2s; }
-  body section .card .card-text::first-letter { border-left: dotted 2px #00a2d8; font-size: 15px; border-radius: 15px; background-image: -webkit-gradient(linear, left top, right top, from(#b2b2b2), color-stop(55%, white)); background-image: linear-gradient(90deg, #b2b2b2 0%, white 55%); }
-  body section .card:hover { padding-bottom: 9px; background-color: white; -webkit-transform: scale(1.05); transform: scale(1.05); -webkit-box-shadow: 0px 0px 5px #b2b2b2; box-shadow: 0px 0px 5px #b2b2b2; }
-  body section .card:hover .card-img-top { height: 45px !important; -webkit-filter: drop-shadow(0px 0px 1px black); filter: drop-shadow(0px 0px 1px black); }
-  body section .card:hover .card-title { text-align: center; font-size: 10px; font-weight: bold; color: #00a2d8; text-shadow: 0px -1px 0px black; }
-  body section .card:hover .card-text { font-size: 6px; text-overflow: ellipsis; -webkit-transform: scale(1.1); transform: scale(1.1); height: 35px; }
-  footer { height: 100px; background-color: black; color: white; position: absolute; bottom: 0; }
-  footer div .col-0-0 { text-justify: auto; margin-left: 5px; }
-  footer div .col-0-0 .tr_an_ti { color: #00a2d8; font-family: 'Encode Sans Condensed', sans-serif; font-weight: bold; }
-  footer div .col-0-0 a img { width: 10%; -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s; transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s; transition: transform 0.5s, box-shadow 0.5s; transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s; }
-  footer div .col-0-0 a img:hover { -webkit-transform: scale(0.8); transform: scale(0.8); -webkit-box-shadow: 0 0 5px #b2b2b2; box-shadow: 0 0 5px #b2b2b2; }
-  footer div .col-0-0 .creators_conteneur { position: absolute; letter-spacing: 1px; bottom: 12px; right: 10px; font-family: 'Encode Sans Condensed', sans-serif; font-weight: bold; }
-  footer div .col-0-0 .creators_conteneur .creators { font-family: none; font-weight: initial; color: #00a2d8; border-bottom: 1px dotted white; letter-spacing: 0px; -webkit-transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s; transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s; }
-  footer div .col-0-0 .creators_conteneur .creators:hover { font-size: 95%; text-decoration: none; border-bottom: 2px dotted white; letter-spacing: 1px; }
-  footer div .col-0-0 .creators_conteneur .creators:after { content: "| "; }
-  footer div .copyrighter { right: 0; position: absolute; bottom: 0; font-size: 75%; text-align: right; margin-right: 5px; }
-  footer div .copyrighter span { color: #b2b2b2; }
-  footer div .copyrighter:before { content: "©"; } }
-
-.css_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: white; background-color: #000085; width: 50%; }
-
-.js_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: yellow; width: 50%; }
-
-.html_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: white; background-color: #000085; width: 50%; }
-
-.bootstrap_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: white; background-color: red; width: 50%; }
-
-.api_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: rosybrown; width: 50%; }
-
-.canvas_badge { display: inline-block; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: black; background-color: white; -webkit-box-shadow: inset 1px 1px 1px black; box-shadow: inset 1px 1px 1px black; width: 50%; }
-
-.generateur { width: 50%; right: 0; padding: 0.25em 0.4em; font-size: 75%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: 0.25rem; color: yellow; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/920305549842945092/DD720C8896AEA4B09947C8C3069F633EAD7380FA/"); background-position: bottom; text-shadow: 0px 1px 0px #000000, 1px 0px 0px #000000, 0px 0px 1px #000000; -webkit-box-shadow: inset 0px 0px 15px 0px yellow; box-shadow: inset 0px 0px 15px 0px yellow; }
-
-.icone { width: 100px; position: absolute; right: 0; -webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg); -webkit-transition: padding 1s, -webkit-filter 2s; transition: padding 1s, -webkit-filter 2s; transition: filter 2s, padding 1s; transition: filter 2s, padding 1s, -webkit-filter 2s; padding: 20px; }
-
-.icone:hover { padding: 15px; -webkit-filter: hue-rotate(120deg); filter: hue-rotate(120deg); }
+footer img { text-align: left; height: 35px; }
 /*# sourceMappingURL=style.css.map */

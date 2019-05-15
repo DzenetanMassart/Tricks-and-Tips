@@ -1,549 +1,104 @@
-$VIVID_CERULEAN: rgba(0, 162, 216, 1);
-$noir: rgba(0, 0, 0, 1);
-$blanc: rgba(255, 255, 255, 1);
-$gris: rgba(178, 178, 178, 1);
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
-body {
-    overflow: hidden;
-    header {
-        margin: 0;
-        width: 100%;
-        h1 {
+$C1:black;
+$C2:white;
+$C3:rgba(0, 162, 216, 1);
+section {
+    width: 95%;
+    margin: auto auto;
+    height: 450px;
+    padding: 10px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    &::-webkit-scrollbar {
+        width: 45px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $C1;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track-piece {
+        background-image: linear-gradient(90deg, $C3 0%, $C2 55%, $C3 100%);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(90deg, $C3 0%, $C2 55%, $C3 100%);
+        border-radius: 10px;
+        box-shadow: inset 2px 0px 10px $C1;
+        transition: background-image 1.5s;
+        &:hover {
+            background-image: linear-gradient(90deg, $C2 0%, $C3 55%, $C2 100%);
+            box-shadow: inset -2px 0px 10px $C1;
+        }
+    }
+    .row {
+        margin-right: 0 !important;
+    }
+    .card {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 390px;
+        height: 300px;
+        margin: 10px;
+        .card-title {
+            font-size: 12.5px;
+            width: 245px;
+            border-bottom: solid 1px $C1;
+            border-right: solid 2px $C1;
+            box-shadow: 0 1px 5px $C1;
+        }
+        .card-img-top {
+            padding: 5px;
+            height: 100px;
+            filter: drop-shadow(5px 5px 5px #222);
+            margin: auto auto;
+        }
+        .badge {
+            height: 20px;
+            position: absolute;
+            width: 150px;
+            top: 5px;
+            right: 0;
+            background: $C1;
+            color: $C2;
+        }
+        .generateur {
+            z-index: 2;
+            white-space: nowrap;
+            vertical-align: baseline;
+            height: 20px;
+            position: absolute;
+            width: 150px;
+            top: 25px;
+            right: 0;
+            border: solid 1px $C1;
+            border-left: solid 2px $C1;
             text-align: center;
-            font-size: 1000%;
-            font-weight: bold;
+            vertical-align: middle;
+            font-size: 12px;
+            background-color: $C2;
         }
-        div {
-            div {
-                div {
-                    div {
-                        left: 15%;
-                        width: 72% !important;
-                        box-shadow: 0 1px 0 $noir;
-                    }
-                }
-            }
+        a {
+            position: absolute;
+            bottom: 5px;
         }
-    }
-    .jumbotron {
-        padding: 0px;
-    }
-    section {
-        margin: 0;
-        margin-left: 200px;
-        float: left;
-        height: 330px;
-        width: 75%;
-        border-radius: 0px 10px 10px 0px;
-        border: 1px solid $VIVID_CERULEAN;
-        overflow-y: scroll;
-        &::-webkit-scrollbar {
-            width: 60px;
-        }
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px $noir;
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-track-piece {
-            background-image: linear-gradient(90deg, $VIVID_CERULEAN 0%, $blanc 55%, $VIVID_CERULEAN 100%);
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-image: linear-gradient(90deg, $VIVID_CERULEAN 0%, $blanc 55%, $VIVID_CERULEAN 100%);
-            border-radius: 10px;
-            box-shadow: inset 2px 0px 10px $noir;
-            transition: background-image 1.5s;
-            &:hover {
-                background-image: linear-gradient(90deg, $blanc 0%, $VIVID_CERULEAN 55%, $blanc 100%);
-                box-shadow: inset -2px 0px 10px $noir;
-            }
-        }
-        .card {
-            height: 300px;
-            width: 200px;
-            display: inline-block;
-            margin: 10px;
-            box-shadow: 0px 2px 0px $gris;
-            transition: 0.2s;
-            background-color: $blanc;
-            .card-title {
-                word-wrap: break-word;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                text-align: center;
-                font-size: 14px;
-                font-weight: bold;
-                color: $VIVID_CERULEAN;
-                text-shadow: 0px 1px 0px $noir;
-                transition: 0.2s;
-            }
-            .badge {
-                width: 100%;
-            }
-            .card-img-top {
-                height: 65px !important;
-                filter: drop-shadow(0px 0px 5px $gris);
-                transition: 0.2s;
-            }
-            .card-text {
-                white-space: normal;
-                overflow: initial;
-                text-overflow: ellipsis;
-                height: 80px;
-                font-size: 12px;
-                transition: 0.2s;
-                &::first-letter {
-                    border-left: dotted 2px $VIVID_CERULEAN;
-                    font-size: 15px;
-                    border-radius: 15px;
-                    background-image: linear-gradient(90deg, $gris 0%, $blanc 55%)
-                }
-            }
-            &:hover {
-                background-color: $blanc;
-                transform: scale(1.05);
-                box-shadow: 0px 0px 5px $gris;
-                .card-img-top {
-                    height: 65px !important;
-                    filter: drop-shadow(0px 0px 1px $noir);
-                }
-                .card-title {
-                    text-align: center;
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: $VIVID_CERULEAN;
-                    text-shadow: 0px -1px 0px $noir;
-                }
-            }
+        .card-body {
+            height: 200px;
         }
     }
 }
 
 footer {
-    height: 50px;
-    background-color: $noir;
-    color: $blanc;
-    position: absolute;
-    bottom: 0;
-    div {
-        .col-0-0 {
-            margin-left: 5px;
-            .tr_an_ti {
-                color: $VIVID_CERULEAN;
-                font-family: 'Encode Sans Condensed', sans-serif;
-                font-weight: bold;
-            }
-            a {
-                img {
-                    width: 10%;
-                    transition: transform 0.5s, box-shadow 0.5s;
-                    &:hover {
-                        transform: scale(0.8);
-                        box-shadow: 0 0 5px $gris;
-                    }
-                }
-            }
-            .creators_conteneur {
-                position: absolute;
-                letter-spacing: 1px;
-                bottom: 12px;
-                right: 10px;
-                font-family: 'Encode Sans Condensed', sans-serif;
-                font-weight: bold;
-                .creators {
-                    font-family: none;
-                    font-weight: initial;
-                    color: $VIVID_CERULEAN;
-                    border-bottom: 1px dotted $blanc;
-                    letter-spacing: 0px;
-                    transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s;
-                    &:hover {
-                        font-size: 95%;
-                        text-decoration: none;
-                        border-bottom: 2px dotted $blanc;
-                        letter-spacing: 1px;
-                    }
-                    &:after {
-                        content: "| ";
-                    }
-                }
-            }
-        }
-        .copyrighter {
-            right: 0;
-            position: absolute;
-            bottom: 0;
-            font-size: 75%;
-            text-align: right;
-            margin-right: 5px;
-            span {
-                color: $gris;
-            }
-            &:before {
-                content: "©";
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    body {
-        overflow: hidden;
-        header {
-            margin: 0;
-            width: 100%;
-            h1 {
-                text-align: center;
-                font-size: 200%;
-                font-weight: bold;
-            }
-            div {
-                div {
-                    div {
-                        div {
-                            left: 90px !important;
-                            width: 100px !important;
-                            padding-right: none!important;
-                            padding-left: none !important;
-                            box-shadow: 0 1px 0 $noir;
-                        }
-                    }
-                }
-            }
-        }
-        .jumbotron {
-            padding: 0px;
-            margin-left: 90px;
-            width: 65%;
-        }
-        section {
-            scroll-snap-type: y mandatory;
-            margin: 0;
-            margin-left: 100px;
-            float: left;
-            height: 175px;
-            width: 75%;
-            border-radius: 0px 10px 10px 0px;
-            border: 1px solid $VIVID_CERULEAN;
-            overflow-y: scroll;
-            scroll-padding: 5px;
-            &::-webkit-scrollbar {
-                width: 60px;
-            }
-            &::-webkit-scrollbar-track {
-                box-shadow: inset 0 0 5px $noir;
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-track-piece {
-                background-image: linear-gradient(90deg, $VIVID_CERULEAN 0%, $blanc 55%, $VIVID_CERULEAN 100%);
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-thumb {
-                background-image: linear-gradient(90deg, $VIVID_CERULEAN 0%, $blanc 55%, $VIVID_CERULEAN 100%);
-                border-radius: 10px;
-                box-shadow: inset 2px 0px 10px $noir;
-                transition: background-image 1.5s;
-                &:hover {
-                    background-image: linear-gradient(90deg, $blanc 0%, $VIVID_CERULEAN 55%, $blanc 100%);
-                    box-shadow: inset -2px 0px 10px $noir;
-                }
-            }
-            .card {
-                //Les différents types de card
-                .htmlcard {
-                    background-color: #ffe1e1;
-                    display: none !important;
-                }
-                .jscard {
-                    background-color: #ffe1e1;
-                    display: none !important;
-                }
-                .boocard {
-                    background-color: #ffe1e1;
-                    display: none !important;
-                }
-                .csscard {
-                    background-color: #ffe1e1;
-                    display: none !important;
-                }
-                .canvacard {
-                    background-color: #ffe1e1;
-                    display: none !important;
-                }
-                .apicard {
-                    background-color: #ffe1e1;
-                    display: none !important;
-                }
-                scroll-snap-align: start;
-                .card-body {
-                    a {
-                        position: absolute;
-                        left: 0px;
-                        font-size: 10px;
-                        padding: 4px;
-                    }
-                }
-                height: 150px;
-                width: 100px;
-                display: inline-block;
-                margin: 10px;
-                box-shadow: 0px 2px 0px $gris;
-                transition: 0.2s;
-                background-color: $blanc;
-                .card-title {
-                    word-wrap: break-word;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    text-align: center;
-                    font-size: 10px;
-                    font-weight: bold;
-                    color: $VIVID_CERULEAN;
-                    text-shadow: 0px 1px 0px $noir;
-                    transition: 0.2s;
-                }
-                .badge {
-                    width: 100%;
-                }
-                .card-img-top {
-                    height: 32px !important;
-                    filter: drop-shadow(0px 0px 5px $gris);
-                    transition: 0.2s;
-                }
-                .card-text {
-                    position: absolute;
-                    padding: 0.25rem;
-                    padding-bottom: 9px;
-                    height: 40px;
-                    overflow: hidden;
-                    text-align: right;
-                    width: 75px;
-                    right: 0px;
-                    padding: 3px;
-                    text-overflow: ellipsis;
-                    font-size: 8px;
-                    transition: 0.2s;
-                    &::first-letter {
-                        border-left: dotted 2px $VIVID_CERULEAN;
-                        font-size: 15px;
-                        border-radius: 15px;
-                        background-image: linear-gradient(90deg, $gris 0%, $blanc 55%)
-                    }
-                }
-                &:hover {
-                    padding-bottom: 9px;
-                    background-color: $blanc;
-                    transform: scale(1.05);
-                    box-shadow: 0px 0px 5px $gris;
-                    .card-img-top {
-                        height: 45px !important;
-                        filter: drop-shadow(0px 0px 1px $noir);
-                    }
-                    .card-title {
-                        text-align: center;
-                        font-size: 10px;
-                        font-weight: bold;
-                        color: $VIVID_CERULEAN;
-                        text-shadow: 0px -1px 0px $noir;
-                    }
-                    .card-text {
-                        font-size: 6px;
-                        text-overflow: ellipsis;
-                        transform: scale(1.1);
-                        height: 35px;
-                    }
-                }
-            }
-        }
-    }
-    footer {
-        height: 100px;
-        background-color: $noir;
-        color: $blanc;
+    .creators_conteneur {
         position: absolute;
-        bottom: 0;
-        div {
-            .col-0-0 {
-                text-justify: auto;
-                margin-left: 5px;
-                .tr_an_ti {
-                    color: $VIVID_CERULEAN;
-                    font-family: 'Encode Sans Condensed', sans-serif;
-                    font-weight: bold;
-                }
-                a {
-                    img {
-                        width: 10%;
-                        transition: transform 0.5s, box-shadow 0.5s;
-                        &:hover {
-                            transform: scale(0.8);
-                            box-shadow: 0 0 5px $gris;
-                        }
-                    }
-                }
-                .creators_conteneur {
-                    position: absolute;
-                    letter-spacing: 1px;
-                    bottom: 12px;
-                    right: 10px;
-                    font-family: 'Encode Sans Condensed', sans-serif;
-                    font-weight: bold;
-                    .creators {
-                        font-family: none;
-                        font-weight: initial;
-                        color: $VIVID_CERULEAN;
-                        border-bottom: 1px dotted $blanc;
-                        letter-spacing: 0px;
-                        transition: font-size 0.5s, border-bottom 0.5s, letter-spacing 0.5s;
-                        &:hover {
-                            font-size: 95%;
-                            text-decoration: none;
-                            border-bottom: 2px dotted $blanc;
-                            letter-spacing: 1px;
-                        }
-                        &:after {
-                            content: "| ";
-                        }
-                    }
-                }
-            }
-            .copyrighter {
-                right: 0;
-                position: absolute;
-                bottom: 0;
-                font-size: 75%;
-                text-align: right;
-                margin-right: 5px;
-                span {
-                    color: $gris;
-                }
-                &:before {
-                    content: "©";
-                }
-            }
-        }
+        right: 0;
+        top: 0;
     }
-}
-
-.css_badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: white;
-    background-color: rgb(0, 0, 133);
-    width: 50%;
-}
-
-.js_badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: black;
-    background-color: yellow;
-    width: 50%;
-}
-
-.html_badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: white;
-    background-color: rgb(0, 0, 133);
-    width: 50%;
-}
-
-.bootstrap_badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: white;
-    background-color: red;
-    width: 50%;
-}
-
-.api_badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: black;
-    background-color: rosybrown;
-    width: 50%;
-}
-
-.canvas_badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: black;
-    background-color: white;
-    box-shadow: inset 1px 1px 1px black;
-    width: 50%;
-}
-
-.generateur {
-    width: 50%;
-    right: 0;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    color: yellow;
-    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/920305549842945092/DD720C8896AEA4B09947C8C3069F633EAD7380FA/");
-    background-position: bottom;
-    text-shadow: 0px 1px 0px #000000, 1px 0px 0px #000000, 0px 0px 1px #000000;
-    box-shadow: inset 0px 0px 15px 0px yellow;
-}
-
-.icone {
-    width: 100px;
-    position: absolute;
-    right: 0;
-    filter: hue-rotate(0deg);
-    transition: filter 2s, padding 1s;
-    padding: 20px;
-    &:hover {
-        padding: 15px;
-        filter: hue-rotate(120deg);
+    .copyrighter {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    img {
+        text-align: left;
+        height: 35px;
     }
 }
