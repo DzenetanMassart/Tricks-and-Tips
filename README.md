@@ -14,7 +14,7 @@ Les boutons "Tout","HTML",Bootstrap","Javascript",... font apparaître leurs car
 ### Nouvelle forme
 La gallerie n'est qu'un block centrer au milieu de la page par "section" avec un "width:95%" pour adapter la largeur en fonction de l'écran et rendre responsive l'ensemble ! Pour rendre facile à éditer,exporter mais surtout aller à l'éfficacitée, les cartes se font en javascript de cette manière:
 
-```
+```javascript
 //Pour créer les cartes 
 let tritip = [{
         "title": "Canvimation",
