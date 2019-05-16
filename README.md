@@ -82,7 +82,7 @@ for (let ii = 0; ii < tritip.length; ii++) {
 document.getElementById("generate").innerHTML += generate;
 
  ```
- Gràce à cette méthode, Javascript possède déjà toutes les cartes dans une base de donnée et il peut identifier avec les badges la technologie associée à la carte !
+ Gràce à cette méthode, Javascript possède déjà toutes les cartes dans une base de donnée et il peut les identifier avec les badges la technologie associée à la carte !
 
 
 ## Les prochaines features
