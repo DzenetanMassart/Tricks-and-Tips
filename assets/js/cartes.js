@@ -47,7 +47,7 @@ let tritip = [{
     },
     {
         "title": "Bootstrap 4 Cheat Sheet",
-        "badge": "Boostrap",
+        "badge": "Bootstrap",
         "generateur": 1,
         "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
         "desc": "Toutes les class de Bootstrap 4 en une page permettant de voir leurs codes et les visuels !",

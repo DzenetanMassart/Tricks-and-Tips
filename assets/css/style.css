@@ -12,23 +12,47 @@ section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(line
 
 section .row { margin-right: 0 !important; }
 
-section .card { padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
+section .card { border: 1px solid black; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
 
-section .card .card-title { font-size: 12.5px; width: 245px; border-bottom: solid 1px black; border-right: solid 2px black; -webkit-box-shadow: 0 1px 5px black; box-shadow: 0 1px 5px black; }
+section .card .card-title { background-color: white; z-index: 2; font-size: 12.5px; width: 245px; border-bottom: solid 1px black; border-right: solid 2px black; -webkit-box-shadow: 0 1px 5px black; box-shadow: 0 1px 5px black; }
 
-section .card .card-img-top { padding: 5px; height: 100px; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222); margin: auto auto; }
+section .card .card-img-top { z-index: 2; position: absolute; width: 35%; right: 5px; top: 55px; margin: auto auto; }
 
-section .card .badge { height: 20px; position: absolute; width: 150px; top: 5px; right: 0; background: black; color: white; }
+section .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
 
 section .card .generateur { z-index: 2; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background-color: white; }
 
-section .card a { position: absolute; bottom: 5px; }
+section .card a { z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
+
+section .card a:hover { bottom: 3px; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; text-shadow: 0 1px 0 black; }
 
 section .card .card-body { height: 200px; }
+
+section .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 260px; width: 62%; background-color: rgba(0, 0, 0, 0.075); position: absolute; z-index: 2; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
+
+section .card .card-body .card-text span { vertical-align: middle; }
+
+section .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
+
+section .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
 
 footer .creators_conteneur { position: absolute; right: 0; top: 0; }
 
 footer .copyrighter { position: absolute; right: 0; bottom: 0; }
 
 footer img { text-align: left; height: 35px; }
+
+.js { background-color: #fbff00; color: black; }
+
+.css { background-color: red; color: white; }
+
+.html { background-color: #1100ff; color: white; }
+
+.bootstrap { background-color: #050049; color: white; }
+
+.wp { background-color: #00b0e6; color: white; font-weight: bold; }
+
+.react { background-color: #62dafb; color: white; text-shadow: 0 1px 1px black; }
+
+.php { background-color: #9062fb; color: black; text-shadow: 0 0 1px white; }
 /*# sourceMappingURL=style.css.map */

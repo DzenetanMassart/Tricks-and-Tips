@@ -2,14 +2,31 @@ let generate = " ";
 
 
 
-for (let ii = 0; ii < 15; ii++) {
+for (let ii = 0; ii < tritip.length; ii++) {
     let tt = (tritip[ii]);
-    console.log(tt);
-
     generate += '<div class="card"> <h4 class = "card-title">' +
-
         tt.title +
-        '</h4> <span class = "badge">' +
+        '</h4> <span class = "badge';
+
+    if (tt.badge === "Javascript") {
+        generate += ' js';
+    } else if (tt.badge === "CSS") {
+        generate += ' css';
+    } else if (tt.badge === "HTML") {
+        generate += ' html';
+    } else if (tt.badge === "Bootstrap") {
+        generate += ' bootstrap';
+    } else if (tt.badge === "WordPress") {
+        generate += 'wp';
+    } else if (tt.badge === "React") {
+        generate += ' react';
+    } else if (tt.badge === "PHP") {
+        generate += ' php';
+    } else {
+        generate += '';
+    }
+
+    generate += '">' +
         tt.badge +
         '</span>';
     if (tt.generateur === 1) {
@@ -19,11 +36,11 @@ for (let ii = 0; ii < 15; ii++) {
         tt.img_link +
         '" alt ="' +
         tt.title +
-        '" > <div class = "card-body"> <p class = "card-text">' +
+        '" > <div class = "card-body"> <p class = "card-text"><span>' +
         tt.desc +
-        '</p><a href =' +
+        '</span></p><a href =' +
         tt.link +
-        'class = "btn btn-primary"> Lien </a> </div > </div>';
+        'class="btn btn-primary">Lien</a> </div></div>';
 }
 
 document.getElementById("generate").innerHTML += generate;
