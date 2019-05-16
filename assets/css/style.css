@@ -1,4 +1,4 @@
-section { width: 95%; margin: auto auto; height: 450px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
+section { width: 95%; margin: auto auto; height: 495px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
 
 section::-webkit-scrollbar { width: 45px; }
 
