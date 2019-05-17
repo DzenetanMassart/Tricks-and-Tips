@@ -114,6 +114,14 @@ let tritip = [{
         "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
         "desc": "Un testeur de Media Query qui offre les normes de taille des écrans et les codes !",
         "link": "http://angrytools.com/css/mediaquery/"
+    },
+    {
+        "title": "CSSline",
+        "badge": "CSS",
+        "generateur": 0,
+        "img_link": "http://cssline.com/images/logo_cssline.png",
+        "desc": "Une gallerie de pages CSS magnifiques ou complexes pour s'inspirer !",
+        "link": "http://cssline.com/"
     }
 
 ]
