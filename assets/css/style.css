@@ -1,36 +1,34 @@
-@media (min-width: 916px) { section { width: 95%; margin: auto auto; height: 495px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
+@media (min-width: 916px) { section { -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 95%; margin: auto auto; height: 495px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
   section::-webkit-scrollbar { width: 45px; }
-  section::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
-  section::-webkit-scrollbar-track-piece { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; }
-  section::-webkit-scrollbar-thumb { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; -webkit-box-shadow: inset 2px 0px 10px black; box-shadow: inset 2px 0px 10px black; -webkit-transition: background-image 1.5s; transition: background-image 1.5s; }
-  section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #00a2d8), to(white)); background-image: linear-gradient(90deg, white 0%, #00a2d8 55%, white 100%); -webkit-box-shadow: inset -2px 0px 10px black; box-shadow: inset -2px 0px 10px black; }
+  section::-webkit-scrollbar-track { border: 1px solid #00a2d8; -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
+  section::-webkit-scrollbar-track-piece { background-color: white; border-radius: 10px; border: 1px solid #00a2d8; }
+  section::-webkit-scrollbar-thumb { background-color: #00a2d8; border-radius: 10px; -webkit-box-shadow: inset -2px 0px 10px black, inset 0 2px 5px black; box-shadow: inset -2px 0px 10px black, inset 0 2px 5px black; }
+  section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; -webkit-box-shadow: inset -2px 0px 10px black, inset 0 1px 4px black; box-shadow: inset -2px 0px 10px black, inset 0 1px 4px black; }
   section .row { margin-right: 0 !important; }
   section .card { border: 1px solid black; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
   section .card .card-title { background-color: white; z-index: 2; font-size: 12.5px; width: 245px; border-bottom: solid 1px black; border-right: solid 2px black; -webkit-box-shadow: 0 1px 5px black; box-shadow: 0 1px 5px black; }
   section .card .card-img-top { z-index: 2; position: absolute; width: 35%; right: 5px; top: 55px; margin: auto auto; }
   section .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
-  section .card .generateur { z-index: 2; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background-color: white; }
-  section .card a { z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
+  section .card a { border-radius: 5px; z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
   section .card a:hover { bottom: 3px; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; text-shadow: 0 1px 0 black; }
   section .card .card-body { height: 200px; }
-  section .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 260px; width: 62%; background-color: rgba(0, 0, 0, 0.075); position: absolute; z-index: 2; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
+  section .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 260px; width: 62%; background-color: rgba(0, 0, 0, 0.075); position: absolute; z-index: 1; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
   section .card .card-body .card-text span { vertical-align: middle; }
   section .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
   section .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); } }
 
 @media (min-width: 768px) and (max-width: 915px) { section { width: 65%; margin: auto auto; height: 495px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
   section::-webkit-scrollbar { width: 45px; }
-  section::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
-  section::-webkit-scrollbar-track-piece { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; }
-  section::-webkit-scrollbar-thumb { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; -webkit-box-shadow: inset 2px 0px 10px black; box-shadow: inset 2px 0px 10px black; -webkit-transition: background-image 1.5s; transition: background-image 1.5s; }
-  section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #00a2d8), to(white)); background-image: linear-gradient(90deg, white 0%, #00a2d8 55%, white 100%); -webkit-box-shadow: inset -2px 0px 10px black; box-shadow: inset -2px 0px 10px black; }
+  section::-webkit-scrollbar-track { border: 1px solid #00a2d8; -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
+  section::-webkit-scrollbar-track-piece { border: 1px solid #00a2d8; background-color: white; border-radius: 10px; }
+  section::-webkit-scrollbar-thumb { background-color: #00a2d8; border-radius: 10px; -webkit-box-shadow: inset -2px 0px 10px black, inset 0 2px 5px black; box-shadow: inset -2px 0px 10px black, inset 0 2px 5px black; }
+  section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; -webkit-box-shadow: inset -2px 0px 10px black, inset 0 1px 4px black; box-shadow: inset -2px 0px 10px black, inset 0 1px 4px black; }
   section .row { margin-left: 15%; padding: 0; margin-right: 0; }
   section .card { border: 1px solid black; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
   section .card .card-title { background-color: white; z-index: 2; font-size: 12.5px; width: 245px; border-bottom: solid 1px black; border-right: solid 2px black; -webkit-box-shadow: 0 1px 5px black; box-shadow: 0 1px 5px black; }
   section .card .card-img-top { z-index: 2; position: absolute; width: 35%; right: 5px; top: 55px; margin: auto auto; }
   section .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
-  section .card .generateur { z-index: 2; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background-color: white; }
-  section .card a { z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
+  section .card a { border-radius: 5px; z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
   section .card a:hover { bottom: 3px; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; text-shadow: 0 1px 0 black; }
   section .card .card-body { height: 200px; }
   section .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 260px; width: 62%; background-color: rgba(0, 0, 0, 0.075); position: absolute; z-index: 2; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
@@ -41,16 +39,15 @@
 @media (max-width: 767px) { section { width: 100%; margin: auto auto; height: 495px; padding: 10px; overflow-y: scroll; margin-bottom: 25px; }
   section::-webkit-scrollbar { width: 45px; }
   section::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 5px black; box-shadow: inset 0 0 5px black; border-radius: 10px; }
-  section::-webkit-scrollbar-track-piece { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; }
-  section::-webkit-scrollbar-thumb { background-image: -webkit-gradient(linear, left top, right top, from(#00a2d8), color-stop(55%, white), to(#00a2d8)); background-image: linear-gradient(90deg, #00a2d8 0%, white 55%, #00a2d8 100%); border-radius: 10px; -webkit-box-shadow: inset 2px 0px 10px black; box-shadow: inset 2px 0px 10px black; -webkit-transition: background-image 1.5s; transition: background-image 1.5s; }
-  section::-webkit-scrollbar-thumb:hover { background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #00a2d8), to(white)); background-image: linear-gradient(90deg, white 0%, #00a2d8 55%, white 100%); -webkit-box-shadow: inset -2px 0px 10px black; box-shadow: inset -2px 0px 10px black; }
+  section::-webkit-scrollbar-track-piece { border: 1px solid #00a2d8; background-color: white; border-radius: 10px; }
+  section::-webkit-scrollbar-thumb { background-color: #00a2d8; border-radius: 10px; -webkit-box-shadow: inset -2px 0px 10px black, inset 0 2px 5px black; box-shadow: inset -2px 0px 10px black, inset 0 2px 5px black; }
+  section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; -webkit-box-shadow: inset -2px 0px 10px black, inset 0 1px 4px black; box-shadow: inset -2px 0px 10px black, inset 0 1px 4px black; }
   section .row { margin-left: 15%; padding: 0; margin-right: 0; }
-  section .card { border: 1px solid black; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
+  section .card { scroll-snap-align: start; border: 1px solid black; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; padding: 5px; margin-bottom: 10px; width: 390px; height: 300px; margin: 10px; }
   section .card .card-title { background-color: white; z-index: 2; font-size: 12.5px; width: 245px; border-bottom: solid 1px black; border-right: solid 2px black; -webkit-box-shadow: 0 1px 5px black; box-shadow: 0 1px 5px black; }
   section .card .card-img-top { z-index: 2; position: absolute; width: 35%; right: 5px; top: 55px; margin: auto auto; }
   section .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
-  section .card .generateur { z-index: 2; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background-color: white; }
-  section .card a { z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
+  section .card a { border-radius: 5px; z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background-color: #00a2d8; color: white; text-align: center; -webkit-box-shadow: 0 1px 2px black; box-shadow: 0 1px 2px black; text-decoration: none; }
   section .card a:hover { bottom: 3px; -webkit-box-shadow: 0 1px 0 black; box-shadow: 0 1px 0 black; text-shadow: 0 1px 0 black; }
   section .card .card-body { height: 200px; }
   section .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 260px; width: 62%; background-color: rgba(0, 0, 0, 0.075); position: absolute; z-index: 2; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
@@ -77,4 +74,6 @@ footer img { text-align: left; height: 35px; }
 .react { background-color: #62dafb; color: white; text-shadow: 0 1px 1px black; }
 
 .php { background-color: #9062fb; color: black; text-shadow: 0 0 1px white; }
+
+.generateur { z-index: 2; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background-image: url("https://i.pinimg.com/originals/90/aa/c3/90aac31c0d76c5a82f78a9be540321fa.gif"); }
 /*# sourceMappingURL=style.css.map */
