@@ -130,6 +130,14 @@ let tritip = [{
         "img_link": "https://palette.ninja/images/logo.png?v=1539973252507",
         "desc": "Générer des palettes de couleur !",
         "link": "https://palette.ninja/#909090-#aaaaaa-#d0d0d0-#444444-#dedede"
+    },
+    {
+        "title": "Codex WordPress",
+        "badge": "WordPress",
+        "generateur": 0,
+        "img_link": "https://s.w.org/style/images/wporg-logo.svg?3",
+        "desc": "Toute la documentation de base de WordPress",
+        "link": "https://codex.wordpress.org/fr:Accueil"
     }
 
 ]
