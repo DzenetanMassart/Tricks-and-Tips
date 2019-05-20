@@ -122,6 +122,14 @@ let tritip = [{
         "img_link": "http://cssline.com/images/logo_cssline.png",
         "desc": "Une gallerie de pages CSS magnifiques ou complexes pour s'inspirer !",
         "link": "http://cssline.com/"
+    },
+    {
+        "title": "Palette.Ninja",
+        "badge": "CSS",
+        "generateur": 1,
+        "img_link": "https://palette.ninja/images/logo.png?v=1539973252507",
+        "desc": "Générer des palettes de couleur !",
+        "link": "https://palette.ninja/#909090-#aaaaaa-#d0d0d0-#444444-#dedede"
     }
 
 ]
