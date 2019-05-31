@@ -40,7 +40,7 @@ for (let ii = 0; ii < tritip.length; ii++) {
         tt.desc +
         '</span></p><a href =' +
         tt.link +
-        'class="btn btn-primary">Lien</a> </div></div>';
+        'class="btn btn-primary link">Lien</a> </div></div>';
 }
 
 document.getElementById("generate").innerHTML += generate;

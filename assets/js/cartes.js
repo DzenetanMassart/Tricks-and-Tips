@@ -146,6 +146,38 @@ let tritip = [{
         "img_link": "https://fr.wikibooks.org/static/images/project-logos/wikibooks.png",
         "desc": "Documentation autour des raccourcis de programmation en javascript !",
         "link": "https://fr.wikibooks.org/wiki/Programmation_JavaScript/Op%C3%A9rateurs"
+    },
+    {
+        "title": "CSS Grid Generator",
+        "badge": "CSS",
+        "generateur": 1,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Créer une grille en CSS avec une interface graphique intéractive!",
+        "link": "https://cssgrid-generator.netlify.com/"
+    },
+    {
+        "title": "Tutoriel:Programmez en orienté objet en PHP",
+        "badge": "PHP",
+        "generateur": 0,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Toute la documentation possible autour du PHP avec sa programmation orientée objet !",
+        "link": "http://sdz.tdct.org/sdz/rogrammez-en-oriente-objet-en-php.html"
+    },
+    {
+        "title": "PIXEL ART TO CSS",
+        "badge": "CSS",
+        "generateur": 1,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Déssiner et animer en CSS !",
+        "link": "https://www.pixelartcss.com/"
+    },
+    {
+        "title": "EnjoyCSS",
+        "badge": "CSS",
+        "generateur": 1,
+        "img_link": "https://enjoycss.com/webshots/5kk_1.png",
+        "desc": "Créer vos templates qui améliorons l'esthétique de vos sites web avec une interface interactive très complète ! ",
+        "link": "https://enjoycss.com/"
     }
 
 ]

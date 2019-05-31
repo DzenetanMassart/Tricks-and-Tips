@@ -1,5 +1,5 @@
 $C1:black;
-$C2:white;
+$C2:rgb(255, 255, 255);
 $C3:rgba(0, 162, 216, 1);
 @media (min-width: 916px) {
     section {
@@ -44,9 +44,11 @@ $C3:rgba(0, 162, 216, 1);
             height: 300px;
             margin: 10px;
             .card-title {
+                left: 0;
+                top: 0;
                 background-color: $C2;
                 z-index: 2;
-                font-size: 12.5px;
+                font-size: 0.7rem;
                 width: 245px;
                 border-bottom: solid 1px $C1;
                 border-right: solid 2px $C1;
@@ -75,7 +77,8 @@ $C3:rgba(0, 162, 216, 1);
                 bottom: 5px;
                 left: 0;
                 width: 100%;
-                background-color: $C3;
+                background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                box-shadow: 0 0 5px $C3;
                 color: $C2;
                 text-align: center;
                 box-shadow: 0 1px 2px $C1;
@@ -95,11 +98,11 @@ $C3:rgba(0, 162, 216, 1);
                     bottom: 0;
                     left: 0;
                     text-align: center;
-                    height: 260px;
+                    height: 270px;
                     width: 62%;
                     background-color: rgba(0, 0, 0, 0.075);
                     position: absolute;
-                    z-index: 1;
+                    z-index: 0;
                     text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
                     span {
                         vertical-align: middle;
@@ -158,16 +161,17 @@ $C3:rgba(0, 162, 216, 1);
             height: 300px;
             margin: 10px;
             .card-title {
+                left: 0;
+                top: 0;
                 background-color: $C2;
                 z-index: 2;
-                font-size: 12.5px;
+                font-size: 1.2rem;
                 width: 245px;
                 border-bottom: solid 1px $C1;
                 border-right: solid 2px $C1;
-                box-shadow: 0 1px 5px $C1;
             }
             .card-img-top {
-                z-index: 2;
+                z-index: 1;
                 position: absolute;
                 width: 35%;
                 right: 5px;
@@ -189,7 +193,8 @@ $C3:rgba(0, 162, 216, 1);
                 bottom: 5px;
                 left: 0;
                 width: 100%;
-                background-color: $C3;
+                background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                box-shadow: 0 0 5px $C3;
                 color: $C2;
                 text-align: center;
                 box-shadow: 0 1px 2px $C1;
@@ -209,11 +214,11 @@ $C3:rgba(0, 162, 216, 1);
                     bottom: 0;
                     left: 0;
                     text-align: center;
-                    height: 260px;
+                    height: 270px;
                     width: 62%;
                     background-color: rgba(0, 0, 0, 0.075);
                     position: absolute;
-                    z-index: 2;
+                    z-index: 0;
                     text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
                     span {
                         vertical-align: middle;
@@ -272,16 +277,18 @@ $C3:rgba(0, 162, 216, 1);
             height: 300px;
             margin: 10px;
             .card-title {
+                left: 0;
+                top: 0;
                 background-color: $C2;
                 z-index: 2;
-                font-size: 12.5px;
+                font-size: 1.2rem;
                 width: 245px;
                 border-bottom: solid 1px $C1;
                 border-right: solid 2px $C1;
                 box-shadow: 0 1px 5px $C1;
             }
             .card-img-top {
-                z-index: 2;
+                z-index: 1;
                 position: absolute;
                 width: 35%;
                 right: 5px;
@@ -297,13 +304,14 @@ $C3:rgba(0, 162, 216, 1);
                 right: 0;
             }
             a {
+                background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                box-shadow: 0 0 5px $C3;
                 border-radius: 5px;
                 z-index: 2;
                 position: absolute;
                 bottom: 5px;
                 left: 0;
                 width: 100%;
-                background-color: $C3;
                 color: $C2;
                 text-align: center;
                 box-shadow: 0 1px 2px $C1;
@@ -323,11 +331,11 @@ $C3:rgba(0, 162, 216, 1);
                     bottom: 0;
                     left: 0;
                     text-align: center;
-                    height: 260px;
+                    height: 270px;
                     width: 62%;
                     background-color: rgba(0, 0, 0, 0.075);
                     position: absolute;
-                    z-index: 2;
+                    z-index: 0;
                     text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
                     span {
                         vertical-align: middle;
@@ -399,7 +407,7 @@ footer {
 }
 
 .generateur {
-    z-index: 2;
+    z-index: 1;
     color: $C2;
     text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
     white-space: nowrap;
