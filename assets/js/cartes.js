@@ -178,6 +178,14 @@ let tritip = [{
         "img_link": "https://enjoycss.com/webshots/5kk_1.png",
         "desc": "Créer vos templates qui améliorons l'esthétique de vos sites web avec une interface interactive très complète ! ",
         "link": "https://enjoycss.com/"
+    },
+    {
+        "title": "CSSFX",
+        "badge": "CSS",
+        "generateur": 0,
+        "img_link": "https://cssfx.dev/_nuxt/img/ced4df1.svg",
+        "desc": "Gallerie d'animation CSS avec les codes ! Le site propose aussi des images animées créées en CSS ! ",
+        "link": "https://cssfx.dev/"
     }
 
 ]
