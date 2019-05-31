@@ -138,6 +138,14 @@ let tritip = [{
         "img_link": "https://s.w.org/style/images/wporg-logo.svg?3",
         "desc": "Toute la documentation de base de WordPress",
         "link": "https://codex.wordpress.org/fr:Accueil"
+    },
+    {
+        "title": "Programmation JavaScript/Opérateurs",
+        "badge": "Javascript",
+        "generateur": 0,
+        "img_link": "https://fr.wikibooks.org/static/images/project-logos/wikibooks.png",
+        "desc": "Documentation autour des raccourcis de programmation en javascript !",
+        "link": "https://fr.wikibooks.org/wiki/Programmation_JavaScript/Op%C3%A9rateurs"
     }
 
 ]

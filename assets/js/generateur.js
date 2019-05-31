@@ -17,7 +17,7 @@ for (let ii = 0; ii < tritip.length; ii++) {
     } else if (tt.badge === "Bootstrap") {
         generate += ' bootstrap';
     } else if (tt.badge === "WordPress") {
-        generate += 'wp';
+        generate += ' wp';
     } else if (tt.badge === "React") {
         generate += ' react';
     } else if (tt.badge === "PHP") {
