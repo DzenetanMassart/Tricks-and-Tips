@@ -1,426 +1,832 @@
 $C1:black;
 $C2:rgb(255, 255, 255);
 $C3:rgba(0, 162, 216, 1);
-@media (min-width: 916px) {
-    section {
-        scroll-snap-type: y mandatory;
-        width: 95%;
-        margin: auto auto;
-        height: 495px;
-        padding: 10px;
-        overflow-y: scroll;
-        margin-bottom: 25px;
-        &::-webkit-scrollbar {
-            width: 45px;
-        }
-        &::-webkit-scrollbar-track {
-            border: 1px solid $C3;
-            box-shadow: inset 0 0 5px $C1;
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-track-piece {
-            background-color: $C2;
-            border-radius: 10px;
-            border: 1px solid $C3;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $C3;
-            border-radius: 10px;
-            box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
-            &:hover {
-                background-color: $C3;
-                box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
+@media (orientation: landscape) {
+    @media only screen and (min-width: 916px) {
+        section {
+            scroll-snap-type: y mandatory;
+            width: 95%;
+            margin: auto auto;
+            height: 495px;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            &::-webkit-scrollbar {
+                width: 45px;
             }
-        }
-        .row {
-            margin-right: 0 !important;
-        }
-        .card {
-            border: 1px solid $C1;
-            box-shadow: 0 1px 2px $C1;
-            padding: 5px;
-            margin-bottom: 10px;
-            width: 390px;
-            height: 300px;
-            margin: 10px;
-            .card-title {
-                left: 0;
-                top: 0;
+            &::-webkit-scrollbar-track {
+                border: 1px solid $C3;
+                box-shadow: inset 0 0 5px $C1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
                 background-color: $C2;
-                z-index: 2;
-                font-size: 0.7rem;
-                width: 245px;
-                border-bottom: solid 1px $C1;
-                border-right: solid 2px $C1;
-                box-shadow: 0 1px 5px $C1;
+                border-radius: 10px;
+                border: 1px solid $C3;
             }
-            .card-img-top {
-                z-index: 2;
-                position: absolute;
-                width: 35%;
-                right: 5px;
-                top: 55px;
-                margin: auto auto;
-            }
-            .badge {
-                z-index: 1;
-                height: 100%;
-                position: absolute;
-                width: 150px;
-                top: 0;
-                right: 0;
-            }
-            a {
-                border-radius: 5px;
-                z-index: 2;
-                position: absolute;
-                bottom: 5px;
-                left: 0;
-                width: 100%;
-                background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
-                box-shadow: 0 0 5px $C3;
-                color: $C2;
-                text-align: center;
-                box-shadow: 0 1px 2px $C1;
-                text-decoration: none;
+            &::-webkit-scrollbar-thumb {
+                background-color: $C3;
+                border-radius: 10px;
+                box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
                 &:hover {
-                    bottom: 3px;
-                    box-shadow: 0 1px 0 $C1;
-                    text-shadow: 0 1px 0 $C1;
+                    background-color: $C3;
+                    box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
                 }
             }
-            .card-body {
-                height: 200px;
-                .card-text {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    bottom: 0;
+            .row {
+                margin-right: 0 !important;
+            }
+            .card {
+                border: 1px solid $C1;
+                box-shadow: 0 1px 2px $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 390px;
+                height: 300px;
+                margin: 10px;
+                .card-title {
                     left: 0;
-                    text-align: center;
-                    height: 270px;
-                    width: 62%;
-                    background-color: rgba(0, 0, 0, 0.075);
+                    top: 0;
+                    background-color: $C2;
+                    z-index: 2;
+                    font-size: 0.7rem;
+                    width: 245px;
+                    border-bottom: solid 1px $C1;
+                    border-right: solid 2px $C1;
+                    box-shadow: 0 1px 5px $C1;
+                }
+                .card-img-top {
+                    z-index: 2;
                     position: absolute;
-                    z-index: 0;
-                    text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
-                    span {
-                        vertical-align: middle;
-                        &::selection {
-                            color: $C1;
-                            background-color: rgba(0, 119, 255, 0.479);
+                    width: 35%;
+                    right: 5px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                a {
+                    border-radius: 5px;
+                    z-index: 2;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                    box-shadow: 0 0 5px $C3;
+                    color: $C2;
+                    text-align: center;
+                    box-shadow: 0 1px 2px $C1;
+                    text-decoration: none;
+                    &:hover {
+                        bottom: 3px;
+                        box-shadow: 0 1px 0 $C1;
+                        text-shadow: 0 1px 0 $C1;
+                    }
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 62%;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
-@media (min-width: 768px) and (max-width: 915px) {
-    section {
-        width: 65%;
-        margin: auto auto;
-        height: 495px;
-        padding: 10px;
-        overflow-y: scroll;
-        margin-bottom: 25px;
-        &::-webkit-scrollbar {
-            width: 45px;
-        }
-        &::-webkit-scrollbar-track {
-            border: 1px solid $C3;
-            box-shadow: inset 0 0 5px $C1;
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-track-piece {
-            border: 1px solid $C3;
-            background-color: $C2;
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $C3;
-            border-radius: 10px;
-            box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
-            &:hover {
-                background-color: $C3;
-                box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
+    @media only screen and (min-width: 768px) and (max-width: 915px) {
+        section {
+            width: 65%;
+            margin: auto auto;
+            height: 495px;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            &::-webkit-scrollbar {
+                width: 45px;
             }
-        }
-        .row {
-            margin-left: 15%;
-            padding: 0;
-            margin-right: 0;
-        }
-        .card {
-            border: 1px solid $C1;
-            box-shadow: 0 1px 2px $C1;
-            padding: 5px;
-            margin-bottom: 10px;
-            width: 390px;
-            height: 300px;
-            margin: 10px;
-            .card-title {
-                left: 0;
-                top: 0;
+            &::-webkit-scrollbar-track {
+                border: 1px solid $C3;
+                box-shadow: inset 0 0 5px $C1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
+                border: 1px solid $C3;
                 background-color: $C2;
-                z-index: 2;
-                font-size: 1.2rem;
-                width: 245px;
-                border-bottom: solid 1px $C1;
-                border-right: solid 2px $C1;
+                border-radius: 10px;
             }
-            .card-img-top {
-                z-index: 1;
-                position: absolute;
-                width: 35%;
-                right: 5px;
-                top: 55px;
-                margin: auto auto;
-            }
-            .badge {
-                z-index: 1;
-                height: 100%;
-                position: absolute;
-                width: 150px;
-                top: 0;
-                right: 0;
-            }
-            a {
-                border-radius: 5px;
-                z-index: 2;
-                position: absolute;
-                bottom: 5px;
-                left: 0;
-                width: 100%;
-                background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
-                box-shadow: 0 0 5px $C3;
-                color: $C2;
-                text-align: center;
-                box-shadow: 0 1px 2px $C1;
-                text-decoration: none;
+            &::-webkit-scrollbar-thumb {
+                background-color: $C3;
+                border-radius: 10px;
+                box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
                 &:hover {
-                    bottom: 3px;
-                    box-shadow: 0 1px 0 $C1;
-                    text-shadow: 0 1px 0 $C1;
+                    background-color: $C3;
+                    box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
                 }
             }
-            .card-body {
-                height: 200px;
-                .card-text {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    bottom: 0;
+            .row {
+                margin-left: 15%;
+                padding: 0;
+                margin-right: 0;
+            }
+            .card {
+                border: 1px solid $C1;
+                box-shadow: 0 1px 2px $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 390px;
+                height: 300px;
+                margin: 10px;
+                .card-title {
                     left: 0;
-                    text-align: center;
-                    height: 270px;
-                    width: 62%;
-                    background-color: rgba(0, 0, 0, 0.075);
+                    top: 0;
+                    background-color: $C2;
+                    z-index: 2;
+                    font-size: 1.2rem;
+                    width: 245px;
+                    border-bottom: solid 1px $C1;
+                    border-right: solid 2px $C1;
+                }
+                .card-img-top {
+                    z-index: 1;
                     position: absolute;
-                    z-index: 0;
-                    text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
-                    span {
-                        vertical-align: middle;
-                        &::selection {
-                            color: $C1;
-                            background-color: rgba(0, 119, 255, 0.479);
+                    width: 35%;
+                    right: 5px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                a {
+                    border-radius: 5px;
+                    z-index: 2;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                    box-shadow: 0 0 5px $C3;
+                    color: $C2;
+                    text-align: center;
+                    box-shadow: 0 1px 2px $C1;
+                    text-decoration: none;
+                    &:hover {
+                        bottom: 3px;
+                        box-shadow: 0 1px 0 $C1;
+                        text-shadow: 0 1px 0 $C1;
+                    }
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 62%;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
-@media (max-width: 767px) {
-    section {
-        width: 100%;
-        margin: auto auto;
-        height: 495px;
-        padding: 10px;
-        overflow-y: scroll;
-        margin-bottom: 25px;
-        &::-webkit-scrollbar {
-            width: 45px;
-        }
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px $C1;
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-track-piece {
-            border: 1px solid $C3;
-            background-color: $C2;
-            border-radius: 10px;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: $C3;
-            border-radius: 10px;
-            box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
-            &:hover {
-                background-color: $C3;
-                box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
+    @media only screen and(max-width: 767px) {
+        section {
+            width: 100%;
+            margin: auto auto;
+            height: 495px;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            &::-webkit-scrollbar {
+                width: 45px;
             }
-        }
-        .row {
-            margin-left: 15%;
-            padding: 0;
-            margin-right: 0;
-        }
-        .card {
-            scroll-snap-align: start;
-            border: 1px solid $C1;
-            box-shadow: 0 1px 2px $C1;
-            padding: 5px;
-            margin-bottom: 10px;
-            width: 390px;
-            height: 300px;
-            margin: 10px;
-            .card-title {
-                left: 0;
-                top: 0;
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px $C1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
+                border: 1px solid $C3;
                 background-color: $C2;
-                z-index: 2;
-                font-size: 1.2rem;
-                width: 245px;
-                border-bottom: solid 1px $C1;
-                border-right: solid 2px $C1;
-                box-shadow: 0 1px 5px $C1;
+                border-radius: 10px;
             }
-            .card-img-top {
-                z-index: 1;
-                position: absolute;
-                width: 35%;
-                right: 5px;
-                top: 55px;
-                margin: auto auto;
-            }
-            .badge {
-                z-index: 1;
-                height: 100%;
-                position: absolute;
-                width: 150px;
-                top: 0;
-                right: 0;
-            }
-            a {
-                background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
-                box-shadow: 0 0 5px $C3;
-                border-radius: 5px;
-                z-index: 2;
-                position: absolute;
-                bottom: 5px;
-                left: 0;
-                width: 100%;
-                color: $C2;
-                text-align: center;
-                box-shadow: 0 1px 2px $C1;
-                text-decoration: none;
+            &::-webkit-scrollbar-thumb {
+                background-color: $C3;
+                border-radius: 10px;
+                box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
                 &:hover {
-                    bottom: 3px;
-                    box-shadow: 0 1px 0 $C1;
-                    text-shadow: 0 1px 0 $C1;
+                    background-color: $C3;
+                    box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
                 }
             }
-            .card-body {
-                height: 200px;
-                .card-text {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    bottom: 0;
+            .row {
+                margin-left: 15%;
+                padding: 0;
+                margin-right: 0;
+            }
+            .card {
+                scroll-snap-align: start;
+                border: 1px solid $C1;
+                box-shadow: 0 1px 2px $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 390px;
+                height: 300px;
+                margin: 10px;
+                .card-title {
                     left: 0;
-                    text-align: center;
-                    height: 270px;
-                    width: 62%;
-                    background-color: rgba(0, 0, 0, 0.075);
+                    top: 0;
+                    background-color: $C2;
+                    z-index: 2;
+                    font-size: 1.2rem;
+                    width: 245px;
+                    border-bottom: solid 1px $C1;
+                    border-right: solid 2px $C1;
+                    box-shadow: 0 1px 5px $C1;
+                }
+                .card-img-top {
+                    z-index: 1;
                     position: absolute;
-                    z-index: 0;
-                    text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
-                    span {
-                        vertical-align: middle;
-                        &::selection {
-                            color: $C1;
-                            background-color: rgba(0, 119, 255, 0.479);
+                    width: 35%;
+                    right: 5px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                a {
+                    background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                    box-shadow: 0 0 5px $C3;
+                    border-radius: 5px;
+                    z-index: 2;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    color: $C2;
+                    text-align: center;
+                    box-shadow: 0 1px 2px $C1;
+                    text-decoration: none;
+                    &:hover {
+                        bottom: 3px;
+                        box-shadow: 0 1px 0 $C1;
+                        text-shadow: 0 1px 0 $C1;
+                    }
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 62%;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
-footer {
-    .creators_conteneur {
+    footer {
+        .creators_conteneur {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .copyrighter {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        img {
+            text-align: left;
+            height: 35px;
+        }
+    }
+    // Les badges
+    .js {
+        background-color: rgb(251, 255, 0);
+        color: $C1;
+    }
+    .css {
+        background-color: rgb(255, 0, 0);
+        color: $C2;
+    }
+    .html {
+        background-color: rgb(17, 0, 255);
+        color: $C2;
+    }
+    .bootstrap {
+        background-color: rgb(5, 0, 73);
+        color: $C2;
+    }
+    .wp {
+        background-color: rgb(0, 176, 230);
+        color: $C2;
+        font-weight: bold;
+    }
+    .react {
+        background-color: #62dafb;
+        color: $C2;
+        text-shadow: 0 1px 1px $C1;
+    }
+    .php {
+        background-color: #9062fb;
+        color: $C1;
+        text-shadow: 0 0 1px $C2;
+    }
+    .generateur {
+        z-index: 1;
+        color: $C2;
+        text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
+        white-space: nowrap;
+        vertical-align: baseline;
+        height: 20px;
         position: absolute;
+        width: 150px;
+        top: 25px;
         right: 0;
-        top: 0;
+        border: solid 1px $C1;
+        border-left: solid 2px $C1;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+        background-image: url("https://i.pinimg.com/originals/90/aa/c3/90aac31c0d76c5a82f78a9be540321fa.gif");
     }
-    .copyrighter {
+}
+
+@media (orientation: portrait) {
+    @media only screen and (min-width: 916px) {
+        section {
+            scroll-snap-type: y mandatory;
+            width: 95%;
+            margin: auto auto;
+            height: 120vw;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            &::-webkit-scrollbar {
+                width: 45px;
+            }
+            &::-webkit-scrollbar-track {
+                border: 1px solid $C3;
+                box-shadow: inset 0 0 5px $C1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
+                background-color: $C2;
+                border-radius: 10px;
+                border: 1px solid $C3;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $C3;
+                border-radius: 10px;
+                box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
+                &:hover {
+                    background-color: $C3;
+                    box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
+                }
+            }
+            .row {
+                margin-right: 0 !important;
+            }
+            .card {
+                border: 1px solid $C1;
+                box-shadow: 0 1px 2px $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 390px;
+                height: 300px;
+                margin: 10px;
+                .card-title {
+                    left: 0;
+                    top: 0;
+                    background-color: $C2;
+                    z-index: 2;
+                    font-size: 0.7rem;
+                    width: 245px;
+                    border-bottom: solid 1px $C1;
+                    border-right: solid 2px $C1;
+                    box-shadow: 0 1px 5px $C1;
+                }
+                .card-img-top {
+                    z-index: 2;
+                    position: absolute;
+                    width: 35%;
+                    right: 5px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                a {
+                    border-radius: 5px;
+                    z-index: 2;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                    box-shadow: 0 0 5px $C3;
+                    color: $C2;
+                    text-align: center;
+                    box-shadow: 0 1px 2px $C1;
+                    text-decoration: none;
+                    &:hover {
+                        bottom: 3px;
+                        box-shadow: 0 1px 0 $C1;
+                        text-shadow: 0 1px 0 $C1;
+                    }
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 62%;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 915px) {
+        section {
+            width: 65%;
+            margin: auto auto;
+            height: 128vw;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            &::-webkit-scrollbar {
+                width: 45px;
+            }
+            &::-webkit-scrollbar-track {
+                border: 1px solid $C3;
+                box-shadow: inset 0 0 5px $C1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
+                border: 1px solid $C3;
+                background-color: $C2;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $C3;
+                border-radius: 10px;
+                box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
+                &:hover {
+                    background-color: $C3;
+                    box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
+                }
+            }
+            .row {
+                margin-left: 15%;
+                padding: 0;
+                margin-right: 0;
+            }
+            .card {
+                border: 1px solid $C1;
+                box-shadow: 0 1px 2px $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 390px;
+                height: 300px;
+                margin: 10px;
+                .card-title {
+                    left: 0;
+                    top: 0;
+                    background-color: $C2;
+                    z-index: 2;
+                    font-size: 1.2rem;
+                    width: 245px;
+                    border-bottom: solid 1px $C1;
+                    border-right: solid 2px $C1;
+                }
+                .card-img-top {
+                    z-index: 1;
+                    position: absolute;
+                    width: 35%;
+                    right: 5px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                a {
+                    border-radius: 5px;
+                    z-index: 2;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                    box-shadow: 0 0 5px $C3;
+                    color: $C2;
+                    text-align: center;
+                    box-shadow: 0 1px 2px $C1;
+                    text-decoration: none;
+                    &:hover {
+                        bottom: 3px;
+                        box-shadow: 0 1px 0 $C1;
+                        text-shadow: 0 1px 0 $C1;
+                    }
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 62%;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and(max-width: 767px) {
+        section {
+            width: 100%;
+            margin: auto auto;
+            height: 128vw;
+            padding: 10px;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+            &::-webkit-scrollbar {
+                width: 45px;
+            }
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px $C1;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-track-piece {
+                border: 1px solid $C3;
+                background-color: $C2;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $C3;
+                border-radius: 10px;
+                box-shadow: inset -2px 0px 10px $C1, inset 0 2px 5px $C1;
+                &:hover {
+                    background-color: $C3;
+                    box-shadow: inset -2px 0px 10px $C1, inset 0 1px 4px $C1;
+                }
+            }
+            .row {
+                margin-left: 15%;
+                padding: 0;
+                margin-right: 0;
+            }
+            .card {
+                scroll-snap-align: start;
+                border: 1px solid $C1;
+                box-shadow: 0 1px 2px $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 390px;
+                height: 300px;
+                margin: 10px;
+                .card-title {
+                    left: 0;
+                    top: 0;
+                    background-color: $C2;
+                    z-index: 2;
+                    font-size: 1.2rem;
+                    width: 245px;
+                    border-bottom: solid 1px $C1;
+                    border-right: solid 2px $C1;
+                    box-shadow: 0 1px 5px $C1;
+                }
+                .card-img-top {
+                    z-index: 1;
+                    position: absolute;
+                    width: 35%;
+                    right: 5px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                a {
+                    background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
+                    box-shadow: 0 0 5px $C3;
+                    border-radius: 5px;
+                    z-index: 2;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    color: $C2;
+                    text-align: center;
+                    box-shadow: 0 1px 2px $C1;
+                    text-decoration: none;
+                    &:hover {
+                        bottom: 3px;
+                        box-shadow: 0 1px 0 $C1;
+                        text-shadow: 0 1px 0 $C1;
+                    }
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 62%;
+                        background-color: rgba(0, 0, 0, 0.075);
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .creators_conteneur {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .copyrighter {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        img {
+            text-align: left;
+            height: 35px;
+        }
+    }
+    // Les badges
+    .js {
+        background-color: rgb(251, 255, 0);
+        color: $C1;
+    }
+    .css {
+        background-color: rgb(255, 0, 0);
+        color: $C2;
+    }
+    .html {
+        background-color: rgb(17, 0, 255);
+        color: $C2;
+    }
+    .bootstrap {
+        background-color: rgb(5, 0, 73);
+        color: $C2;
+    }
+    .wp {
+        background-color: rgb(0, 176, 230);
+        color: $C2;
+        font-weight: bold;
+    }
+    .react {
+        background-color: #62dafb;
+        color: $C2;
+        text-shadow: 0 1px 1px $C1;
+    }
+    .php {
+        background-color: #9062fb;
+        color: $C1;
+        text-shadow: 0 0 1px $C2;
+    }
+    .generateur {
+        z-index: 1;
+        color: $C2;
+        text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
+        white-space: nowrap;
+        vertical-align: baseline;
+        height: 20px;
         position: absolute;
+        width: 150px;
+        top: 25px;
         right: 0;
-        bottom: 0;
+        border: solid 1px $C1;
+        border-left: solid 2px $C1;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+        background-image: url("https://i.pinimg.com/originals/90/aa/c3/90aac31c0d76c5a82f78a9be540321fa.gif");
     }
-    img {
-        text-align: left;
-        height: 35px;
-    }
-}
-
-// Les badges
-.js {
-    background-color: rgb(251, 255, 0);
-    color: $C1;
-}
-
-.css {
-    background-color: rgb(255, 0, 0);
-    color: $C2;
-}
-
-.html {
-    background-color: rgb(17, 0, 255);
-    color: $C2;
-}
-
-.bootstrap {
-    background-color: rgb(5, 0, 73);
-    color: $C2;
-}
-
-.wp {
-    background-color: rgb(0, 176, 230);
-    color: $C2;
-    font-weight: bold;
-}
-
-.react {
-    background-color: #62dafb;
-    color: $C2;
-    text-shadow: 0 1px 1px $C1;
-}
-
-.php {
-    background-color: #9062fb;
-    color: $C1;
-    text-shadow: 0 0 1px $C2;
-}
-
-.generateur {
-    z-index: 1;
-    color: $C2;
-    text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-    white-space: nowrap;
-    vertical-align: baseline;
-    height: 20px;
-    position: absolute;
-    width: 150px;
-    top: 25px;
-    right: 0;
-    border: solid 1px $C1;
-    border-left: solid 2px $C1;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 12px;
-    background-image: url("https://i.pinimg.com/originals/90/aa/c3/90aac31c0d76c5a82f78a9be540321fa.gif");
 }
