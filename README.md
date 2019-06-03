@@ -79,13 +79,12 @@ for (let ii = 0; ii < tritip.length; ii++) {
         'class="btn btn-primary">Lien</a> </div></div>';
 }
 
-document.getElementById("generate").innerHTML += generate;
+document.getElementById("generate").innerHTML = generate;
 
  ```
  Gràce à cette méthode, Javascript possède déjà toutes les cartes dans une base de donnée et il peut les identifier avec les badges la technologie associée à la carte !
 
 
 ## Les prochaines features
-- Les boutons fonctionnels (Le javascript n'est pas encore fonctionnel pour les boutons),
 - Les nouvelles API que nous verrons à BeCode !
 
