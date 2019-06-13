@@ -186,6 +186,50 @@ let tritip = [{
         "img_link": "https://cssfx.dev/_nuxt/img/ced4df1.svg",
         "desc": "Gallerie d'animation CSS avec les codes ! Le site propose aussi des images animées créées en CSS ! ",
         "link": "https://cssfx.dev/"
+    },
+    {
+        "title": "Font Awesome to base64",
+        "badge": "Javascript",
+        "generateur": 1,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Récupéré le code d'une icone de FontAwesome en base64 pour l'intégrer dans vos présentations en Javascript ! ",
+        "link": "http://fatopng.com/fontawesome-to-base64"
+    },
+    {
+        "title": "JS.do Online JavaScript Editor",
+        "badge": "HTML",
+        "generateur": 1,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": 'Même s\'il y a "JS" dans le titre, on est bien dans un petit éditeur HTML en ligne !',
+        "link": "https://js.do/"
+    },
+    {
+        "title": "Emmet Documentation",
+        "badge": "",
+        "generateur": 0,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Toute la documentation sur l'extension Emmet qui permet de compléter automatiquement ce qu'on inscit dans un locigiel de coding !",
+        "link": "https://docs.emmet.io/cheat-sheet/"
+    },
+    {
+        "title": "codesandbox.io",
+        "badge": "",
+        "generateur": 1,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Un logiciel comme VScode mais en ligne et qui peut importer React et autres frameworks pour coder !",
+        "link": "https://codesandbox.io/"
     }
 
 ]
+
+/*
+,
+    {
+        "title": "",
+        "badge": " ",
+        "generateur": 0,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": " ",
+        "link": " "
+    }
+*/

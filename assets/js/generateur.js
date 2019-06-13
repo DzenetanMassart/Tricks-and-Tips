@@ -1,4 +1,5 @@
 let generate = " ";
+
 //La génération de base
 for (let ii = 0; ii < tritip.length; ii++) {
 
@@ -58,6 +59,9 @@ document.getElementById("WordPress").addEventListener("click", wp);
 document.getElementById("JS").addEventListener("click", js);
 document.getElementById("React").addEventListener("click", react);
 document.getElementById("PHP").addEventListener("click", php);
+
+document.getElementById("Gen").addEventListener("click", generators);
+
 
 //Les fonctions du boutons
 function tout() {
@@ -123,25 +127,7 @@ function html() {;
             generate += '<div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
-
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
-
+            generate += ' html';
             generate += '">' +
                 tt.badge +
                 '</span>';
@@ -175,24 +161,7 @@ function css() {;
             generate += '<div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
-
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
+            generate += ' css';
 
             generate += '">' +
                 tt.badge +
@@ -227,24 +196,7 @@ function bs() {;
             generate += '<div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
-
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
+            generate += ' bootstrap';
 
             generate += '">' +
                 tt.badge +
@@ -280,23 +232,7 @@ function wp() {;
                 tt.title +
                 '</h4> <span class = "badge';
 
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
+            generate += ' wp';
 
             generate += '">' +
                 tt.badge +
@@ -332,23 +268,7 @@ function js() {;
                 tt.title +
                 '</h4> <span class = "badge';
 
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
+            generate += ' js';
 
             generate += '">' +
                 tt.badge +
@@ -383,24 +303,7 @@ function react() {;
             generate += '<div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
-
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
+            generate += ' react';
 
             generate += '">' +
                 tt.badge +
@@ -437,23 +340,7 @@ function php() {
                 tt.title +
                 '</h4> <span class = "badge';
 
-            if (tt.badge === "Javascript") {
-                generate += ' js';
-            } else if (tt.badge === "CSS") {
-                generate += ' css';
-            } else if (tt.badge === "HTML") {
-                generate += ' html';
-            } else if (tt.badge === "Bootstrap") {
-                generate += ' bootstrap';
-            } else if (tt.badge === "WordPress") {
-                generate += ' wp';
-            } else if (tt.badge === "React") {
-                generate += ' react';
-            } else if (tt.badge === "PHP") {
-                generate += ' php';
-            } else {
-                generate += '';
-            }
+            generate += ' php';
 
             generate += '">' +
                 tt.badge +
@@ -476,4 +363,54 @@ function php() {
     }
     document.getElementById("generate").innerHTML = generate;
 
+}
+
+function generators() {
+    let generate = " ";
+
+    for (let ii = 0; ii < tritip.length; ii++) {
+        let tt = (tritip[ii]);
+
+        if (tt.generateur === 1) {
+
+            generate += '<div class="card"> <h4 class = "card-title">' +
+                tt.title +
+                '</h4> <span class = "badge';
+
+            if (tt.badge === "Javascript") {
+                generate += ' js';
+            } else if (tt.badge === "CSS") {
+                generate += ' css';
+            } else if (tt.badge === "HTML") {
+                generate += ' html';
+            } else if (tt.badge === "Bootstrap") {
+                generate += ' bootstrap';
+            } else if (tt.badge === "WordPress") {
+                generate += ' wp';
+            } else if (tt.badge === "React") {
+                generate += ' react';
+            } else if (tt.badge === "PHP") {
+                generate += ' php';
+            } else {
+                generate += '';
+            }
+
+            generate += '">' +
+                tt.badge +
+                '</span>';
+            generate += '<span class = "generateur" > Generateur </span>'
+            generate += '<img class = "card-img-top"src ="' +
+                tt.img_link +
+                '" alt ="' +
+                tt.title +
+                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+                tt.desc +
+                '</span></p><a href =' +
+                tt.link +
+                'class="btn btn-primary link">Lien</a> </div></div>';
+
+        }
+
+    }
+    document.getElementById("generate").innerHTML = generate;
 }
