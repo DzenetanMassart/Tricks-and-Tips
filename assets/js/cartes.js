@@ -218,6 +218,22 @@ let tritip = [{
         "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
         "desc": "Un logiciel comme VScode mais en ligne et qui peut importer React et autres frameworks pour coder !",
         "link": "https://codesandbox.io/"
+    },
+    {
+        "title": "Google Font",
+        "badge": "CSS",
+        "generateur": 0,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Obtenez gratuitement des polices de caractère à importer dans vos fichiers CSS !",
+        "link": "https://fonts.google.com/"
+    },
+    {
+        "title": "Ultimate CSS Gradient Generator",
+        "badge": "CSS",
+        "generateur": 1,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Gérer les gradients, les images, l'opacité,... avec une interface graphique !",
+        "link": "https://www.colorzilla.com/gradient-editor/"
     }
 
 ]
