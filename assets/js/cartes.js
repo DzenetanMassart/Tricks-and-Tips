@@ -234,6 +234,14 @@ let tritip = [{
         "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
         "desc": "Gérer les gradients, les images, l'opacité,... avec une interface graphique !",
         "link": "https://www.colorzilla.com/gradient-editor/"
+    },
+    {
+        "title": "React.js cheatsheet",
+        "badge": "React",
+        "generateur": 0,
+        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "desc": "Une synthèse complète de l'ensemble des différentes méthodes de React.",
+        "link": "https://devhints.io/react"
     }
 
 ]
