@@ -4,11 +4,14 @@ $C3:rgba(0, 162, 216, 1);
 @media (orientation: landscape) {
     @media only screen and (min-width: 916px) {
         section {
+            position: absolute;
+            top: 60px;
+            left: 7.5%;
             scroll-snap-type: y mandatory;
-            width: 95%;
+            width: 86%;
             margin: auto auto;
-            height: 100vh;
-            padding: 10px;
+            height: 80vh;
+            padding: 50px;
             overflow-y: scroll;
             margin-bottom: 25px;
             &::-webkit-scrollbar {
@@ -422,7 +425,7 @@ $C3:rgba(0, 162, 216, 1);
             scroll-snap-type: y mandatory;
             width: 95%;
             margin: auto auto;
-            height: 120vw;
+            height: 92vh;
             padding: 10px;
             overflow-y: scroll;
             margin-bottom: 25px;
@@ -829,4 +832,9 @@ $C3:rgba(0, 162, 216, 1);
         font-size: 12px;
         background-image: url("https://i.pinimg.com/originals/90/aa/c3/90aac31c0d76c5a82f78a9be540321fa.gif");
     }
+}
+
+.icone {
+    width: 25px;
+    height: 25px;
 }
