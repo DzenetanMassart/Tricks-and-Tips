@@ -19,7 +19,7 @@ let tritip = [{
         "badge": "Bootstrap",
         "generateur": 1,
         "img_link": "http://shoelace.io/css/img/shoelace-logo.png",
-        "desc": "Créer une grille Bootstrap pour téléphone,tablette,écran moyen et écran large !",
+        "desc": "Créer une grille Bootstrap pour téléphone, tablette, écran moyen et écran large !",
         "link": "http://shoelace.io/"
     }, {
         "title": "JavaScript Event KeyCodes",
