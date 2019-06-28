@@ -5,7 +5,7 @@ for (let ii = 0; ii < tritip.length; ii++) {
 
     let tt = (tritip[ii]);
 
-    generate += '<div class="card"> <h4 class = "card-title">' +
+    generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
         tt.title +
         '</h4> <span class = "badge';
 
@@ -39,9 +39,7 @@ for (let ii = 0; ii < tritip.length; ii++) {
         tt.title +
         '" > <div class = "card-body"> <p class = "card-text"><span>' +
         tt.desc +
-        '</span></p><a href =' +
-        tt.link +
-        'class="btn btn-primary link">Lien</a> </div></div>';
+        '</span></p></div></div></a>';
 
 }
 document.getElementById("generate").innerHTML += generate;
@@ -71,7 +69,7 @@ function tout() {
 
         let tt = (tritip[ii]);
 
-        generate += '<div class="card"> <h4 class = "card-title">' +
+        generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
             tt.title +
             '</h4> <span class = "badge';
 
@@ -105,9 +103,7 @@ function tout() {
             tt.title +
             '" > <div class = "card-body"> <p class = "card-text"><span>' +
             tt.desc +
-            '</span></p><a href =' +
-            tt.link +
-            'class="btn btn-primary link">Lien</a> </div></div>';
+            '</span></p></div></div></a>';
 
     }
     document.getElementById("generate").innerHTML = generate;
@@ -124,7 +120,7 @@ function html() {;
         let tt = (tritip[ii]);
 
         if (tt.badge === "HTML") {
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
             generate += ' html';
@@ -140,9 +136,7 @@ function html() {;
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
+                '</span></p></div></div></a>';
 
         }
 
@@ -158,7 +152,7 @@ function css() {;
         let tt = (tritip[ii]);
 
         if (tt.badge === "CSS") {
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
             generate += ' css';
@@ -175,9 +169,7 @@ function css() {;
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
+                '</span></p></div></div> </a>';
 
         }
 
@@ -193,7 +185,7 @@ function bs() {;
         let tt = (tritip[ii]);
 
         if (tt.badge === "Bootstrap") {
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
             generate += ' bootstrap';
@@ -210,9 +202,7 @@ function bs() {;
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
+                '</span></p></div></div></a>';
 
         }
 
@@ -228,7 +218,7 @@ function wp() {;
         let tt = (tritip[ii]);
 
         if (tt.badge === "WordPress") {
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
 
@@ -246,10 +236,7 @@ function wp() {;
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
-
+                '</span></p></div></div></a>';
         }
 
     }
@@ -264,7 +251,7 @@ function js() {;
         let tt = (tritip[ii]);
 
         if (tt.badge === "Javascript") {
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
 
@@ -282,9 +269,7 @@ function js() {;
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
+                '</span></p></div></div></a>';
 
         }
 
@@ -300,7 +285,7 @@ function react() {;
         let tt = (tritip[ii]);
 
         if (tt.badge === "React") {
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
             generate += ' react';
@@ -317,9 +302,7 @@ function react() {;
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
+                '</span></p></div></div></a>';
 
         }
 
@@ -336,7 +319,7 @@ function php() {
 
         if (tt.badge === "PHP") {
 
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
 
@@ -354,10 +337,7 @@ function php() {
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
-
+                '</span></p></div></div></a>';
         }
 
     }
@@ -373,7 +353,7 @@ function generators() {
 
         if (tt.generateur === 1) {
 
-            generate += '<div class="card"> <h4 class = "card-title">' +
+            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge';
 
@@ -405,9 +385,7 @@ function generators() {
                 tt.title +
                 '" > <div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p><a href =' +
-                tt.link +
-                'class="btn btn-primary link">Lien</a> </div></div>';
+                '</span></p></div></div></a>';
 
         }
 

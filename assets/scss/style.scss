@@ -1,186 +1,178 @@
-$C1:black;
-$C2:rgb(255, 255, 255);
-$C3:rgba(0, 162, 216, 1);
-.icone {
-    width: 25px;
-    height: 25px;
-}
-
-section {
-    scroll-snap-type: y mandatory;
-    width: 86%;
-    margin: auto auto;
-    height: 80vh;
-    padding: 50px;
-    margin-bottom: 25px;
-    &::-webkit-scrollbar {
-        width: 5px;
+    $C1:black;
+    $C2:rgb(255, 255, 255);
+    $C3:rgba(0, 162, 216, 1);
+    .icone {
+        width: 25px;
+        height: 25px;
     }
-    &::-webkit-scrollbar-track {
-        border: 1px solid $C3;
-        border-radius: 10px;
-    }
-    &::-webkit-scrollbar-track-piece {
-        background-color: $C2;
-        border-radius: 10px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 162, 216, 0.548);
-        border-radius: 10px;
-        &:hover {
-            background-color: $C3;
+    
+    section {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        width: 86%;
+        margin: auto auto;
+        height: 80vh;
+        padding: 50px;
+        margin-bottom: 25px;
+        &::-webkit-scrollbar {
+            width: 5px;
         }
-    }
-    .row {
-        margin-right: 0 !important;
-    }
-    .card {
-        border: 1px solid $C1;
-        padding: 5px;
-        margin-bottom: 10px;
-        width: 480px;
-        height: 300px;
-        margin: 10px;
-        .card-title {
-            left: 0;
-            top: 0;
-            z-index: 2;
-            font-size: 0.8rem;
-            width: 60%;
-            color: $C3;
-            text-shadow: 0 1px 0 $C1;
+        &::-webkit-scrollbar-track {
+            border: 1px solid $C3;
+            border-radius: 10px;
         }
-        .card-img-top {
-            z-index: 2;
-            position: absolute;
-            width: 25%;
-            right: 15px;
-            top: 55px;
-            margin: auto auto;
+        &::-webkit-scrollbar-track-piece {
+            background-color: $C2;
+            border-radius: 10px;
         }
-        .badge {
-            z-index: 1;
-            height: 100%;
-            position: absolute;
-            width: 150px;
-            top: 0;
-            right: 0;
-        }
-        a {
-            border-radius: 5px;
-            z-index: 2;
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(180deg, $C3 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif");
-            color: $C2;
-            text-align: center;
-            text-decoration: none;
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 162, 216, 0.548);
+            border-radius: 10px;
             &:hover {
-                bottom: 3px;
-                text-shadow: 0 1px 0 $C1;
+                background-color: $C3;
             }
         }
-        .card-body {
-            height: 200px;
-            .card-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                bottom: 0;
-                left: 0;
-                text-align: center;
-                height: 270px;
-                width: 50%;
-                position: absolute;
-                z-index: 0;
-                text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
-                span {
-                    vertical-align: middle;
-                    font-size: 1.2em;
-                    &::selection {
-                        color: $C1;
-                        background-color: rgba(0, 119, 255, 0.479);
+        .row {
+            margin-right: 0 !important;
+        }
+        a {
+            .card {
+                border: 1px solid $C1;
+                padding: 5px;
+                margin-bottom: 10px;
+                width: 480px;
+                height: 300px;
+                margin: 10px;
+                transform: scale(1.0);
+                transition: all 0.9s;
+                .card-title {
+                    left: 0;
+                    top: 0;
+                    z-index: 2;
+                    font-size: 0.8rem;
+                    width: 60%;
+                    color: $C3;
+                    text-shadow: 0 1px 0 $C1;
+                }
+                .card-img-top {
+                    z-index: 2;
+                    position: absolute;
+                    width: 25%;
+                    right: 15px;
+                    top: 55px;
+                    margin: auto auto;
+                }
+                .badge {
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    width: 150px;
+                    top: 0;
+                    right: 0;
+                }
+                .card-body {
+                    height: 200px;
+                    .card-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        height: 270px;
+                        width: 50%;
+                        position: absolute;
+                        z-index: 0;
+                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        span {
+                            vertical-align: middle;
+                            font-size: 1.1em;
+                            &::selection {
+                                color: $C1;
+                                background-color: rgba(0, 119, 255, 0.479);
+                            }
+                        }
                     }
                 }
             }
+            &:hover {
+                transform: scale(0.99);
+            }
         }
     }
-}
-
-.generateur {
-    z-index: 1;
-    color: $C2;
-    text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-    white-space: nowrap;
-    vertical-align: baseline;
-    height: 20px;
-    position: absolute;
-    width: 150px;
-    top: 25px;
-    right: 0;
-    border: solid 1px $C1;
-    border-left: solid 2px $C1;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 12px;
-    background: black;
-}
-
-// Les badges
-.js {
-    background-color: rgba(251, 255, 0, 0.445);
-    color: $C1;
-}
-
-.css {
-    background-color: rgba(245, 24, 0, 0.555);
-    color: $C2;
-}
-
-.html {
-    background-color: rgba(17, 0, 255, 0.466);
-    color: $C2;
-}
-
-.bootstrap {
-    background-color: rgba(5, 0, 73, 0.274);
-    color: $C2;
-}
-
-.wp {
-    background-color: rgba(0, 176, 230, 0.493);
-    color: $C2;
-    font-weight: bold;
-}
-
-.react {
-    background-color: #62dafb75;
-    color: $C2;
-    text-shadow: 0 1px 1px $C1;
-}
-
-.php {
-    background-color: #9062fb79;
-    color: $C1;
-    text-shadow: 0 0 1px $C2;
-}
-
-// Travail sur le footer
-footer {
-    .creators_conteneur {
+    
+    .generateur {
+        z-index: 1;
+        color: $C2;
+        text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
+        white-space: nowrap;
+        vertical-align: baseline;
+        height: 20px;
         position: absolute;
+        width: 150px;
+        top: 25px;
         right: 0;
-        top: 0;
+        border: solid 1px $C1;
+        border-left: solid 2px $C1;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+        background: black;
     }
-    .copyrighter {
-        position: absolute;
-        right: 0;
-        bottom: 0;
+    
+    // Les badges
+    .js {
+        background-color: rgba(251, 255, 0, 0.445);
+        color: $C1;
     }
-    img {
-        text-align: left;
-        height: 35px;
+    
+    .css {
+        background-color: rgba(245, 24, 0, 0.555);
+        color: $C2;
     }
-}
+    
+    .html {
+        background-color: rgba(17, 0, 255, 0.466);
+        color: $C2;
+    }
+    
+    .bootstrap {
+        background-color: rgba(5, 0, 73, 0.274);
+        color: $C2;
+    }
+    
+    .wp {
+        background-color: rgba(0, 176, 230, 0.493);
+        color: $C2;
+        font-weight: bold;
+    }
+    
+    .react {
+        background-color: #62dafb75;
+        color: $C2;
+        text-shadow: 0 1px 1px $C1;
+    }
+    
+    .php {
+        background-color: #9062fb79;
+        color: $C1;
+        text-shadow: 0 0 1px $C2;
+    }
+    
+    // Travail sur le footer
+    footer {
+        .creators_conteneur {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .copyrighter {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        img {
+            text-align: left;
+            height: 35px;
+        }
+    }

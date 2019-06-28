@@ -1,6 +1,6 @@
 .icone { width: 25px; height: 25px; }
 
-section { -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 80vh; padding: 50px; margin-bottom: 25px; }
+section { overflow-y: scroll; -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 80vh; padding: 50px; margin-bottom: 25px; }
 
 section::-webkit-scrollbar { width: 5px; }
 
@@ -14,27 +14,25 @@ section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; }
 
 section .row { margin-right: 0 !important; }
 
-section .card { border: 1px solid black; padding: 5px; margin-bottom: 10px; width: 480px; height: 300px; margin: 10px; }
+section a .card { border: 1px solid black; padding: 5px; margin-bottom: 10px; width: 480px; height: 300px; margin: 10px; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.9s; transition: all 0.9s; }
 
-section .card .card-title { left: 0; top: 0; z-index: 2; font-size: 0.8rem; width: 60%; color: #00a2d8; text-shadow: 0 1px 0 black; }
+section a .card .card-title { left: 0; top: 0; z-index: 2; font-size: 0.8rem; width: 60%; color: #00a2d8; text-shadow: 0 1px 0 black; }
 
-section .card .card-img-top { z-index: 2; position: absolute; width: 25%; right: 15px; top: 55px; margin: auto auto; }
+section a .card .card-img-top { z-index: 2; position: absolute; width: 25%; right: 15px; top: 55px; margin: auto auto; }
 
-section .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
+section a .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
 
-section .card a { border-radius: 5px; z-index: 2; position: absolute; bottom: 5px; left: 0; width: 100%; background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00a2d8), to(rgba(0, 169, 255, 0.66))), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif"); background: linear-gradient(180deg, #00a2d8 0, rgba(0, 169, 255, 0.66) 100%), url("https://thumbs.gfycat.com/IllustriousBasicAmericancrocodile-size_restricted.gif"); color: white; text-align: center; text-decoration: none; }
+section a .card .card-body { height: 200px; }
 
-section .card a:hover { bottom: 3px; text-shadow: 0 1px 0 black; }
+section a .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 270px; width: 50%; position: absolute; z-index: 0; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
 
-section .card .card-body { height: 200px; }
+section a .card .card-body .card-text span { vertical-align: middle; font-size: 1.1em; }
 
-section .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 270px; width: 50%; position: absolute; z-index: 0; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
+section a .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
 
-section .card .card-body .card-text span { vertical-align: middle; font-size: 1.2em; }
+section a .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
 
-section .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
-
-section .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
+section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
 
 .generateur { z-index: 1; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background: black; }
 
