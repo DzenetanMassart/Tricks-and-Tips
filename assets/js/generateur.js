@@ -33,11 +33,15 @@ for (let ii = 0; ii < tritip.length; ii++) {
     if (tt.generateur === 1) {
         generate += '<span class = "generateur" > Generateur </span>'
     }
-    generate += '<img class = "card-img-top"src ="' +
-        tt.img_link +
-        '" alt ="' +
-        tt.title +
-        '" > <div class = "card-body"> <p class = "card-text"><span>' +
+    if (tt.img_link != "nope") {
+        generate += '<img class = "card-img-top"src ="' +
+            tt.img_link +
+            '" alt ="' +
+            tt.title +
+            '" >'
+    } else {}
+
+    generate += '<div class = "card-body"> <p class = "card-text"><span>' +
         tt.desc +
         '</span></p></div></div></a>';
 
@@ -97,14 +101,17 @@ function tout() {
         if (tt.generateur === 1) {
             generate += '<span class = "generateur" > Generateur </span>'
         }
-        generate += '<img class = "card-img-top"src ="' +
-            tt.img_link +
-            '" alt ="' +
-            tt.title +
-            '" > <div class = "card-body"> <p class = "card-text"><span>' +
+        if (tt.img_link != "nope") {
+            generate += '<img class = "card-img-top"src ="' +
+                tt.img_link +
+                '" alt ="' +
+                tt.title +
+                '" >'
+        } else {}
+
+        generate += '<div class = "card-body"> <p class = "card-text"><span>' +
             tt.desc +
             '</span></p></div></div></a>';
-
     }
     document.getElementById("generate").innerHTML = generate;
 
@@ -130,14 +137,17 @@ function html() {;
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
-
         }
 
     }
@@ -163,13 +173,17 @@ function css() {;
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
-                '</span></p></div></div> </a>';
+                '</span></p></div></div></a>';
 
         }
 
@@ -196,11 +210,15 @@ function bs() {;
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
 
@@ -230,11 +248,15 @@ function wp() {;
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
         }
@@ -263,11 +285,15 @@ function js() {;
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
 
@@ -296,11 +322,15 @@ function react() {;
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
 
@@ -331,11 +361,15 @@ function php() {
             if (tt.generateur === 1) {
                 generate += '<span class = "generateur" > Generateur </span>'
             }
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
         }
@@ -379,11 +413,15 @@ function generators() {
                 tt.badge +
                 '</span>';
             generate += '<span class = "generateur" > Generateur </span>'
-            generate += '<img class = "card-img-top"src ="' +
-                tt.img_link +
-                '" alt ="' +
-                tt.title +
-                '" > <div class = "card-body"> <p class = "card-text"><span>' +
+            if (tt.img_link != "nope") {
+                generate += '<img class = "card-img-top"src ="' +
+                    tt.img_link +
+                    '" alt ="' +
+                    tt.title +
+                    '" >'
+            } else {}
+
+            generate += '<div class = "card-body"> <p class = "card-text"><span>' +
                 tt.desc +
                 '</span></p></div></div></a>';
 

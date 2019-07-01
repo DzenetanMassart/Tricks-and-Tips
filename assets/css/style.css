@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
+body { margin: 0; overflow-y: hidden; }
+
 .icone { width: 25px; height: 25px; }
 
-section { overflow-y: scroll; -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 80vh; padding: 50px; margin-bottom: 25px; }
+section { overflow-y: scroll; -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 88vh; padding: 50px; margin-bottom: 25px; background-color: rgba(230, 230, 230, 0.23); }
 
 section::-webkit-scrollbar { width: 5px; }
 
@@ -36,19 +39,19 @@ section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
 
 .generateur { z-index: 1; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background: black; }
 
-.js { background-color: rgba(251, 255, 0, 0.445); color: black; }
+.js { background-color: rgba(251, 255, 0, 0.445); color: black; font-family: 'Kalam', cursive; }
 
-.css { background-color: rgba(245, 24, 0, 0.555); color: white; }
+.css { background-color: rgba(245, 24, 0, 0.555); color: white; font-family: 'Kalam', cursive; }
 
-.html { background-color: rgba(17, 0, 255, 0.466); color: white; }
+.html { background-color: rgba(17, 0, 255, 0.466); color: white; font-family: 'Kalam', cursive; }
 
-.bootstrap { background-color: rgba(5, 0, 73, 0.274); color: white; }
+.bootstrap { background-color: rgba(5, 0, 73, 0.274); color: white; font-family: 'Kalam', cursive; }
 
-.wp { background-color: rgba(0, 176, 230, 0.493); color: white; font-weight: bold; }
+.wp { background-color: rgba(0, 176, 230, 0.493); color: white; font-weight: bold; font-family: 'Kalam', cursive; }
 
-.react { background-color: #62dafb75; color: white; text-shadow: 0 1px 1px black; }
+.react { background-color: #62dafb75; color: white; text-shadow: 0 1px 1px black; font-family: 'Kalam', cursive; }
 
-.php { background-color: #9062fb79; color: black; text-shadow: 0 0 1px white; }
+.php { background-color: #9062fb79; color: black; text-shadow: 0 0 1px white; font-family: 'Kalam', cursive; }
 
 footer .creators_conteneur { position: absolute; right: 0; top: 0; }
 

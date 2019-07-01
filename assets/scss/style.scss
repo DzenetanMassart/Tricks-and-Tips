@@ -1,6 +1,16 @@
     $C1:black;
     $C2:rgb(255, 255, 255);
     $C3:rgba(0, 162, 216, 1);
+    @mixin F1() {
+        font-family: 'Kalam', cursive;
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+    body {
+        margin: 0;
+        overflow-y: hidden;
+    }
+    
     .icone {
         width: 25px;
         height: 25px;
@@ -11,9 +21,10 @@
         scroll-snap-type: y mandatory;
         width: 86%;
         margin: auto auto;
-        height: 80vh;
+        height: 88vh;
         padding: 50px;
         margin-bottom: 25px;
+        background-color: rgba(230, 230, 230, 0.23);
         &::-webkit-scrollbar {
             width: 5px;
         }
@@ -124,39 +135,46 @@
     .js {
         background-color: rgba(251, 255, 0, 0.445);
         color: $C1;
+        @include F1()
     }
     
     .css {
         background-color: rgba(245, 24, 0, 0.555);
         color: $C2;
+        @include F1()
     }
     
     .html {
         background-color: rgba(17, 0, 255, 0.466);
         color: $C2;
+        @include F1()
     }
     
     .bootstrap {
         background-color: rgba(5, 0, 73, 0.274);
         color: $C2;
+        @include F1()
     }
     
     .wp {
         background-color: rgba(0, 176, 230, 0.493);
         color: $C2;
         font-weight: bold;
+        @include F1()
     }
     
     .react {
         background-color: #62dafb75;
         color: $C2;
         text-shadow: 0 1px 1px $C1;
+        @include F1()
     }
     
     .php {
         background-color: #9062fb79;
         color: $C1;
         text-shadow: 0 0 1px $C2;
+        @include F1()
     }
     
     // Travail sur le footer

@@ -49,7 +49,7 @@ let tritip = [{
         "title": "Bootstrap 4 Cheat Sheet",
         "badge": "Bootstrap",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Toutes les class de Bootstrap 4 en une page permettant de voir leurs codes et les visuels.",
         "link": "https://hackerthemes.com/bootstrap-cheatsheet/"
     }, {
@@ -72,14 +72,14 @@ let tritip = [{
         "title": "Converting jQuery to JavaScript",
         "badge": "Javascript",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Un résumé de comment remplacer les notations de JQuery en Javascript.",
         "link": "https://github.com/jackocnr/intl-tel-input/wiki/Converting-jQuery-to-JavaScript"
     }, {
         "title": "Dimple.js",
         "badge": "Javascript",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Un utilitaire de D3 Data Visualisation pour refaire des graphiques.",
         "link": "http://dimplejs.org/"
     },
@@ -87,7 +87,7 @@ let tritip = [{
         "title": "CSS Animate (BETA)",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Créer des animations en CSS avec une interface et une pré-visualisation.",
         "link": "http://cssanimate.com/"
     },
@@ -95,7 +95,7 @@ let tritip = [{
         "title": "Bootstrap Code Editor",
         "badge": "Bootstrap",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Un éditeur mettant en avant les différentes features de Bootstrap.",
         "link": "http://angrytools.com/bootstrap/editor/"
     },
@@ -111,7 +111,7 @@ let tritip = [{
         "title": "CSS Media Query",
         "badge": "CSS",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Un testeur de Media Query qui offre les normes de taille des écrans et les codes.",
         "link": "http://angrytools.com/css/mediaquery/"
     },
@@ -151,7 +151,7 @@ let tritip = [{
         "title": "CSS Grid Generator",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Créer une grille en CSS avec une interface graphique intéractive.",
         "link": "https://cssgrid-generator.netlify.com/"
     },
@@ -159,7 +159,7 @@ let tritip = [{
         "title": "Tutoriel:Programmez en orienté objet en PHP",
         "badge": "PHP",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Toute la documentation possible autour du PHP avec sa programmation orientée objet.",
         "link": "http://sdz.tdct.org/sdz/rogrammez-en-oriente-objet-en-php.html"
     },
@@ -167,7 +167,7 @@ let tritip = [{
         "title": "PIXEL ART TO CSS",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Déssiner et animer en CSS.",
         "link": "https://www.pixelartcss.com/"
     },
@@ -191,7 +191,7 @@ let tritip = [{
         "title": "Font Awesome to base64",
         "badge": "Javascript",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Récupéré le code d'une icone de FontAwesome en base64 pour l'intégrer dans vos présentations en Javascript.",
         "link": "http://fatopng.com/fontawesome-to-base64"
     },
@@ -199,7 +199,7 @@ let tritip = [{
         "title": "JS.do Online JavaScript Editor",
         "badge": "HTML",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": 'Même s\'il y a "JS" dans le titre, on est bien dans un petit éditeur HTML en ligne.',
         "link": "https://js.do/"
     },
@@ -207,7 +207,7 @@ let tritip = [{
         "title": "Emmet Documentation",
         "badge": "",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Toute la documentation sur l'extension Emmet qui permet de compléter automatiquement ce qu'on inscit dans un locigiel de coding.",
         "link": "https://docs.emmet.io/cheat-sheet/"
     },
@@ -215,7 +215,7 @@ let tritip = [{
         "title": "codesandbox.io",
         "badge": "",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Un logiciel comme VScode mais en ligne et qui peut importer React et autres frameworks pour coder.",
         "link": "https://codesandbox.io/"
     },
@@ -223,7 +223,7 @@ let tritip = [{
         "title": "Google Font",
         "badge": "CSS",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Obtenez gratuitement des polices de caractère à importer dans vos fichiers CSS.",
         "link": "https://fonts.google.com/"
     },
@@ -231,7 +231,7 @@ let tritip = [{
         "title": "Ultimate CSS Gradient Generator",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Gérer les gradients, les images, l'opacité,... avec une interface graphique.",
         "link": "https://www.colorzilla.com/gradient-editor/"
     },
@@ -239,7 +239,7 @@ let tritip = [{
         "title": "React.js cheatsheet",
         "badge": "React",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": "Une synthèse complète de l'ensemble des différentes méthodes de React.",
         "link": "https://devhints.io/react"
     }
@@ -252,7 +252,7 @@ let tritip = [{
         "title": "",
         "badge": " ",
         "generateur": 0,
-        "img_link": "assets/pics/AUCUNE IMAGE DISPONIBLE.png",
+        "img_link": "nope",
         "desc": " ",
         "link": " "
     }
