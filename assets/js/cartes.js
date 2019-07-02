@@ -250,6 +250,22 @@ let tritip = [{
         "img_link": "https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg",
         "desc": "Convertisseur de Javascript pour en faire une version compatible à tout les navigateurs.",
         "link": "https://babeljs.io/"
+    },
+    {
+        "title": "Can I use____?",
+        "badge": "CSS",
+        "generateur": 0,
+        "img_link": "nope",
+        "desc": "Comparateur des capacités des différents navigateurs.",
+        "link": "https://caniuse.com/"
+    },
+    {
+        "title": "The Road To Learn React",
+        "badge": "React",
+        "generateur": 0,
+        "img_link": "nope",
+        "desc": "Document PDF anglophone complet sur React.",
+        "link": "https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/kDSoSdPUk3nlO7b/the-road-to-learn-react.pdf"
     }
 
 ]
