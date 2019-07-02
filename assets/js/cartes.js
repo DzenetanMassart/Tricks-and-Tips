@@ -242,6 +242,14 @@ let tritip = [{
         "img_link": "nope",
         "desc": "Une synthèse complète de l'ensemble des différentes méthodes de React.",
         "link": "https://devhints.io/react"
+    },
+    {
+        "title": "BabelJS",
+        "badge": "Javascript",
+        "generateur": 1,
+        "img_link": "https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg",
+        "desc": "Convertisseur de Javascript pour en faire une version compatible à tout les navigateurs.",
+        "link": "https://babeljs.io/"
     }
 
 ]
