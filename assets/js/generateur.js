@@ -1,11 +1,15 @@
 let generate = " ";
 
-//La génération de base
+/*
+|===================|
+|L'affichage de base|
+|===================|
+*/
 for (let ii = 0; ii < tritip.length; ii++) {
 
     let tt = (tritip[ii]);
 
-    generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
+    generate += '<a href="' + tt.link + '" target="_blank"><div class="card"> <h4 class = "card-title">' +
         tt.title +
         '</h4> <span class = "badge';
 
@@ -48,25 +52,36 @@ for (let ii = 0; ii < tritip.length; ii++) {
 }
 document.getElementById("generate").innerHTML += generate;
 
-//Les boutons du header
-
+/*
+|================================|
+|Les différents boutons du header|
+|================================|
+*/
 document.getElementById("TOUT").addEventListener("click", tout);
 
 document.getElementById("HTML").addEventListener("click", function() { gen("HTML"); });
-
+//Programmation
 document.getElementById("CSS").addEventListener("click", function() { gen("CSS"); });
 document.getElementById("Bootstrap").addEventListener("click", function() { gen("Bootstrap"); });
 document.getElementById("WordPress").addEventListener("click", function() { gen("WordPress"); });
-
+//Esthétique
 document.getElementById("JS").addEventListener("click", function() { gen("Javascript"); });
 document.getElementById("React").addEventListener("click", function() { gen("React"); });
 document.getElementById("PHP").addEventListener("click", function() { gen("PHP"); });
+
 document.getElementById("Autre").addEventListener("click", function() { gen(""); });
 
 document.getElementById("Gen").addEventListener("click", generators);
 
 
-//Les fonctions du boutons
+/*
+|=========================|
+|Les fonctions des boutons|
+|=========================|
+*/
+
+
+//La fonction du bouton "tout"
 function tout() {
     let generate = " ";
 
@@ -74,7 +89,7 @@ function tout() {
 
         let tt = (tritip[ii]);
 
-        generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
+        generate += '<a href="' + tt.link + '" target="_blank"><div class="card"> <h4 class = "card-title">' +
             tt.title +
             '</h4> <span class = "badge';
 
@@ -120,18 +135,18 @@ function tout() {
 }
 
 
-
-function gen(a) {;
+// La fonction qui lit les boutons d'affichage spécifique en fonction du badge
+function gen(nom) {;
     let generate = " ";
 
     for (let ii = 0; ii < tritip.length; ii++) {
         let tt = (tritip[ii]);
 
-        if (tt.badge === a) {
-            generate += '<a href="' + tt.link + '"><div class="card"> <h4 class = "card-title">' +
+        if (tt.badge === nom) {
+            generate += '<a href="' + tt.link + '" target="_blank"><div class="card"> <h4 class = "card-title">' +
                 tt.title +
                 '</h4> <span class = "badge ';
-            generate += a;
+            generate += nom;
             generate += '">' +
                 tt.badge +
                 '</span>';
@@ -156,6 +171,8 @@ function gen(a) {;
 
 }
 
+
+//La fonction du boutons des générateurs
 function generators() {
     let generate = " ";
 
