@@ -137,6 +137,7 @@ function tout() {
 
 // La fonction qui lit les boutons d'affichage spécifique en fonction du badge
 function gen(nom) {;
+    document.title = "Tricks and Tips-" + nom;
     let generate = " ";
 
     for (let ii = 0; ii < tritip.length; ii++) {
