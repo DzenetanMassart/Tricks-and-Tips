@@ -39,19 +39,19 @@ section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
 
 .generateur { z-index: 1; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background: black; }
 
-.js { background-color: rgba(251, 255, 0, 0.445); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.Javascript { background-color: rgba(251, 255, 0, 0.445); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-.css { background-color: rgba(245, 24, 0, 0.555); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.CSS { background-color: rgba(245, 24, 0, 0.555); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-.html { background-color: rgba(17, 0, 255, 0.466); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.HTML { background-color: rgba(17, 0, 255, 0.466); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-.bootstrap { background-color: rgba(5, 0, 73, 0.274); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.Bootstrap { background-color: rgba(5, 0, 73, 0.274); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-.wp { background-color: rgba(0, 176, 230, 0.493); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.WordPress { background-color: rgba(0, 176, 230, 0.493); color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-.react { background-color: #62dafb75; color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.React { background-color: #62dafb75; color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-.php { background-color: #9062fb79; color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
+.PHP { background-color: #9062fb79; color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
 footer .creators_conteneur { position: absolute; right: 0; top: 0; }
 
