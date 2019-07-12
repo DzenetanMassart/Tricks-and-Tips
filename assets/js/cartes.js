@@ -266,6 +266,14 @@ let tritip = [{
         "img_link": "nope",
         "desc": "Document PDF anglophone complet sur React.",
         "link": "https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/kDSoSdPUk3nlO7b/the-road-to-learn-react.pdf"
+    },
+    {
+        "title": "html5pattern",
+        "badge": "PHP",
+        "generateur": 1,
+        "img_link": "nope",
+        "desc": 'Une banque pour les "preg_match" de PHP afin d\'effectuer des recherches de correspondance avec des expressions rationnelles standards. ',
+        "link": "http://html5pattern.com/"
     }
 
 ]
