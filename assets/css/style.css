@@ -53,9 +53,9 @@ section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
 
 .PHP { background-color: #9062fb79; color: white; font-family: 'Kalam', cursive; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; font-weight: bold; }
 
-footer .creators_conteneur { position: absolute; right: 0; top: 0; }
+footer p { margin-left: 0; margin-top: auto; margin-bottom: auto; text-align: right; }
 
-footer .copyrighter { position: absolute; right: 0; bottom: 0; }
+footer .center { margin-left: auto; margin-right: auto; }
 
-footer img { text-align: left; height: 35px; }
+footer .copyrighter { position: absolute; bottom: 0; right: 50px; }
 /*# sourceMappingURL=style.css.map */
