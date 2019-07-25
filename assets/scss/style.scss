@@ -75,8 +75,8 @@
                     z-index: 2;
                     font-size: 0.8rem;
                     width: 60%;
-                    color: $C3;
-                    text-shadow: 0 1px 0 $C1;
+                    color: $C1;
+                    text-shadow: 0 1px 0 $C3;
                 }
 
                 .card-img-top {
@@ -189,6 +189,17 @@
 
     // Travail sur le footer
     footer {
+        a {
+            color: $C1;
+            background-color: $C3;
+
+            &:hover {
+                color: $C1;
+                background-color: $C2;
+                margin-top: 1px;
+            }
+        }
+
         p {
             margin-left: 0;
             margin-top: auto;

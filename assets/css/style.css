@@ -19,7 +19,7 @@ section .row { margin-right: 0 !important; }
 
 section a .card { border: 1px solid black; padding: 5px; margin-bottom: 10px; width: 480px; height: 300px; margin: 10px; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.9s; transition: all 0.9s; }
 
-section a .card .card-title { left: 0; top: 0; z-index: 2; font-size: 0.8rem; width: 60%; color: #00a2d8; text-shadow: 0 1px 0 black; }
+section a .card .card-title { left: 0; top: 0; z-index: 2; font-size: 0.8rem; width: 60%; color: black; text-shadow: 0 1px 0 #00a2d8; }
 
 section a .card .card-img-top { z-index: 2; position: absolute; width: 25%; right: 15px; top: 55px; margin: auto auto; }
 
@@ -52,6 +52,10 @@ section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
 .React { background-color: #62dafb75; color: black; font-family: 'Kalam', cursive; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; font-weight: bold; }
 
 .PHP { background-color: #9062fb79; color: black; font-family: 'Kalam', cursive; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; font-weight: bold; }
+
+footer a { color: black; background-color: #00a2d8; }
+
+footer a:hover { color: black; background-color: white; margin-top: 1px; }
 
 footer p { margin-left: 0; margin-top: auto; margin-bottom: auto; text-align: right; }
 
