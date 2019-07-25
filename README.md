@@ -86,5 +86,5 @@ document.getElementById("generate").innerHTML = generate;
 
 
 ## Les prochaines features
-- Les nouvelles API que nous verrons à BeCode !
+- Le site deviens un PWA ("Progressive Web App","Application Web Progressive" en français).
 
