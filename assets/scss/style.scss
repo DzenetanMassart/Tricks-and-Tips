@@ -1,24 +1,26 @@
     $C1:black;
     $C2:rgb(255, 255, 255);
     $C3:rgba(0, 162, 216, 1);
+
     @mixin F1() {
-        color: $C2;
+        color: $C1;
         font-family: 'Kalam', cursive;
-        text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
+        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
         font-weight: bold;
     }
-    
+
     @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
     body {
         margin: 0;
         overflow-y: hidden;
     }
-    
+
     .icone {
         width: 25px;
         height: 25px;
     }
-    
+
     section {
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
@@ -28,27 +30,34 @@
         padding: 50px;
         margin-bottom: 25px;
         background-color: rgba(230, 230, 230, 0.23);
+
         &::-webkit-scrollbar {
             width: 5px;
         }
+
         &::-webkit-scrollbar-track {
             border: 1px solid $C3;
             border-radius: 10px;
         }
+
         &::-webkit-scrollbar-track-piece {
             background-color: $C2;
             border-radius: 10px;
         }
+
         &::-webkit-scrollbar-thumb {
             background-color: rgba(0, 162, 216, 0.548);
             border-radius: 10px;
+
             &:hover {
                 background-color: $C3;
             }
         }
+
         .row {
             margin-right: 0 !important;
         }
+
         a {
             .card {
                 border: 1px solid $C1;
@@ -59,6 +68,7 @@
                 margin: 10px;
                 transform: scale(1.0);
                 transition: all 0.9s;
+
                 .card-title {
                     left: 0;
                     top: 0;
@@ -68,6 +78,7 @@
                     color: $C3;
                     text-shadow: 0 1px 0 $C1;
                 }
+
                 .card-img-top {
                     z-index: 2;
                     position: absolute;
@@ -76,6 +87,7 @@
                     top: 55px;
                     margin: auto auto;
                 }
+
                 .badge {
                     z-index: 1;
                     height: 100%;
@@ -84,8 +96,10 @@
                     top: 0;
                     right: 0;
                 }
+
                 .card-body {
                     height: 200px;
+
                     .card-text {
                         display: flex;
                         flex-direction: column;
@@ -98,9 +112,11 @@
                         position: absolute;
                         z-index: 0;
                         text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+
                         span {
                             vertical-align: middle;
                             font-size: 1.1em;
+
                             &::selection {
                                 color: $C1;
                                 background-color: rgba(0, 119, 255, 0.479);
@@ -109,12 +125,13 @@
                     }
                 }
             }
+
             &:hover {
                 transform: scale(0.99);
             }
         }
     }
-    
+
     .generateur {
         z-index: 1;
         color: $C2;
@@ -133,43 +150,43 @@
         font-size: 12px;
         background: black;
     }
-    
+
     // Les badges
     .Javascript {
         background-color: rgba(251, 255, 0, 0.445);
         @include F1()
     }
-    
+
     .CSS {
         background-color: rgba(245, 24, 0, 0.555);
         @include F1()
     }
-    
+
     .HTML {
         background-color: rgba(17, 0, 255, 0.466);
         @include F1()
     }
-    
+
     .Bootstrap {
         background-color: rgba(5, 0, 73, 0.274);
         @include F1()
     }
-    
+
     .WordPress {
         background-color: rgba(0, 176, 230, 0.493);
         @include F1()
     }
-    
+
     .React {
         background-color: #62dafb75;
         @include F1()
     }
-    
+
     .PHP {
         background-color: #9062fb79;
         @include F1()
     }
-    
+
     // Travail sur le footer
     footer {
         p {
@@ -178,10 +195,12 @@
             margin-bottom: auto;
             text-align: right;
         }
+
         .center {
             margin-left: auto;
             margin-right: auto;
         }
+
         .copyrighter {
             position: absolute;
             bottom: 0;
