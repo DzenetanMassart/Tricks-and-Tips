@@ -11,144 +11,297 @@
 
     @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
 
-    body {
-        margin: 0;
-        overflow-y: hidden;
-    }
+    // Version en paysage
+    @media (orientation:landscape) {
 
-    .icone {
-        width: 25px;
-        height: 25px;
-    }
-
-    section {
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-        width: 86%;
-        margin: auto auto;
-        height: 88vh;
-        padding: 50px;
-        margin-bottom: 25px;
-        background-color: rgba(230, 230, 230, 0.23);
-
-        &::-webkit-scrollbar {
-            width: 5px;
+        body {
+            margin: 0;
+            overflow-y: hidden;
         }
 
-        &::-webkit-scrollbar-track {
-            border: 1px solid $C3;
-            border-radius: 10px;
+        .icone {
+            width: 25px;
+            height: 25px;
         }
 
-        &::-webkit-scrollbar-track-piece {
-            background-color: $C2;
-            border-radius: 10px;
-        }
+        section {
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            width: 86%;
+            margin: auto auto;
+            height: 88vh;
+            padding: 50px;
+            margin-bottom: 25px;
+            background-color: rgba(230, 230, 230, 0.23);
 
-        &::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 162, 216, 0.548);
-            border-radius: 10px;
-
-            &:hover {
-                background-color: $C3;
+            &::-webkit-scrollbar {
+                width: 5px;
             }
-        }
 
-        .row {
-            margin-right: 0 !important;
-        }
+            &::-webkit-scrollbar-track {
+                border: 1px solid $C3;
+                border-radius: 10px;
+            }
 
-        a {
-            .card {
-                border: 1px solid $C1;
-                padding: 5px;
-                margin-bottom: 10px;
-                width: 480px;
-                height: 300px;
-                margin: 10px;
-                transform: scale(1.0);
-                transition: all 0.9s;
+            &::-webkit-scrollbar-track-piece {
+                background-color: $C2;
+                border-radius: 10px;
+            }
 
-                .card-title {
-                    left: 0;
-                    top: 0;
-                    z-index: 2;
-                    font-size: 0.8rem;
-                    width: 60%;
-                    color: $C1;
-                    text-shadow: 0 1px 0 $C3;
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 162, 216, 0.548);
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: $C3;
                 }
+            }
 
-                .card-img-top {
-                    z-index: 2;
-                    position: absolute;
-                    width: 25%;
-                    right: 15px;
-                    top: 55px;
-                    margin: auto auto;
-                }
+            .row {
+                margin-right: 0 !important;
+            }
 
-                .badge {
-                    z-index: 1;
-                    height: 100%;
-                    position: absolute;
-                    width: 150px;
-                    top: 0;
-                    right: 0;
-                }
+            a {
+                .card {
+                    border: 1px solid $C1;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    width: 480px;
+                    height: 300px;
+                    margin: 10px;
+                    transform: scale(1.0);
+                    transition: all 0.9s;
 
-                .card-body {
-                    height: 200px;
-
-                    .card-text {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        bottom: 0;
+                    .card-title {
                         left: 0;
-                        text-align: center;
-                        height: 270px;
-                        width: 50%;
+                        top: 0;
+                        z-index: 2;
+                        font-size: 0.8rem;
+                        width: 60%;
+                        color: $C1;
+                        text-shadow: 0 1px 0 $C3;
+                    }
+
+                    .card-img-top {
+                        z-index: 2;
                         position: absolute;
-                        z-index: 0;
-                        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+                        width: 25%;
+                        right: 15px;
+                        top: 55px;
+                        margin: auto auto;
+                    }
 
-                        span {
-                            vertical-align: middle;
-                            font-size: 1.1em;
+                    .badge {
+                        z-index: 1;
+                        height: 100%;
+                        position: absolute;
+                        width: 150px;
+                        top: 0;
+                        right: 0;
+                    }
 
-                            &::selection {
-                                color: $C1;
-                                background-color: rgba(0, 119, 255, 0.479);
+                    .card-body {
+                        height: 200px;
+
+                        .card-text {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            bottom: 0;
+                            left: 0;
+                            text-align: center;
+                            height: 270px;
+                            width: 50%;
+                            position: absolute;
+                            z-index: 0;
+                            text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+
+                            span {
+                                vertical-align: middle;
+                                font-size: 1.1em;
+
+                                &::selection {
+                                    color: $C1;
+                                    background-color: rgba(0, 119, 255, 0.479);
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            &:hover {
-                transform: scale(0.99);
+                &:hover {
+                    transform: scale(0.99);
+                }
             }
+        }
+
+        .generateur {
+            z-index: 1;
+            color: $C2;
+            text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
+            white-space: nowrap;
+            vertical-align: baseline;
+            height: 20px;
+            position: absolute;
+            width: 150px;
+            top: 25px;
+            right: 0;
+            border: solid 1px $C1;
+            border-left: solid 2px $C1;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 12px;
+            background: black;
         }
     }
 
-    .generateur {
-        z-index: 1;
-        color: $C2;
-        text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-        white-space: nowrap;
-        vertical-align: baseline;
-        height: 20px;
-        position: absolute;
-        width: 150px;
-        top: 25px;
-        right: 0;
-        border: solid 1px $C1;
-        border-left: solid 2px $C1;
-        text-align: center;
-        vertical-align: middle;
-        font-size: 12px;
-        background: black;
+    // Version en portrait
+    @media (orientation: portrait) {
+        body {
+            margin: 0;
+            overflow-y: hidden;
+        }
+
+        .icone {
+            width: 25px;
+            height: 25px;
+        }
+
+        section {
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            width: 86%;
+            margin: auto auto;
+            height: 88vh;
+            padding: 50px;
+            margin-bottom: 25px;
+            background-color: rgba(230, 230, 230, 0.23);
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                border: 1px solid $C3;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-track-piece {
+                background-color: $C2;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 162, 216, 0.548);
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: $C3;
+                }
+            }
+
+            .row {
+                margin-right: 0 !important;
+            }
+
+            a {
+                .card {
+                    border: 1px solid $C1;
+                    padding: 5px;
+                    margin-bottom: 10px;
+                    width: 60vw;
+                    height: 25vh;
+                    margin: 10px;
+                    transform: scale(1.0);
+                    transition: all 0.9s;
+
+                    .card-title {
+                        left: 0;
+                        top: 0;
+                        z-index: 2;
+                        font-size: 2.1vh;
+                        width: 60%;
+                        color: $C1;
+                        text-shadow: 0 1px 0 $C3;
+                    }
+
+                    .card-img-top {
+                        z-index: 2;
+                        position: absolute;
+                        width: 25%;
+                        right: 5px;
+                        top: 55px;
+                        margin: auto auto;
+                    }
+
+                    .badge {
+                        z-index: 1;
+                        height: 100%;
+                        position: absolute;
+                        width: 30%;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .card-body {
+                        height: 200px;
+
+                        .card-text {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            bottom: 0;
+                            left: 0;
+                            text-align: center;
+                            height: 20vh;
+                            width: 65%;
+                            position: absolute;
+                            z-index: 0;
+                            text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+
+                            span {
+                                vertical-align: middle;
+                                font-size: 1.5vh;
+
+                                &::selection {
+                                    color: $C1;
+                                    background-color: rgba(0, 119, 255, 0.479);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: scale(0.99);
+                }
+            }
+        }
+
+        .generateur {
+            z-index: 1;
+            color: $C2;
+            text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
+            white-space: nowrap;
+            vertical-align: baseline;
+            height: 20px;
+            position: absolute;
+            width: 30%;
+            top: 25px;
+            right: 0;
+            border: solid 1px $C1;
+            border-left: solid 2px $C1;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 10px;
+            background: black;
+        }
+
+
+
+
+
+
     }
 
     // Les badges
@@ -187,6 +340,13 @@
         @include F1()
     }
 
+
+
+
+
+
+
+
     // Travail sur le footer
     footer {
         a {
@@ -205,16 +365,31 @@
             margin-top: auto;
             margin-bottom: auto;
             text-align: right;
+
         }
 
-        .center {
+        .searcher {
             margin-left: auto;
             margin-right: auto;
+
         }
 
-        .copyrighter {
-            position: absolute;
-            bottom: 0;
-            right: 50px;
+        .footer-navbar {
+            color: red;
+            border-color: red;
+            height: 50px;
+            width: 50px;
         }
+
+        .footer-navbar-icon {
+            background-image: url("../pics/T_T.png");
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            content: "";
+            background: no-repeat center center;
+            background-size: 100% 100%;
+        }
+
     }

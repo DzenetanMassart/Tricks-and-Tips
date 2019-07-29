@@ -1,43 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
-body { margin: 0; overflow-y: hidden; }
+@media (orientation: landscape) { body { margin: 0; overflow-y: hidden; }
+  .icone { width: 25px; height: 25px; }
+  section { overflow-y: scroll; -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 88vh; padding: 50px; margin-bottom: 25px; background-color: rgba(230, 230, 230, 0.23); }
+  section::-webkit-scrollbar { width: 5px; }
+  section::-webkit-scrollbar-track { border: 1px solid #00a2d8; border-radius: 10px; }
+  section::-webkit-scrollbar-track-piece { background-color: white; border-radius: 10px; }
+  section::-webkit-scrollbar-thumb { background-color: rgba(0, 162, 216, 0.548); border-radius: 10px; }
+  section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; }
+  section .row { margin-right: 0 !important; }
+  section a .card { border: 1px solid black; padding: 5px; margin-bottom: 10px; width: 480px; height: 300px; margin: 10px; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.9s; transition: all 0.9s; }
+  section a .card .card-title { left: 0; top: 0; z-index: 2; font-size: 0.8rem; width: 60%; color: black; text-shadow: 0 1px 0 #00a2d8; }
+  section a .card .card-img-top { z-index: 2; position: absolute; width: 25%; right: 15px; top: 55px; margin: auto auto; }
+  section a .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
+  section a .card .card-body { height: 200px; }
+  section a .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 270px; width: 50%; position: absolute; z-index: 0; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
+  section a .card .card-body .card-text span { vertical-align: middle; font-size: 1.1em; }
+  section a .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
+  section a .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
+  section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
+  .generateur { z-index: 1; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background: black; } }
 
-.icone { width: 25px; height: 25px; }
-
-section { overflow-y: scroll; -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 88vh; padding: 50px; margin-bottom: 25px; background-color: rgba(230, 230, 230, 0.23); }
-
-section::-webkit-scrollbar { width: 5px; }
-
-section::-webkit-scrollbar-track { border: 1px solid #00a2d8; border-radius: 10px; }
-
-section::-webkit-scrollbar-track-piece { background-color: white; border-radius: 10px; }
-
-section::-webkit-scrollbar-thumb { background-color: rgba(0, 162, 216, 0.548); border-radius: 10px; }
-
-section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; }
-
-section .row { margin-right: 0 !important; }
-
-section a .card { border: 1px solid black; padding: 5px; margin-bottom: 10px; width: 480px; height: 300px; margin: 10px; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.9s; transition: all 0.9s; }
-
-section a .card .card-title { left: 0; top: 0; z-index: 2; font-size: 0.8rem; width: 60%; color: black; text-shadow: 0 1px 0 #00a2d8; }
-
-section a .card .card-img-top { z-index: 2; position: absolute; width: 25%; right: 15px; top: 55px; margin: auto auto; }
-
-section a .card .badge { z-index: 1; height: 100%; position: absolute; width: 150px; top: 0; right: 0; }
-
-section a .card .card-body { height: 200px; }
-
-section a .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 270px; width: 50%; position: absolute; z-index: 0; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
-
-section a .card .card-body .card-text span { vertical-align: middle; font-size: 1.1em; }
-
-section a .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
-
-section a .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
-
-section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
-
-.generateur { z-index: 1; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 150px; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 12px; background: black; }
+@media (orientation: portrait) { body { margin: 0; overflow-y: hidden; }
+  .icone { width: 25px; height: 25px; }
+  section { overflow-y: scroll; -ms-scroll-snap-type: y mandatory; scroll-snap-type: y mandatory; width: 86%; margin: auto auto; height: 88vh; padding: 50px; margin-bottom: 25px; background-color: rgba(230, 230, 230, 0.23); }
+  section::-webkit-scrollbar { width: 5px; }
+  section::-webkit-scrollbar-track { border: 1px solid #00a2d8; border-radius: 10px; }
+  section::-webkit-scrollbar-track-piece { background-color: white; border-radius: 10px; }
+  section::-webkit-scrollbar-thumb { background-color: rgba(0, 162, 216, 0.548); border-radius: 10px; }
+  section::-webkit-scrollbar-thumb:hover { background-color: #00a2d8; }
+  section .row { margin-right: 0 !important; }
+  section a .card { border: 1px solid black; padding: 5px; margin-bottom: 10px; width: 60vw; height: 25vh; margin: 10px; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.9s; transition: all 0.9s; }
+  section a .card .card-title { left: 0; top: 0; z-index: 2; font-size: 2.1vh; width: 60%; color: black; text-shadow: 0 1px 0 #00a2d8; }
+  section a .card .card-img-top { z-index: 2; position: absolute; width: 25%; right: 5px; top: 55px; margin: auto auto; }
+  section a .card .badge { z-index: 1; height: 100%; position: absolute; width: 30%; top: 0; right: 0; }
+  section a .card .card-body { height: 200px; }
+  section a .card .card-body .card-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; bottom: 0; left: 0; text-align: center; height: 20vh; width: 65%; position: absolute; z-index: 0; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; }
+  section a .card .card-body .card-text span { vertical-align: middle; font-size: 1.5vh; }
+  section a .card .card-body .card-text span::-moz-selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
+  section a .card .card-body .card-text span::selection { color: black; background-color: rgba(0, 119, 255, 0.479); }
+  section a:hover { -webkit-transform: scale(0.99); transform: scale(0.99); }
+  .generateur { z-index: 1; color: white; text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px; white-space: nowrap; vertical-align: baseline; height: 20px; position: absolute; width: 30%; top: 25px; right: 0; border: solid 1px black; border-left: solid 2px black; text-align: center; vertical-align: middle; font-size: 10px; background: black; } }
 
 .Javascript { background-color: rgba(251, 255, 0, 0.445); color: black; font-family: 'Kalam', cursive; text-shadow: white 1px 1px, white -1px 1px, white -1px -1px, white 1px -1px; font-weight: bold; }
 
@@ -59,7 +61,9 @@ footer a:hover { color: black; background-color: white; margin-top: 1px; }
 
 footer p { margin-left: 0; margin-top: auto; margin-bottom: auto; text-align: right; }
 
-footer .center { margin-left: auto; margin-right: auto; }
+footer .searcher { margin-left: auto; margin-right: auto; }
 
-footer .copyrighter { position: absolute; bottom: 0; right: 50px; }
+footer .footer-navbar { color: red; border-color: red; height: 50px; width: 50px; }
+
+footer .footer-navbar-icon { background-image: url("../pics/T_T.png"); display: inline-block; width: 1.5em; height: 1.5em; vertical-align: middle; content: ""; background: no-repeat center center; background-size: 100% 100%; }
 /*# sourceMappingURL=style.css.map */

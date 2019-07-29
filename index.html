@@ -102,31 +102,33 @@
     </section>
 
     <footer>
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-            <a href="https://github.com/DzenetanMassart/Tricks-and-Tips" class="navbar-brand btn btn-light">Lien vers le
-                répertoire Github</a>
+        <nav class="navbar fixed-bottom navbar-light bg-light dropup">
+            <button class="footer-navbar" type="button" data-toggle="collapse" data-target="#footer-navbar"
+                aria-controls="footer-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="footer-navbar-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="footer-navbar">
+                <div class="avbar-nav mr-auto">
+                    <!--Debut Rechercheurs-->
+                    <div class="searcher">
+                        <form class="form-inline my-3 my-lg-0">
+                            <select id="search_lang" class="custom-select mr-sm-3" label="search_lang">
+                                <option selected>...</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="php">PHP</option>
+                                <option value="css">CSS</option>
+                                <option value="html">HTML</option>
 
-            <!--Debut Rechercheurs-->
-            <div class="center">
-                <form class="form-inline my-3 my-lg-0">
-                    <select id="search_lang" class="custom-select mr-sm-3" label="search_lang">
-                        <option selected>...</option>
-                        <option value="javascript">Javascript</option>
-                        <option value="php">PHP</option>
-                        <option value="css">CSS</option>
-                        <option value="html">HTML</option>
-
-                    </select>
-                    <input class="form-control mr-sm-3" id="search_input" type="search"
-                        placeholder="Que recherchons-nous ?" aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" id="search_ok" type="submit">Rechercher</button>
-                </form>
+                            </select>
+                            <input class="form-control mr-sm-3" id="search_input" type="search"
+                                placeholder="Que recherchons-nous ?" aria-label="Search">
+                            <button class="btn btn-outline-info my-2 my-sm-0" id="search_ok"
+                                type="submit">Rechercher</button>
+                        </form>
+                    </div>
+                    <!--Fin Rechercheurs-->
+                </div>
             </div>
-            <!--Fin Rechercheurs-->
-
-            <p class="nav-link active">Créateurs: <a title="Vers le Github de Dzénetan Massart"
-                    href="https://github.com/DzenetanMassart">Massart D.</a> </p>
-            <span class="copyrighter">Massart.D ,2019</span>
         </nav>
     </footer>
     <script src="assets/js/cartes.js"></script>
