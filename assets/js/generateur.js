@@ -40,6 +40,8 @@ for (let ii = 0; ii < tritip.length; ii++) {
     if (tt.img_link != "nope") {
         generate += '<img class = "card-img-top"src ="' +
             tt.img_link +
+            '" title ="' +
+            tt.title +
             '" alt ="' +
             tt.title +
             '" >'
@@ -120,6 +122,8 @@ function tout() {
         if (tt.img_link != "nope") {
             generate += '<img class = "card-img-top"src ="' +
                 tt.img_link +
+                '" title ="' +
+                tt.title +
                 '" alt ="' +
                 tt.title +
                 '" >'
@@ -157,6 +161,8 @@ function gen(nom) {;
             if (tt.img_link != "nope") {
                 generate += '<img class = "card-img-top"src ="' +
                     tt.img_link +
+                    '" title ="' +
+                    tt.title +
                     '" alt ="' +
                     tt.title +
                     '" >'
@@ -211,6 +217,8 @@ function generators() {
             if (tt.img_link != "nope") {
                 generate += '<img class = "card-img-top"src ="' +
                     tt.img_link +
+                    '" title ="' +
+                    tt.title +
                     '" alt ="' +
                     tt.title +
                     '" >'

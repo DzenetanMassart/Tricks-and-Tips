@@ -6,29 +6,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css" />
     <meta name="full-screen" content="yes">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Tricks and Tips</title>
     <!--Debut Gestion des icones de l'application-->
     <link rel="icon" type="image/png" href="assets/pics/T_T.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/pics/favicon_package_v0.16/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/pics/favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="assets/pics/favicon_package_v0.16/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/pics/favicon_package_v0.16/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/pics/T_T.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/pics/favicon_package_v0.16/favicon-16x16.png">
     <link rel="manifest" href="assets/pics/favicon_package_v0.16/site.webmanifest.json">
-    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
-        integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
-        crossorigin="anonymous"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js" integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc" crossorigin="anonymous"></script>
     <link rel="mask-icon" href="assets/pics/favicon_package_v0.16/safari-pinned-tab.svg" color="#ff2800">
     <link rel="apple-touch-startup-image" href="assets/pics/T_T.png" />
     <meta name="apple-mobile-web-app-title" content="Tricks&amp;Tips">
@@ -44,10 +38,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="https://github.com/DzenetanMassart/Tricks-and-Tips"><img class="icone"
-                    src="assets/pics/T_T.png" alt="Vers le répertoire de Tricks-and-Tips" />Tricks and Tips</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a title="Renitialiser l'affichage" class="navbar-brand" href="https://dzenetanmassart.github.io/Tricks-and-Tips/"><img class="icone" src="assets/pics/T_T.png" alt="Vers le répertoire de Tricks-and-Tips" />Tricks and Tips</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -57,38 +49,36 @@
                         <a id="TOUT" class="nav-link" href="#">Tout <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a id="HTML" class="nav-link" href="#">HTML</a>
+                        <a id="HTML" class="nav-link" href="#" title="Afficher la documentation autour de HTML">HTML</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Afficher les options esthétiques: CSS,Bootstrap et WordPress">
                             Esthétique
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a id="CSS" class="dropdown-item" href="#">CSS</a>
-                            <a id="Bootstrap" class="dropdown-item" href="#">Bootstrap</a>
-                            <a id="WordPress" class="dropdown-item" href="#">WordPress</a>
+                            <a id="CSS" class="dropdown-item" href="#" title="Afficher la documentation autour du CSS">CSS</a>
+                            <a id="Bootstrap" class="dropdown-item" href="#" title="Afficher la documentation autour de Bootstrap">Bootstrap</a>
+                            <a id="WordPress" class="dropdown-item" href="#" title="Afficher la documentation autour de WordPress">WordPress</a>
 
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Afficher les options esthétiques: Javascript,React et PHP">
                             Programmation
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a id="JS" class="dropdown-item" href="#">Javascript</a>
-                            <a id="React" class="dropdown-item" href="#">React</a>
-                            <a id="PHP" class="dropdown-item" href="#">PHP</a>
+                            <a id="JS" class="dropdown-item" href="#" title="Afficher la documentation autour de Javascript">Javascript</a>
+                            <a id="React" class="dropdown-item" href="#" title="Afficher la documentation autour de React">React</a>
+                            <a id="PHP" class="dropdown-item" href="#" title="Afficher la documentation autour du PHP">PHP</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a id="Autre" class="nav-link" href="#">Autre</a>
+                        <a id="Autre" class="nav-link" href="#" title="Afficher la documentation non-classable">Autre</a>
                     </li>
                 </ul>
                 <li class="nav-item my-3 my-lg-0 navbar-nav ">
 
-                    <a id="Gen" class="nav-link" href="#">Générateurs</a>
+                    <a id="Gen" class="nav-link" href="#" title="Afficher la documentation intéractive et/ou génératrice">Générateurs</a>
                 </li>
             </div>
         </nav>
@@ -103,9 +93,8 @@
 
     <footer>
         <nav class="navbar fixed-bottom navbar-light bg-light dropup">
-            <button class="footer-navbar" type="button" data-toggle="collapse" data-target="#footer-navbar"
-                aria-controls="footer-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="footer-navbar-icon"></span>
+            <button class="footer-navbar" type="button" data-toggle="collapse" data-target="#footer-navbar" aria-controls="footer-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="footer-navbar-icon"><i class="fas fa-search"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="footer-navbar">
                 <div class="avbar-nav mr-auto">
@@ -120,10 +109,8 @@
                                 <option value="html">HTML</option>
 
                             </select>
-                            <input class="form-control mr-sm-3" id="search_input" type="search"
-                                placeholder="Que recherchons-nous ?" aria-label="Search">
-                            <button class="btn btn-outline-info my-2 my-sm-0" id="search_ok"
-                                type="submit">Rechercher</button>
+                            <input class="form-control mr-sm-3" id="search_input" type="search" placeholder="Que recherchons-nous ?" aria-label="Search">
+                            <button class="btn btn-outline-info my-2 my-sm-0" id="search_ok" type="submit">Rechercher</button>
                         </form>
                     </div>
                     <!--Fin Rechercheurs-->
