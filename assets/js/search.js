@@ -10,6 +10,8 @@ function search() {
         window.open('https://css-tricks.com/?s=' + document.getElementById("search_input").value + '&orderby=relevance&post_type=post%2Cpage%2Cguide');
     } else if (lang.value === 'html') {
         window.open('https://developer.mozilla.org/fr/search?q=' + document.getElementById("search_input").value + '&topic=html');
+    } else if (lang.value === 'wordpress') {
+        window.open('https://fr-be.wordpress.org/plugins/search/' + document.getElementById("search_input").value + '/');
     } else {
         document.getElementById("search_input").value = "Choisissez une techno' !"
     }
