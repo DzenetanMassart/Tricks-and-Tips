@@ -306,6 +306,14 @@ let tritip = [{
         "img_link": "https://media-6d6e.kxcdn.com/wp-content/uploads/2019/10/wp-marmite-halloween@2x.png",
         "desc": "Générateur de thème enfant pour WordPress afin d'éviter toutes pertes dans le CSS et les fonctions PHP ajoutés.",
         "link": "https://wpmarmite.com/creer-theme-enfant/"
+    },
+    {
+        "title": "Favicon & App Icon Generator",
+        "badge": "HTML",
+        "generateur": 1,
+        "img_link": "https://dpidudyah7i0b.cloudfront.net/favicon.ico",
+        "desc": "Générateur des différents formats d'image pour permettre à votre site web d'avoir une image dans l'onglet et dans l'icone d'application.",
+        "link": "https://www.favicon-generator.org/"
     }
 
 
