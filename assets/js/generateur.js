@@ -27,9 +27,12 @@ for (let ii = 0; ii < tritip.length; ii++) {
         generate += ' React';
     } else if (tt.badge === "PHP") {
         generate += ' PHP';
-    } else {
-        generate += '';
-    }
+    } else if (tt.badge === " ") {
+        generate += ' GEN';
+    } else {}
+
+
+
 
     generate += '">' +
         tt.badge +

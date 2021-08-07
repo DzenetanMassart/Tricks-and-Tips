@@ -56,7 +56,7 @@ let tritip = [{
         "title": "Les secrets des balises structurelles du HTML5 sémantique",
         "badge": "HTML",
         "generateur": 0,
-        "img_link": "https://cdn.semrush.com/blog/static/media/be/44/be448deca7a20b5a01d06f4ae79c0de6/resize/885x-/blogheaderhtml5-01-01.png",
+        "img_link": "https://static.semrush.com/blog/uploads/media/00/1e/001e3c0f4ecb41a56798f9a14152c28b/semantic-html5-guide.svg",
         "desc": "Un topo sur la structure en HTML5.",
         "link": "https://fr.semrush.com/blog/balises-structurelles-html-semantique/"
     },
@@ -64,7 +64,7 @@ let tritip = [{
         "title": "JSLint",
         "badge": "Javascript",
         "generateur": 0,
-        "img_link": "http://www.jslint.com/image/jslintpill.gif",
+        "img_link": "https://www.jslint.com/asset-image-jslint-512.svg",
         "desc": "Rectifions la qualité de nos codes Javascript avec le logiciel en ligne de DOUGLAS CROCKFORD.",
         "link": "http://jslint.com/"
     },
@@ -72,14 +72,14 @@ let tritip = [{
         "title": "Converting jQuery to JavaScript",
         "badge": "Javascript",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://github.githubassets.com/favicons/favicon-dark.png",
         "desc": "Un résumé de comment remplacer les notations de JQuery en Javascript.",
         "link": "https://github.com/jackocnr/intl-tel-input/wiki/Converting-jQuery-to-JavaScript"
     }, {
         "title": "Dimple.js",
         "badge": "Javascript",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "http://dimplejs.org/images/areas_dual_measure.jpg",
         "desc": "Un utilitaire de D3 Data Visualisation pour refaire des graphiques.",
         "link": "http://dimplejs.org/"
     },
@@ -95,7 +95,7 @@ let tritip = [{
         "title": "Bootstrap Code Editor",
         "badge": "Bootstrap",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "https://angrytools.com/include/img/thumb/sm/bootstrap-editor.webp",
         "desc": "Un éditeur mettant en avant les différentes features de Bootstrap.",
         "link": "http://angrytools.com/bootstrap/editor/"
     },
@@ -111,7 +111,7 @@ let tritip = [{
         "title": "CSS Media Query",
         "badge": "CSS",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://angrytools.com/include/img/thumb/sm/css-mediaquery.webp",
         "desc": "Un testeur de Media Query qui offre les normes de taille des écrans et les codes.",
         "link": "http://angrytools.com/css/mediaquery/"
     },
@@ -119,7 +119,7 @@ let tritip = [{
         "title": "CSSline",
         "badge": "CSS",
         "generateur": 0,
-        "img_link": "http://cssline.com/images/logo_cssline.png",
+        "img_link": "data:image/png;base64,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",
         "desc": "Une gallerie de pages CSS magnifiques ou complexes pour s'inspirer.",
         "link": "http://cssline.com/"
     },
@@ -151,7 +151,7 @@ let tritip = [{
         "title": "CSS Grid Generator",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "https://cssgrid-generator.netlify.app/favicon.ico",
         "desc": "Créer une grille en CSS avec une interface graphique intéractive.",
         "link": "https://cssgrid-generator.netlify.com/"
     },
@@ -167,7 +167,7 @@ let tritip = [{
         "title": "PIXEL ART TO CSS",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "https://www.pixelartcss.com/apple-touch-icon.png",
         "desc": "Déssiner et animer en CSS.",
         "link": "https://www.pixelartcss.com/"
     },
@@ -180,22 +180,6 @@ let tritip = [{
         "link": "https://enjoycss.com/"
     },
     {
-        "title": "CSSFX",
-        "badge": "CSS",
-        "generateur": 0,
-        "img_link": "https://cssfx.dev/_nuxt/img/ced4df1.svg",
-        "desc": "Gallerie d'animation CSS avec les codes ! Le site propose aussi des images animées créées en CSS.",
-        "link": "https://cssfx.dev/"
-    },
-    {
-        "title": "Font Awesome to base64",
-        "badge": "Javascript",
-        "generateur": 1,
-        "img_link": "nope",
-        "desc": "Récupéré le code d'une icone de FontAwesome en base64 pour l'intégrer dans vos présentations en Javascript.",
-        "link": "http://fatopng.com/fontawesome-to-base64"
-    },
-    {
         "title": "JS.do Online JavaScript Editor",
         "badge": "HTML",
         "generateur": 1,
@@ -205,17 +189,17 @@ let tritip = [{
     },
     {
         "title": "Emmet Documentation",
-        "badge": "",
+        "badge": " ",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://docs.emmet.io/-/3755353140/favicon.ico",
         "desc": "Toute la documentation sur l'extension Emmet qui permet de compléter automatiquement ce qu'on inscit dans un locigiel de coding.",
         "link": "https://docs.emmet.io/cheat-sheet/"
     },
     {
         "title": "codesandbox.io",
-        "badge": "",
+        "badge": " ",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiBoZWlnaHQ9IjIzIiB2aWV3Qm94PSIwIDAgMjMgMjMiIHdpZHRoPSIyMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0ibTExLjUgMTEuNjE2NnYxMS4xNzA0Yy4xOTQ1IDAgLjMyMjMtLjA0MjIuNDk2OS0uMTQxOWw4Ljk0NDUtNS4xMTExYy4zNTMxLS4yMDI0LjQ5NzEtLjUxNTguNDk3MS0uOTIyOXYtMTAuMzY0MTljMC0uMjA0Mi0uMDQzLS4zMjYzNi0uMTQyMi0uNDk2OTFsLTkuNTEwMiA1LjM3MzVjLS4xNzY5LjEwMTEtLjI4NjEuMjg5My0uMjg2MS40OTMxem00Ljk2OTEgNi40MTQzYzAgLjI4MzktLjEwNjQuNDI1OS0uMzU0OS41Njc5bC0yLjk4MTUgMS43MDM3Yy0uMjEyOS4xNDE5LS40OTY5LjA3MS0uNDk2OS0uMjEzdi03LjU5NTdjMC0uMjAzMi4xNzg4LS40NjY1LjM1NDktLjU2NzlsNi44MTQ5LTMuOTA0MjljLjE4OTMtLjEwODk0LjM1NDkuMDY1NTQuMzU0OS4yODM5NXY0LjA0NjM0YzAgLjIwOTctLjA5ODkuMzk4Mi0uMjg0LjQ5NjlsLTMuMDUyNCAxLjYzMjdjLS4xODUxLjA5ODctLjM1NS4yODcxLS4zNTUuNDk2OXoiIGZpbGw9IiM5OTkiLz48cGF0aCBkPSJtMS41NjE1MiAxNi42MTF2LTEwLjM2NDE2YzAtLjQwNzU5LjIxNDAyLS43OTE2LjU2NzktLjk5MzgzbDguNjYwNDgtNC44OTgxNDZjLjE4NjYtLjA5ODg4My40OTY5LS4xNDE5NzMuNzA5OS0uMTQxOTczcy41NDE1LjA1Mjc0MS43MDk5LjE0MTk3NWw4LjU4OTUgNC44OTgxNDRjLjE2OTkuMTAwNDIuNDAwOC4zMzE3Mi40OTY5LjQ5NjkybC05LjUxMjQgNS4zOTUwN2MtLjE3NjkuMTAxMS0uMjgzOS4yOTMxLS4yODM5LjQ5Njl2MTEuMTQ1MWMtLjE5NDUgMC0uMzkzMy0uMDQyMy0uNTY3OS0uMTQybC04LjczMTQ5LTUuMDQwMWMtLjM1Mzg5LS4yMDIzLS42Mzg4OS0uNTg2My0uNjM4ODktLjk5Mzl6bTEuMjc3NzgtOC4zMDU1MnY0LjA0NjMyYzAgLjI4MzkuMDcwOTkuNDI1OS4zNTQ5NC41Njc5bDIuOTgxNDggMS43MDM3Yy4yODM5NS4xNDIuMzU0OTQuMzU0OS4zNTQ5NC41Njc5djIuODM5NWMwIC4yODM5LjA3MDk5LjQyNTkuMzU0OTQuNTY3OWwyLjk4MTQ4IDEuNzAzN2MuMjgzOTIuMTQyLjQ5NjkyLjA3MS40OTY5Mi0uMjEzdi03LjU5NTZjMC0uMjEzLS4wNzEtLjQyNi0uMzU0OS0uNTY3OWwtNi42NzI4OS0zLjgzMzM4Yy0uMjEyOTYtLjE0MTk3LS40OTY5MS0uMDcwOTktLjQ5NjkxLjIxMjk2em0xMS42NDItNC44MjcxNi0yLjYyNjYgMS40OTA3NGMtLjIxMjkuMTQxOTgtLjQ5NjkuMTQxOTgtLjcwOTggMGwtMi42MjY1OS0xLjQ5MDc0Yy0uMTcyODktLjA5NzcyLS4zOTQ3Mi0uMDk3MjItLjU2NzkgMGwtMy4yNjU0MyAxLjg0NTY4Yy0uMjgzOTUuMTQxOTgtLjI4Mzk1LjQyNTkzIDAgLjU2NzlsNi41MzA4MiAzLjc2MjM1Yy4xNzQ4LjEwMDA2LjM5MzIuMTAwMDYuNTY3OSAwbDYuNTMwOS0zLjc2MjM1Yy4yMTMtLjE0MTk3LjI4NC0uNDI1OTIgMC0uNTY3OWwtMy4yNjU0LTEuODQ1NjhjLS4xNzMyLS4wOTcyMi0uMzk1LS4wOTc3Mi0uNTY3OSAweiIgZmlsbD0iI2YyZjJmMiIvPjwvZz48L3N2Zz4=",
         "desc": "Un logiciel comme VScode mais en ligne et qui peut importer React et autres frameworks pour coder.",
         "link": "https://codesandbox.io/"
     },
@@ -223,7 +207,7 @@ let tritip = [{
         "title": "Google Font",
         "badge": "CSS",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "http://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/opengraph_color.png",
         "desc": "Obtenez gratuitement des polices de caractère à importer dans vos fichiers CSS.",
         "link": "https://fonts.google.com/"
     },
@@ -231,7 +215,7 @@ let tritip = [{
         "title": "Ultimate CSS Gradient Generator",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "https://www.colorzilla.com/firefox/images/logo-50.png",
         "desc": "Gérer les gradients, les images, l'opacité,... avec une interface graphique.",
         "link": "https://www.colorzilla.com/gradient-editor/"
     },
@@ -239,7 +223,7 @@ let tritip = [{
         "title": "React.js cheatsheet",
         "badge": "React",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://devhints.io/assets/favicon.png",
         "desc": "Une synthèse complète de l'ensemble des différentes méthodes de React.",
         "link": "https://devhints.io/react"
     },
@@ -255,7 +239,7 @@ let tritip = [{
         "title": "Can I use____?",
         "badge": "CSS",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://caniuse.com/img/favicon-128.png",
         "desc": "Comparateur des capacités des différents navigateurs.",
         "link": "https://caniuse.com/"
     },
@@ -277,7 +261,7 @@ let tritip = [{
     },
     {
         "title": "Tania Rascia Blog",
-        "badge": "",
+        "badge": " ",
         "generateur": 0,
         "img_link": "nope",
         "desc": "Un blog présentant beaucoup d'API différentes ainsi que du Javascript,du CSS,du PHP,...",
@@ -285,7 +269,7 @@ let tritip = [{
     },
     {
         "title": "Whatruns",
-        "badge": "",
+        "badge": " ",
         "generateur": 1,
         "img_link": "https://www.whatruns.com/images/home/WhatRuns-logo.svg",
         "desc": "Générer un rapport des technologies utilisées sur un site web.",
