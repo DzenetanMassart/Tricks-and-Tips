@@ -1,358 +1,519 @@
-    $C1:black;
-    $C2:rgb(255, 255, 255);
-    $C3:rgb(0, 42, 56);
-    @mixin F1() {
-        color: $C1;
-        font-family: 'Kalam', cursive;
-        text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
-        font-weight: bold;
-    }
-    
-    @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-    #brand {
+$C1:black;
+$C2:rgb(255, 255, 255);
+$C3:rgb(0, 42, 56);
+@mixin F1() {
+    color: $C1;
+    font-family: 'Kalam', cursive;
+    text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+#brand {
+    font-family: 'Nerko One', cursive;
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    a {
         font-family: 'Nerko One', cursive;
-        font-size: 1.5rem;
+        font-size: large;
     }
-    
-    .nav-item {
-        a {
-            font-family: 'Nerko One', cursive;
-            font-size: large;
-        }
-    }
-    
-    // Version en paysage
-    @media (orientation:landscape) {
-        body {
-            margin: 0;
-            overflow-y: hidden;
-            background-color: rgb(17, 17, 17) !important;
-        }
-        .icone {
-            width: 25px;
-            height: 25px;
-        }
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+    overflow: hidden;
+}
+
+// Version en paysage
+@media (orientation:landscape) {
+    .scrollbar {
+        margin-top: 15px;
+        overflow-y: scroll;
+        height: 80vh;
         section {
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-            width: 86%;
-            margin: auto auto;
-            height: 88vh;
-            padding: 50px;
-            margin-bottom: 25px;
-            background-color: rgb(17, 17, 17) !important;
-            &::-webkit-scrollbar {
-                width: 15px;
-            }
-            &::-webkit-scrollbar-track {
-                border: 1px solid $C3;
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-track-piece {
-                background-color: $C2;
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: black;
-                border-radius: 10px;
-                &:hover {
-                    background-color: $C3;
-                }
-            }
-            .row {
-                margin-right: 0 !important;
-            }
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            scroll-behavior: smooth;
+            flex: 1;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-start;
+            min-height: 0;
+            margin-top: 15px;
             a {
-                .card {
-                    border: 1px solid $C1;
-                    padding: 5px;
-                    margin-bottom: 10px;
-                    width: 480px;
-                    height: 300px;
-                    margin: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+                justify-content: center;
+                align-content: center;
+                margin-bottom: 15px;
+                transform: scale(1.0);
+                transition: all 0.09s;
+                color: white;
+                margin-left: 15px;
+                margin-right: 15px;
+                &:hover {
+                    text-decoration: none;
+                    color: grey;
+                }
+                .ensemble {
                     transform: scale(1.0);
-                    transition: all 0.9s;
-                    background-color: rgb(39, 39, 39);
-                    .card-title {
-                        left: 0px;
-                        margin-left: 10px;
-                        top: 0;
-                        z-index: 2;
-                        font-size: 0.8rem;
-                        width: 60%;
-                        color: $C2;
-                        text-shadow: 0 1px 0 $C3;
+                    transition: all 0.09s;
+                    width: 400px;
+                    height: 350px;
+                    flex-direction: column;
+                    background-color: #343a40 !important;
+                    &:hover {
+                        transform: scale(0.9);
                     }
-                    .card-img-top {
-                        z-index: 2;
-                        position: absolute;
-                        width: 25%;
-                        right: 15px;
-                        top: 55px;
-                        margin: auto auto;
-                    }
-                    .badge {
-                        z-index: 1;
-                        height: 100%;
-                        position: absolute;
-                        width: 150px;
-                        top: 0;
-                        right: 0;
-                    }
-                    .card-body {
-                        height: 200px;
-                        .card-text {
+                    .part_un {
+                        border-top: 1px solid $C2;
+                        border-left: 1px solid $C2;
+                        border-bottom: 1px solid $C2;
+                        height: 350px;
+                        h3 {
+                            font-size: 20px;
+                            text-align: justify;
+                        }
+                        p {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            bottom: 0;
-                            left: 0;
                             text-align: center;
-                            height: 270px;
-                            width: 50%;
+                        }
+                    }
+                    .part_deux {
+                        border-top: 1px solid $C2;
+                        border-right: 1px solid $C2;
+                        border-bottom: 1px solid $C2;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        .badge {
                             position: absolute;
-                            z-index: 0;
-                            text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-                            span {
-                                vertical-align: middle;
-                                font-size: 1.1em;
-                                &::selection {
-                                    color: $C1;
-                                    background-color: rgba(0, 119, 255, 0.479);
-                                }
-                            }
+                            top: 0;
+                        }
+                        span {
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                            @include F1();
+                            position: absolute;
+                            bottom: 0;
+                        }
+                        img {
+                            display: block;
+                            filter: drop-shadow(0 0 1px $C1);
+                            object-fit: scale-down;
+                            width: 100%;
+                            padding: 5px;
                         }
                     }
                 }
-                &:hover {
-                    transform: scale(0.99);
-                }
             }
-        }
-        .generateur {
-            z-index: 1;
-            color: $C2;
-            text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-            white-space: nowrap;
-            vertical-align: baseline;
-            height: 20px;
-            position: absolute;
-            width: 150px;
-            top: 25px;
-            right: 0;
-            border: solid 1px $C1;
-            border-left: solid 2px $C1;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 12px;
-            background: black;
         }
     }
-    
-    // Version en portrait
-    @media (orientation: portrait) {
-        body {
-            margin: 0;
-            overflow-y: hidden;
-            background-color: rgb(20, 20, 20) !important;
-        }
-        .icone {
-            width: 25px;
-            height: 25px;
-        }
+}
+
+// Version en portrait
+@media (orientation: portrait) {
+    .scrollbar {
+        margin-top: 15px;
+        overflow-y: scroll;
+        height: 80vh;
+        margin: 10px 10px;
         section {
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-            width: 86%;
-            margin: auto auto;
-            height: 88vh;
-            padding: 50px;
-            margin-bottom: 25px;
-            background-color: rgb(20, 20, 20) !important;
-            &::-webkit-scrollbar {
-                width: 15px;
-            }
-            &::-webkit-scrollbar-track {
-                border: 1px solid $C3;
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-track-piece {
-                background-color: $C2;
-                border-radius: 10px;
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: black;
-                border-radius: 10px;
-                &:hover {
-                    background-color: $C3;
-                }
-            }
-            .row {
-                margin-right: 0 !important;
-            }
+            flex-direction: column!important;
+            display: flex;
+            flex-wrap: wrap;
             a {
-                .card {
-                    border: 1px solid $C2;
-                    padding: 5px;
-                    margin-bottom: 10px;
-                    width: 60vw;
-                    height: 25vh;
-                    margin: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+                justify-content: center;
+                align-content: center;
+                padding: 0 4px;
+                margin-bottom: 10px;
+                transform: scale(1.0);
+                transition: all 0.09s;
+                color: white;
+                &:hover {
+                    text-decoration: none;
+                    color: grey;
+                }
+                .ensemble {
                     transform: scale(1.0);
-                    transition: all 0.9s;
-                    background-color: #272727;
-                    .card-title {
-                        left: 0;
-                        margin-left: 10px;
-                        top: 0;
-                        z-index: 2;
-                        font-size: 2.1vh;
-                        width: 60%;
-                        color: $C2;
-                        text-shadow: 0 1px 0 $C1;
+                    transition: all 0.09s;
+                    width: 95vw;
+                    flex-direction: column;
+                    background-color: #343a40 !important;
+                    &:hover {
+                        transform: scale(0.9);
                     }
-                    .card-img-top {
-                        z-index: 2;
-                        position: absolute;
-                        width: 25%;
-                        right: 5px;
-                        top: 55px;
-                        margin: auto auto;
-                    }
-                    .badge {
-                        z-index: 1;
-                        height: 100%;
-                        position: absolute;
-                        width: 30%;
-                        top: 0;
-                        right: 0;
-                    }
-                    .card-body {
-                        height: 200px;
-                        .card-text {
+                    .part_un {
+                        border-top: 1px solid $C2;
+                        border-left: 1px solid $C2;
+                        border-right: 1px solid $C2;
+                        display: block;
+                        width: 100%;
+                        max-width: none !important;
+                        flex: none;
+                        height: 100px;
+                        p {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
+                            text-align: center;
+                        }
+                    }
+                    .part_deux {
+                        border-left: 1px solid $C2;
+                        border-right: 1px solid $C2;
+                        border-bottom: 1px solid $C2;
+                        width: 95vw;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        height: 100px;
+                        .badge {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                        span {
+                            display: block;
+                            text-align: right;
+                            @include F1();
+                        }
+                        img {
+                            display: block;
+                            filter: drop-shadow(0 0 1px $C1);
+                            object-fit: contain;
+                            height: 100px;
+                            max-width: 150px;
+                            padding: 10px;
+                            position: absolute;
                             bottom: 0;
                             left: 0;
-                            text-align: center;
-                            height: 20vh;
-                            width: 65%;
-                            position: absolute;
-                            z-index: 0;
-                            text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-                            span {
-                                vertical-align: middle;
-                                font-size: 1.5vh;
-                                &::selection {
-                                    color: $C1;
-                                    background-color: rgba(0, 119, 255, 0.479);
-                                }
-                            }
                         }
                     }
                 }
-                &:hover {
-                    transform: scale(0.99);
+            }
+        }
+    }
+}
+
+// Les badges
+.Javascript {
+    background-color: rgba(251, 255, 0, 0.445);
+    @include F1()
+}
+
+.CSS {
+    background-color: rgba(245, 24, 0, 0.555);
+    @include F1()
+}
+
+.HTML {
+    background-color: rgba(17, 0, 255, 0.466);
+    @include F1()
+}
+
+.Bootstrap {
+    background-color: rgba(5, 0, 73, 0.274);
+    @include F1()
+}
+
+.WordPress {
+    background-color: rgba(0, 176, 230, 0.493);
+    @include F1()
+}
+
+.React {
+    background-color: #62dafb75;
+    @include F1()
+}
+
+.PHP {
+    background-color: #9062fb79;
+    @include F1()
+}
+
+.GEN {
+    background-color: #ffffff79;
+}
+
+// La barre de défilement
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+
+.presentation {
+    position: relative;
+    width: 95vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    h2 {
+        border-radius: 0 0 50px 50px;
+        display: block;
+        border-bottom: 2px grey solid;
+        width: 100%;
+        background-color: $C2;
+        color: $C1;
+        text-align: center;
+        ;
+    }
+    p {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .separation {
+        display: flex;
+        width: 50vw;
+        margin: auto auto;
+        ul {
+            list-style-type: none;
+            text-align: center;
+            border: 2px grey solid;
+            width: 50%;
+            li {
+                border: 1px rgb(255, 255, 255) solid;
+                background-color: black;
+                color: white;
+                &:nth-child(2n-1) {
+                    background-color: white;
+                    color: black;
                 }
             }
         }
-        .generateur {
-            z-index: 1;
-            color: $C2;
-            text-shadow: $C1 1px 1px, $C1 -1px 1px, $C1 -1px -1px, $C1 1px -1px;
-            white-space: nowrap;
-            vertical-align: baseline;
-            height: 20px;
-            position: absolute;
-            width: 30%;
-            top: 25px;
-            right: 0;
-            border: solid 1px $C1;
-            border-left: solid 2px $C1;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 10px;
-            background: black;
-        }
     }
-    
-    // Les badges
-    .Javascript {
-        background-color: rgba(251, 255, 0, 0.445);
-        @include F1()
-    }
-    
-    .CSS {
-        background-color: rgba(245, 24, 0, 0.555);
-        @include F1()
-    }
-    
-    .HTML {
-        background-color: rgba(17, 0, 255, 0.466);
-        @include F1()
-    }
-    
-    .Bootstrap {
-        background-color: rgba(5, 0, 73, 0.274);
-        @include F1()
-    }
-    
-    .WordPress {
-        background-color: rgba(0, 176, 230, 0.493);
-        @include F1()
-    }
-    
-    .React {
-        background-color: #62dafb75;
-        @include F1()
-    }
-    
-    .PHP {
-        background-color: #9062fb79;
-        @include F1()
-    }
-    
-    .GEN {
-        background-color: #ffffff79;
-    }
-    
-    // Travail sur le footer
-    footer {
+    color: white;
+    margin:auto auto;
+}
+
+// La sélection de la page d'accueil
+@media (orientation:landscape) {
+    .index_selection {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        scroll-behavior: smooth;
+        flex: 1;
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-start;
+        min-height: 0;
+        margin-top: 15px;
         a {
-            color: $C1;
-            background-color: $C3;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+            align-content: center;
+            margin-bottom: 15px;
+            transform: scale(1.0);
+            transition: all 0.09s;
+            color: white;
+            margin-left: 15px;
+            margin-right: 15px;
             &:hover {
-                color: $C1;
-                background-color: $C2;
-                margin-top: 1px;
+                text-decoration: none;
+                color: grey;
+            }
+            .ensemble {
+                transform: scale(1.0);
+                transition: all 0.09s;
+                width: 400px;
+                height: 350px;
+                flex-direction: column;
+                background-color: #343a40 !important;
+                &:hover {
+                    transform: scale(0.9);
+                }
+                .part_un {
+                    border-top: 1px solid $C2;
+                    border-left: 1px solid $C2;
+                    border-bottom: 1px solid $C2;
+                    height: 350px;
+                    h3 {
+                        font-size: 20px;
+                        text-align: justify;
+                    }
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
+                .part_deux {
+                    border-top: 1px solid $C2;
+                    border-right: 1px solid $C2;
+                    border-bottom: 1px solid $C2;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    .badge {
+                        position: absolute;
+                        top: 0;
+                    }
+                    span {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        @include F1();
+                        position: absolute;
+                        bottom: 0;
+                    }
+                    img {
+                        display: block;
+                        filter: drop-shadow(0 0 1px $C1);
+                        object-fit: scale-down;
+                        width: 100%;
+                        padding: 5px;
+                    }
+                }
             }
         }
-        p {
-            margin-left: 0;
-            margin-top: auto;
-            margin-bottom: auto;
-            text-align: right;
-        }
-        .searcher {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .footer-navbar {
-            color: red;
-            border-color: red;
-            height: 50px;
-            width: 50px;
-        }
-        .footer-navbar-icon {
-            background-image: url("../pics/T_T.png");
-            display: inline-block;
-            width: 1.5em;
-            height: 1.5em;
-            vertical-align: middle;
-            content: "";
-            background: no-repeat center center;
-            background-size: 100% 100%;
+    }
+}
+
+// Version en portrait
+@media (orientation: portrait) {
+    .index_selection {
+        flex-direction: column!important;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+            align-content: center;
+            padding: 0 4px;
+            margin-bottom: 10px;
+            transform: scale(1.0);
+            transition: all 0.09s;
+            color: white;
+            &:hover {
+                text-decoration: none;
+                color: grey;
+            }
+            .ensemble {
+                transform: scale(1.0);
+                transition: all 0.09s;
+                width: 95vw;
+                flex-direction: column;
+                background-color: #343a40 !important;
+                &:hover {
+                    transform: scale(0.9);
+                }
+                .part_un {
+                    border-top: 1px solid $C2;
+                    border-left: 1px solid $C2;
+                    border-right: 1px solid $C2;
+                    display: block;
+                    width: 100%;
+                    max-width: none !important;
+                    flex: none;
+                    height: 100px;
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
+                .part_deux {
+                    border-left: 1px solid $C2;
+                    border-right: 1px solid $C2;
+                    border-bottom: 1px solid $C2;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    height: 100px;
+                    max-width: none !important;
+                    flex: none;
+                    .badge {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                    span {
+                        display: block;
+                        text-align: right;
+                        @include F1();
+                    }
+                    img {
+                        display: block;
+                        filter: drop-shadow(0 0 1px $C1);
+                        object-fit: contain;
+                        height: 100px;
+                        max-width: 150px;
+                        padding: 10px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
         }
     }
+}
