@@ -29,6 +29,20 @@ body {
     overflow: hidden;
 }
 
+.searcher {
+    select {
+        width: 95px;
+    }
+    input {
+        width: 35vw;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+}
+
 // Version en paysage
 @media (orientation:landscape) {
     .scrollbar {
@@ -127,8 +141,8 @@ body {
     .scrollbar {
         margin-top: 15px;
         overflow-y: scroll;
-        height: 80vh;
-        margin: 10px 10px;
+        height: 78vh;
+        margin: 5px 5px;
         section {
             flex-direction: column!important;
             display: flex;
@@ -294,6 +308,24 @@ body {
     background: transparent;
 }
 
+footer {
+    background-color: #343a40 !important;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    p {
+        color: white;
+        a {
+            color: grey;
+            &:hover {
+                color: rgb(160, 160, 160);
+            }
+        }
+    }
+}
+
+// Tout pour l'index
 h1 {
     color: white;
     text-align: center;
@@ -322,13 +354,14 @@ h1 {
     }
     .separation {
         display: flex;
-        width: 50vw;
+        width: 60vw;
         margin: auto auto;
         ul {
             list-style-type: none;
             text-align: center;
             border: 2px grey solid;
             width: 50%;
+            padding: 0;
             li {
                 border: 1px rgb(255, 255, 255) solid;
                 background-color: black;
