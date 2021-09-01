@@ -99,7 +99,7 @@ document.getElementById("JS").addEventListener("click", function() { gen("Javasc
 document.getElementById("React").addEventListener("click", function() { gen("React"); });
 document.getElementById("PHP").addEventListener("click", function() { gen("PHP"); });
 
-document.getElementById("Gen").addEventListener("click", generators);
+document.getElementById("Gen").addEventListener("click", function() { generators; });
 
 
 /*
