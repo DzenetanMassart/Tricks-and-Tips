@@ -33,7 +33,7 @@ body {
   .scrollbar {
     margin-top: 15px;
     overflow-y: scroll;
-    height: 80vh;
+    height: 83vh;
   }
   .scrollbar section {
     -ms-flex-wrap: wrap;
@@ -170,7 +170,7 @@ body {
   .scrollbar {
     margin-top: 15px;
     overflow-y: scroll;
-    height: 78vh;
+    height: 81vh;
     margin: 5px 5px;
   }
   .scrollbar section {

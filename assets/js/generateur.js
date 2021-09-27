@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (url_result === "Javascript") { gen("Javascript"); };
     if (url_result === "React") { gen("Ract"); };
     if (url_result === "PHP") { gen("PHP"); };
-    if (url_result === "GEN") { generators; };
+    if (url_result === "GEN") { generators(); };
 
 });
 /*
@@ -99,7 +99,7 @@ document.getElementById("JS").addEventListener("click", function() { gen("Javasc
 document.getElementById("React").addEventListener("click", function() { gen("React"); });
 document.getElementById("PHP").addEventListener("click", function() { gen("PHP"); });
 
-document.getElementById("Gen").addEventListener("click", function() { generators; });
+document.getElementById("Gen").addEventListener("click", function() { generators(); });
 
 
 /*
@@ -204,7 +204,6 @@ function generators() {
         let tt = (tritip[ii]);
 
         if (tt.generateur === 1) {
-
             generate += '<a href="' + tt.link + '" target="_blank" ><div class="row ensemble"><div class="col-12"><div class="row"><div class="col-8 part_un"> <h3 class="text-center">' +
                 tt.title + '</h3> <p>' + tt.desc + '</p></div><div class="col-md-4 part_deux ' + tt.badge + '">';
             generate += '<h4 class="badge ' + tt.badge + '">' + tt.badge + '</h4>';

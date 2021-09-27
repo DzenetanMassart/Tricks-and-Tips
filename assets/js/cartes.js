@@ -49,7 +49,7 @@ let tritip = [{
         "title": "Bootstrap 4 Cheat Sheet",
         "badge": "Bootstrap",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "https://hackerthemes.com/bootstrap-cheatsheet/images/ogCheatSheet.png",
         "desc": "Toutes les class de Bootstrap 4 en une page permettant de voir leurs codes et les visuels.",
         "link": "https://hackerthemes.com/bootstrap-cheatsheet/"
     }, {
@@ -87,7 +87,7 @@ let tritip = [{
         "title": "CSS Animate (BETA)",
         "badge": "CSS",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "https://cssanimate.com/favicon.ico",
         "desc": "Créer des animations en CSS avec une interface et une pré-visualisation.",
         "link": "http://cssanimate.com/"
     },
@@ -159,7 +159,7 @@ let tritip = [{
         "title": "Tutoriel:Programmez en orienté objet en PHP",
         "badge": "PHP",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://sdz-upload.s3.amazonaws.com/prod/upload/zozor-temoignage.png",
         "desc": "Toute la documentation possible autour du PHP avec sa programmation orientée objet.",
         "link": "http://sdz.tdct.org/sdz/rogrammez-en-oriente-objet-en-php.html"
     },
@@ -247,7 +247,7 @@ let tritip = [{
         "title": "The Road To Learn React",
         "badge": "React",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://www.bypeople.com/wp-content/uploads/2017/02/road-to-learn-react-pdf-ebook.jpg",
         "desc": "Document PDF anglophone complet sur React.",
         "link": "https://contattafiles.s3.us-west-1.amazonaws.com/tnt14094/kDSoSdPUk3nlO7b/the-road-to-learn-react.pdf"
     },
@@ -255,7 +255,7 @@ let tritip = [{
         "title": "html5pattern",
         "badge": "PHP",
         "generateur": 1,
-        "img_link": "nope",
+        "img_link": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;><text y=&quot;.9em&quot; font-size=&quot;90&quot;>⌨️</text></svg>",
         "desc": 'Une banque pour les "preg_match" de PHP afin d\'effectuer des recherches de correspondance avec des expressions rationnelles standards. ',
         "link": "http://html5pattern.com/"
     },
@@ -263,7 +263,7 @@ let tritip = [{
         "title": "Tania Rascia Blog",
         "badge": " ",
         "generateur": 0,
-        "img_link": "nope",
+        "img_link": "https://www.taniarascia.com/favicon-32x32.png?v=07f5a193c5a1357203c0389b1002fb71",
         "desc": "Un blog présentant beaucoup d'API différentes ainsi que du Javascript,du CSS,du PHP,...",
         "link": "https://www.taniarascia.com/blog/"
     },
