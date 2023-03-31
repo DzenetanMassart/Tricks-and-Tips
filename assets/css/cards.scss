@@ -1,0 +1,93 @@
+$C1:black;
+$C2:rgb(255, 255, 255);
+$C3:rgb(0, 42, 56);
+*{
+    text-decoration: none !important;
+}
+@mixin F1() {
+    color: $C1;
+    font-family: 'Kalam', cursive;
+    text-shadow: $C2 1px 1px, $C2 -1px 1px, $C2 -1px -1px, $C2 1px -1px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+.carte{
+width:350px;
+height: 400px;
+margin:10px;
+ text-align: center;
+        img{
+            display: inline-block;
+            height:10%;
+            text-align: center;
+filter: drop-shadow(0 0 1px $C1);
+ object-fit: scale-down;
+        }
+        p{
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .lien{
+  position: absolute;
+  bottom:0;
+  left:0;
+  font-size: 8px;
+        }
+        .generateur{
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom:0;
+  right:0;
+        }
+}
+
+
+
+// Les badges
+.Javascript {
+    background-color: rgba(251, 255, 0, 0.445);
+    @include F1()
+}
+
+.CSS {
+    background-color: rgba(245, 24, 0, 0.555);
+    @include F1()
+}
+
+.HTML {
+    background-color: rgba(17, 0, 255, 0.466);
+    @include F1()
+}
+
+.Bootstrap {
+    background-color: rgba(5, 0, 73, 0.274);
+    @include F1()
+}
+
+.WordPress {
+    background-color: rgba(0, 176, 230, 0.493);
+    @include F1()
+}
+
+.React {
+    background-color: #62dafb75;
+    @include F1()
+}
+
+.PHP {
+    background-color: #9062fb79;
+    @include F1()
+}
+
+.GEN {
+    background-color: #ffffff79;
+}

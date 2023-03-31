@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+* {
+  text-decoration: none !important;
+}
+
+.carte {
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+}
+.carte img {
+  display: inline-block;
+  height: 10%;
+  text-align: center;
+  filter: drop-shadow(0 0 1px black);
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.carte p {
+  text-align: center;
+  text-decoration: none;
+}
+.carte .lien {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 8px;
+}
+.carte .generateur {
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.Javascript {
+  background-color: rgba(251, 255, 0, 0.445);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.CSS {
+  background-color: rgba(245, 24, 0, 0.555);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.HTML {
+  background-color: rgba(17, 0, 255, 0.466);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.Bootstrap {
+  background-color: rgba(5, 0, 73, 0.274);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.WordPress {
+  background-color: rgba(0, 176, 230, 0.493);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.React {
+  background-color: rgba(98, 218, 251, 0.4588235294);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.PHP {
+  background-color: rgba(144, 98, 251, 0.4745098039);
+  color: black;
+  font-family: "Kalam", cursive;
+  text-shadow: rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px 1px, rgb(255, 255, 255) -1px -1px, rgb(255, 255, 255) 1px -1px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.GEN {
+  background-color: rgba(255, 255, 255, 0.4745098039);
+}/*# sourceMappingURL=cards.css.map */

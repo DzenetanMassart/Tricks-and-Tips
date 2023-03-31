@@ -32,49 +32,51 @@ for (let ii = 0; ii < tritip.length; ii++) {
 
     let tt = (tritip[ii]);
 
-    generate += '<a href="' + tt.link + '" target="_blank"><div class="row ensemble"><div class="col-12"><div class="row"><div class="col-8 part_un">';
-    generate += '<h3 class="text-center">' + tt.title + '</h3>';
-    generate += ' <p>' + tt.desc + '</p></div><div class="col-md-4 part_deux ' + tt.badge + '">';
+    generate += '<a class="card carte"  href="' + tt.link + '" target="_blank">';
+      generate += '<span class="badge rounded-pill ';
 
-    generate += '<h4 class="badge ';
+        if (tt.badge === "Javascript") {
+            generate += ' Javascript';
+        } else if (tt.badge === "CSS") {
+            generate += ' CSS';
+        } else if (tt.badge === "HTML") {
+            generate += ' HTML';
+        } else if (tt.badge === "Bootstrap") {
+            generate += ' Bootstrap';
+        } else if (tt.badge === "WordPress") {
+            generate += ' WordPress';
+        } else if (tt.badge === "React") {
+            generate += ' React';
+        } else if (tt.badge === "PHP") {
+            generate += ' PHP';
+        } else {
+            generate += '';
+        }
 
-    if (tt.badge === "Javascript") {
-        generate += ' Javascript';
-    } else if (tt.badge === "CSS") {
-        generate += ' CSS';
-    } else if (tt.badge === "HTML") {
-        generate += ' HTML';
-    } else if (tt.badge === "Bootstrap") {
-        generate += ' Bootstrap';
-    } else if (tt.badge === "WordPress") {
-        generate += ' WordPress';
-    } else if (tt.badge === "React") {
-        generate += ' React';
-    } else if (tt.badge === "PHP") {
-        generate += ' PHP';
-    } else {
-        generate += '';
-    }
+        generate += '">' +
+            tt.badge +
+            '</span>';
+            if (tt.img_link != "nope") {
+                generate += '<img class="card-img-top" src="' +
+                    tt.img_link +
+                    '" title="' +
+                    tt.title +
+                    '" alt="' +
+                    tt.title +
+                    '" >';
+            } else { }
+            generate += '<div class="card-body">';
+            generate += '<h3 class="card-title">' + tt.title + '</h3>';
+            generate += '<p class="card-text">' + tt.desc + '</p>';
+            generate += '<span class="lien">' + tt.link + '</span>';
+            if (tt.generateur === 1) {
+                generate += '<span class="generateur">Generateur</span>';
+            }
+            generate += '</div>';
 
-    generate += '">' +
-        tt.badge +
-        '</h4>';
-    if (tt.generateur === 1) {
-        generate += '<span class="generateur">Generateur</span>';
-    }
-    if (tt.img_link != "nope") {
-        generate += '<img src="' +
-            tt.img_link +
-            '" title="' +
-            tt.title +
-            '" alt="' +
-            tt.title +
-            '" >';
-    } else {}
-
-    generate += '</div></div></div></div></a>';
-}
-document.getElementById("generate").innerHTML = generate;
+            generate += '</a>';
+        }
+        document.getElementById("generate").innerHTML = generate;
 
 
 
@@ -117,9 +119,8 @@ function tout() {
 
         let tt = (tritip[ii]);
 
-        generate += '<a href="' + tt.link + '" target="_blank" ><div class="row ensemble"><div class="col-12"><div class="row"><div class="col-8 part_un"> <h3 class="text-center">' +
-            tt.title + '</h3> <p>' + tt.desc + '</p></div><div class="col-md-4 part_deux ' + tt.badge + '">';
-        generate += '<h4 class="badge ';
+        generate += '<a class="card carte" href="' + tt.link + '" target="_blank">';
+           generate += '<span class="badge rounded-pill ';
 
         if (tt.badge === "Javascript") {
             generate += ' Javascript';
@@ -141,23 +142,28 @@ function tout() {
 
         generate += '">' +
             tt.badge +
-            '</h4>';
-        if (tt.generateur === 1) {
-            generate += '<span class="generateur">Generateur</span>';
-        }
-        if (tt.img_link != "nope") {
-            generate += '<img src="' +
-                tt.img_link +
-                '" title="' +
-                tt.title +
-                '" alt="' +
-                tt.title +
-                '" >';
-        } else {}
+            '</span>';
+            if (tt.img_link != "nope") {
+                generate += '<img class="card-img-top" src="' +
+                    tt.img_link +
+                    '" title="' +
+                    tt.title +
+                    '" alt="' +
+                    tt.title +
+                    '" >';
+            } else { }
+            generate += '<div class="card-body">';
+            generate += '<h3 class="card-title">' + tt.title + '</h3>';
+            generate += '<p class="card-text">' + tt.desc + '</p>';
+            generate += '<span class="lien">' + tt.link + '</span>';
+            if (tt.generateur === 1) {
+                generate += '<span class="generateur">Generateur</span>';
+            }
+            generate += '</div>';
 
-        generate += '</div></div></div></div></a>';
-    }
-    document.getElementById("generate").innerHTML = generate;
+            generate += '</a>';
+        }
+        document.getElementById("generate").innerHTML = generate;
 }
 
 
@@ -171,48 +177,43 @@ function gen(nom) {
 
         let tt = (tritip[ii]);
         if (tt.badge === nom) {
-            generate += '<a href="' + tt.link + '" target="_blank" ><div class="row ensemble"><div class="col-12"><div class="row"><div class="col-8 part_un"> <h3 class="text-center">' +
-                tt.title + '</h3> <p>' + tt.desc + '</p></div><div class="col-md-4 part_deux ' + tt.badge + '">';
-            generate += '<h4 class="badge ' + nom + '">' + nom + '</h4>';
+            generate += '<a class="card carte " href="' + tt.link + '" target="_blank">';
+                        generate += '<span class="badge rounded-pill ' + tt.badge + '">' + tt.badge + '</span>';
 
-            if (tt.generateur === 1) {
-                generate += '<span class="generateur">Generateur</span>';
-            }
             if (tt.img_link != "nope") {
-                generate += '<img src="' +
+                generate += '<img class="card-img-top" src="' +
                     tt.img_link +
                     '" title="' +
                     tt.title +
                     '" alt="' +
                     tt.title +
-                    '"> ';
-            } else {}
+                    '" >';
+            } else { }
+            generate += '<div class="card-body">';
+            generate += '<h3 class="card-title">' + tt.title + '</h3>';
+            generate += '<p class="card-text">' + tt.desc + '</p>';
+            generate += '<span class="lien">' + tt.link + '</span>';
+            if (tt.generateur === 1) {
+                generate += '<span class="generateur">Generateur</span>';
+            }
+            generate += '</div>';
 
-            generate += '</div></div></div></div></a>';
+            generate += '</a>';
         }
+        document.getElementById("generate").innerHTML = generate;
     }
-    document.getElementById("generate").innerHTML = generate;
-
 }
 
 
 //La fonction du boutons des générateurs
 function generators() {
     let generate = " ";
-
     for (let ii = 0; ii < tritip.length; ii++) {
         let tt = (tritip[ii]);
-
-        if (tt.generateur === 1) {
-            generate += '<a href="' + tt.link + '" target="_blank" ><div class="row ensemble"><div class="col-12"><div class="row"><div class="col-8 part_un"> <h3 class="text-center">' +
-                tt.title + '</h3> <p>' + tt.desc + '</p></div><div class="col-md-4 part_deux ' + tt.badge + '">';
-            generate += '<h4 class="badge ' + tt.badge + '">' + tt.badge + '</h4>';
-
-            if (tt.generateur === 1) {
-                generate += '<span class="generateur">Generateur</span>';
-            }
-            if (tt.img_link != "nope") {
-                generate += '<img  src="' +
+        generate += '<a class="card carte " href="' + tt.link + '" target="_blank">';
+                            generate += '<span class="badge rounded-pill '+tt.badge+'">' + tt.badge + '</span>';
+                if (tt.img_link != "nope") {
+                generate += '<img class="card-img-top" src="' +
                     tt.img_link +
                     '" title="' +
                     tt.title +
@@ -220,9 +221,18 @@ function generators() {
                     tt.title +
                     '" >';
             } else {}
+            generate += '<div class="card-body">';
+            generate += '<h3 class="card-title">' + tt.title + '</h3>';
+        generate += '<p class="card-text">' + tt.desc + '</p>';
 
-            generate += '</div></div></div></div></a>';
+        generate += '<span class="lien">' + tt.link + '</span>';
+
+            if (tt.generateur === 1) {
+                generate += '<span class="generateur">Generateur</span>';
         }
+                    generate += '</div>';
+
+            generate += '</a>';
     }
     document.getElementById("generate").innerHTML = generate;
 }

@@ -50,91 +50,12 @@ body {
         overflow-y: scroll;
         height: 83vh;
         section {
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-content: center;
-            scroll-behavior: smooth;
-            flex: 1;
-            flex-grow: 1;
-            display: flex;
-            align-items: flex-start;
-            min-height: 0;
-            margin-top: 15px;
-            a {
-                display: flex;
-                flex-wrap: wrap;
-                padding: 0 4px;
-                justify-content: center;
-                align-content: center;
-                margin-bottom: 15px;
-                transform: scale(1.0);
-                transition: all 0.09s;
-                color: white;
-                margin-left: 15px;
-                margin-right: 15px;
-                &:hover {
-                    text-decoration: none;
-                    color: grey;
-                }
-                .ensemble {
-                    transform: scale(1.0);
-                    transition: all 0.09s;
-                    width: 400px;
-                    height: 350px;
-                    flex-direction: column;
-                    background-color: #343a40 !important;
-                    &:hover {
-                        transform: scale(0.9);
-                    }
-                    .part_un {
-                        border-top: 1px solid $C2;
-                        border-left: 1px solid $C2;
-                        border-bottom: 1px solid $C2;
-                        height: 350px;
-                        h3 {
-                            font-size: 20px;
-                            text-align: justify;
-                        }
-                        p {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            text-align: center;
-                        }
-                    }
-                    .part_deux {
-                        border-top: 1px solid $C2;
-                        border-right: 1px solid $C2;
-                        border-bottom: 1px solid $C2;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-content: center;
-                        .badge {
-                            position: absolute;
-                            top: 0;
-                        }
-                        span {
-                            display: block;
-                            width: 100%;
-                            text-align: center;
-                            @include F1();
-                            position: absolute;
-                            bottom: 0;
-                        }
-                        img {
-                            display: block;
-                            filter: drop-shadow(0 0 1px $C1);
-                            object-fit: scale-down;
-                            width: 100%;
-                            padding: 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
+display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content:space-between;
+}}}
 
 // Version en portrait
 @media (orientation: portrait) {
@@ -144,130 +65,13 @@ body {
         height: 81vh;
         margin: 5px 5px;
         section {
-            flex-direction: column!important;
-            display: flex;
-            flex-wrap: wrap;
-            a {
-                display: flex;
-                flex-wrap: wrap;
-                padding: 0 4px;
-                justify-content: center;
-                align-content: center;
-                padding: 0 4px;
-                margin-bottom: 10px;
-                transform: scale(1.0);
-                transition: all 0.09s;
-                color: white;
-                &:hover {
-                    text-decoration: none;
-                    color: grey;
-                }
-                .ensemble {
-                    transform: scale(1.0);
-                    transition: all 0.09s;
-                    width: 95vw;
-                    flex-direction: column;
-                    background-color: #343a40 !important;
-                    &:hover {
-                        transform: scale(0.9);
-                    }
-                    .part_un {
-                        border-top: 1px solid $C2;
-                        border-left: 1px solid $C2;
-                        border-right: 1px solid $C2;
-                        display: block;
-                        width: 100%;
-                        max-width: none !important;
-                        flex: none;
-                        height: 100px;
-                        h3 {
-                            font-size: 5vw;
-                        }
-                        p {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            text-align: center;
-                            font-size: 2.5vw;
-                        }
-                    }
-                    .part_deux {
-                        border-left: 1px solid $C2;
-                        border-right: 1px solid $C2;
-                        border-bottom: 1px solid $C2;
-                        width: 95vw;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        align-content: center;
-                        height: 100px;
-                        .badge {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                        }
-                        span {
-                            display: block;
-                            text-align: right;
-                            @include F1();
-                        }
-                        img {
-                            display: block;
-                            filter: drop-shadow(0 0 1px $C1);
-                            object-fit: contain;
-                            height: 100px;
-                            max-width: 150px;
-                            padding: 10px;
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content:space-between;
+        }}}
 
-// Les badges
-.Javascript {
-    background-color: rgba(251, 255, 0, 0.445);
-    @include F1()
-}
 
-.CSS {
-    background-color: rgba(245, 24, 0, 0.555);
-    @include F1()
-}
-
-.HTML {
-    background-color: rgba(17, 0, 255, 0.466);
-    @include F1()
-}
-
-.Bootstrap {
-    background-color: rgba(5, 0, 73, 0.274);
-    @include F1()
-}
-
-.WordPress {
-    background-color: rgba(0, 176, 230, 0.493);
-    @include F1()
-}
-
-.React {
-    background-color: #62dafb75;
-    @include F1()
-}
-
-.PHP {
-    background-color: #9062fb79;
-    @include F1()
-}
-
-.GEN {
-    background-color: #ffffff79;
-}
 
 // La barre de défilement
 ::-webkit-scrollbar {
@@ -397,78 +201,6 @@ h1 {
         align-items: flex-start;
         min-height: 0;
         margin-top: 15px;
-        a {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-            justify-content: center;
-            align-content: center;
-            margin-bottom: 15px;
-            transform: scale(1.0);
-            transition: all 0.09s;
-            color: white;
-            margin-left: 15px;
-            margin-right: 15px;
-            &:hover {
-                text-decoration: none;
-                color: grey;
-            }
-            .ensemble {
-                transform: scale(1.0);
-                transition: all 0.09s;
-                width: 400px;
-                height: 350px;
-                flex-direction: column;
-                background-color: #343a40 !important;
-                &:hover {
-                    transform: scale(0.9);
-                }
-                .part_un {
-                    border-top: 1px solid $C2;
-                    border-left: 1px solid $C2;
-                    border-bottom: 1px solid $C2;
-                    height: 350px;
-                    h3 {
-                        font-size: 20px;
-                        text-align: justify;
-                    }
-                    p {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        text-align: center;
-                    }
-                }
-                .part_deux {
-                    border-top: 1px solid $C2;
-                    border-right: 1px solid $C2;
-                    border-bottom: 1px solid $C2;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-content: center;
-                    .badge {
-                        position: absolute;
-                        top: 0;
-                    }
-                    span {
-                        display: block;
-                        width: 100%;
-                        text-align: center;
-                        @include F1();
-                        position: absolute;
-                        bottom: 0;
-                    }
-                    img {
-                        display: block;
-                        filter: drop-shadow(0 0 1px $C1);
-                        object-fit: scale-down;
-                        width: 100%;
-                        padding: 5px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -479,81 +211,5 @@ h1 {
         display: flex;
         flex-wrap: wrap;
         margin-top: 15px;
-        a {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-            justify-content: center;
-            align-content: center;
-            padding: 0 4px;
-            margin-bottom: 10px;
-            transform: scale(1.0);
-            transition: all 0.09s;
-            color: white;
-            &:hover {
-                text-decoration: none;
-                color: grey;
-            }
-            .ensemble {
-                transform: scale(1.0);
-                transition: all 0.09s;
-                width: 95vw;
-                flex-direction: column;
-                background-color: #343a40 !important;
-                &:hover {
-                    transform: scale(0.9);
-                }
-                .part_un {
-                    border-top: 1px solid $C2;
-                    border-left: 1px solid $C2;
-                    border-right: 1px solid $C2;
-                    display: block;
-                    width: 100%;
-                    max-width: none !important;
-                    flex: none;
-                    height: 100px;
-                    p {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        text-align: center;
-                    }
-                }
-                .part_deux {
-                    border-left: 1px solid $C2;
-                    border-right: 1px solid $C2;
-                    border-bottom: 1px solid $C2;
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-content: center;
-                    height: 100px;
-                    max-width: none !important;
-                    flex: none;
-                    .badge {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                    }
-                    span {
-                        display: block;
-                        text-align: right;
-                        @include F1();
-                    }
-                    img {
-                        display: block;
-                        filter: drop-shadow(0 0 1px $C1);
-                        object-fit: contain;
-                        height: 100px;
-                        max-width: 150px;
-                        padding: 10px;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                    }
-                }
-            }
-        }
     }
 }

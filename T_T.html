@@ -6,12 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css" />
-    <meta name="full-screen" content="yes">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+    <!--Bootstrap ON-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap OFF-->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Tricks and Tips</title>
     <!--Debut Gestion des icones de l'application-->
@@ -39,6 +38,8 @@
     <meta content="#1b1b1b" data-react-helmet="true" name="theme-color" />
     <!--Fin  gestion de l'embed pour Discord-->
     <meta name="description" content="Répertoire de trucs et astuces à usage des devellopeurs web !" />
+        <link rel="stylesheet" type="text/css" href="assets/css/cards.css" media="all" />
+
 </head>
 
 <body>
@@ -46,7 +47,7 @@
 
         <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
 
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon "></span>
     </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -58,7 +59,7 @@
                         <a id="HTML" class="nav-link" href="#HTML" title="Afficher la documentation autour de HTML">HTML</a>
                     </li>
                     <li class="nav-item dropdown dropright">
-                        <a class="nav-link dropdown-toggle" href="#" id="Esthetique" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Afficher les options esthétiques: CSS,Bootstrap et WordPress">
+                        <a class="nav-link dropdown-toggle" href="#" id="Esthetique" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Afficher les options esthétiques: CSS,Bootstrap et WordPress">
                             Esthétique
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Esthetique">
@@ -69,7 +70,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown dropright">
-                        <a class="nav-link dropdown-toggle" href="#" id="Programmation" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Afficher les options esthétiques: Javascript,React et PHP">
+                        <a class="nav-link dropdown-toggle" href="#" id="Programmation" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Afficher les options esthétiques: Javascript,React et PHP">
                             Programmation
                         </a>
                         <div class="dropdown-menu" aria-labelledby="Programmation">
@@ -115,7 +116,7 @@
     <footer>
         <p>Créé par <a href="https://dzenetanmassart.github.io/" target="_blank">Dzénetan Massart<sup><i class="fas fa-external-link-alt"></i></sup></a> le 17 Février 2019 à <a href="https://becode.org/fr/" target="_blank">la formation BeCode<sup><i class="fas fa-external-link-alt"></i></sup></a>.
             <b>Tricks & Tips</b> sert à répertorier les applications et documentations autour du développement web.</p>
-        <p>Massart Dzénetan©2019-2021</p>
+        <p>Massart Dzénetan©2019-2023</p>
     </footer>
     <script src="assets/js/cartes.js"></script>
     <script src="assets/js/generateur.js"></script>
