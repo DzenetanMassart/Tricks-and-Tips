@@ -32,7 +32,7 @@ for (let ii = 0; ii < tritip.length; ii++) {
 
     let tt = (tritip[ii]);
 
-    generate += '<a class="card carte"  href="' + tt.link + '" target="_blank">';
+    generate += '<a class="card carte"  href="' + tt.link + '" target="_blank" title="'+tt.title+'">';
       generate += '<span class="badge rounded-pill ';
 
         if (tt.badge === "Javascript") {
@@ -119,7 +119,7 @@ function tout() {
 
         let tt = (tritip[ii]);
 
-        generate += '<a class="card carte" href="' + tt.link + '" target="_blank">';
+        generate += '<a class="card carte" href="' + tt.link + '" target="_blank" title="'+tt.title+'">';
            generate += '<span class="badge rounded-pill ';
 
         if (tt.badge === "Javascript") {
@@ -177,7 +177,7 @@ function gen(nom) {
 
         let tt = (tritip[ii]);
         if (tt.badge === nom) {
-            generate += '<a class="card carte " href="' + tt.link + '" target="_blank">';
+            generate += '<a class="card carte " href="' + tt.link + '" target="_blank" title="'+tt.title+'">';
                         generate += '<span class="badge rounded-pill ' + tt.badge + '">' + tt.badge + '</span>';
 
             if (tt.img_link != "nope") {
@@ -210,7 +210,7 @@ function generators() {
     let generate = " ";
     for (let ii = 0; ii < tritip.length; ii++) {
         let tt = (tritip[ii]);
-        generate += '<a class="card carte " href="' + tt.link + '" target="_blank">';
+        generate += '<a class="card carte " href="' + tt.link + '" target="_blank" title="'+tt.title+'">';
                             generate += '<span class="badge rounded-pill '+tt.badge+'">' + tt.badge + '</span>';
                 if (tt.img_link != "nope") {
                 generate += '<img class="card-img-top" src="' +

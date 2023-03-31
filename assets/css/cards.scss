@@ -48,6 +48,15 @@ filter: drop-shadow(0 0 1px $C1);
   bottom:0;
   right:0;
         }
+        &:hover{
+             animation: gelatine 0.5s infinite;
+        }
+        &:visited{
+            background:rgba(255, 255, 255, 0.5);
+        }
+        &:active{
+            animation: pulse 1s infinite ease-in-out alternate;
+        }
 }
 
 
@@ -90,4 +99,16 @@ filter: drop-shadow(0 0 1px $C1);
 
 .GEN {
     background-color: #ffffff79;
+}
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+@keyframes pulse {
+  from { transform: scale(1.0, 0.9); }
+  to { transform: scale(1.2, 1.2); }
 }
