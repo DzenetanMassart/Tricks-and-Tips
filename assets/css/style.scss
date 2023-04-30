@@ -26,7 +26,6 @@ $C3:rgb(0, 42, 56);
 
 body {
     background-color: #1b1b1b;
-    overflow: hidden;
 }
 
 .searcher {
@@ -43,33 +42,14 @@ body {
     }
 }
 
-// Version en paysage
-@media (orientation:landscape) {
-    .scrollbar {
-        margin-top: 15px;
-        overflow-y: scroll;
-        height: 83vh;
-        section {
-
-display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content:space-between;
-}}}
-
-// Version en portrait
-@media (orientation: portrait) {
-    .scrollbar {
-        margin-top: 15px;
-        overflow-y: scroll;
-        height: 81vh;
-        margin: 5px 5px;
-        section {
-display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content:space-between;
-        }}}
+section{
+    display: flex;
+    flex-wrap:wrap;
+    @media (orientation: portrait){    justify-content: center;
+    }
+    @media (orientation: landscape){    justify-content: space-between;
+    }
+}
 
 
 
@@ -119,13 +99,14 @@ display: flex;
 footer {
     background-color: #343a40 !important;
     text-align: center;
-    position: fixed;
+    margin:0;
+    height:70px;
     bottom: 0;
     width: 100%;
     p {
         color: white;
         @media only screen and (max-width: 600px) {
-            font-size: 2.1vw;
+            font-size: 1em;
         }
         a {
             color: grey;

@@ -5,10 +5,21 @@
 }
 
 .carte {
-  width: 350px;
-  height: 400px;
-  margin: 10px;
   text-align: center;
+}
+@media (orientation: portrait) {
+  .carte {
+    width: 80%;
+    height: 250px;
+    margin: 10px;
+  }
+}
+@media (orientation: landscape) {
+  .carte {
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+  }
 }
 .carte img {
   display: inline-block;

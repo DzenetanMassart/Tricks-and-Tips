@@ -76,14 +76,6 @@ let tritip = [{
         "link": "http://dimplejs.org/"
     },
     {
-        "title": "CSS Animate (BETA)",
-        "badge": "CSS",
-        "generateur": 1,
-        "img_link": "https://cssanimate.com/favicon.ico",
-        "desc": "Créer des animations en CSS avec une interface et une pré-visualisation.",
-        "link": "http://cssanimate.com/"
-    },
-    {
         "title": "Bootstrap Code Editor",
         "badge": "Bootstrap",
         "generateur": 1,

@@ -16,9 +16,14 @@ $C3:rgb(0, 42, 56);
 @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 .carte{
-width:350px;
-height: 400px;
-margin:10px;
+    @media (orientation: portrait){width:80%;
+        height: 250px;
+        margin:10px;}
+    @media (orientation: landscape){width:350px;
+        height: 400px;
+        margin:10px;}
+
+
  text-align: center;
         img{
             display: inline-block;
